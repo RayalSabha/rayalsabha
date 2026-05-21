@@ -235,15 +235,19 @@
     }
 
     /* ── IMAGE PLACEHOLDER ── */
-    .scene-image {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border: 1px solid var(--gold-border);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 28px;
+   .scene-image {
+      width: 60%;
+      max-width: 900px;
+      margin: 1.5rem auto;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(139, 92, 246, 0.15));
+      border: 2px solid rgba(201, 168, 76, 0.4);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
-      background: linear-gradient(135deg, #120e08 0%, #0a0806 100%);
+      overflow: hidden;
     }
     /* When real image is added it fills perfectly */
     .scene-image img {
