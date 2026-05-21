@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RayalSabha | తెలుగు కధలు · భారతీయ సంస్కృతి</title>
+  <meta name="description" content="RayalSabha — తెనాలి రామకృష్ణ కథలు, విక్రమార్క వల్లభ కథలు, మరిన్ని భారతీయ సంస్కృతి కధలు తెలుగులో" />
+  <meta name="keywords" content="తెనాలి రామకృష్ణ, విక్రమార్క వల్లభ, తెలుగు కధలు, భారతీయ కథలు, తెలుగు సంస్కృతి, RayalSabha" />
+  <meta property="og:title" content="RayalSabha | తెలుగు కధలు · భారతీయ సంస్కృతి" />
+  <meta property="og:description" content="తెలుగుకు చెందిన గ్రంథాలు, కధలు, సంస్కృతి — తెనాలి, విక్రమార్క, మరిన్ని" />
+  <meta property="og:image" content="https://rayalsabha.com/og-image.jpg" />
+  <link rel="canonical" href="https://rayalsabha.com" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Tiro Telugu', 'Cormorant Garamond', serif;
+      background: linear-gradient(135deg, #0d0805 0%, #1a1410 50%, #080604 100%);
+      color: #f5ecd7;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ============ NAVIGATION ============ */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(8, 6, 4, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #C9A84C;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #f5ecd7;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #C9A84C;
+    }
+
+    .nav-yt {
+      color: #f5ecd7;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .nav-yt:hover {
+      color: #C9A84C;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 0.8rem 1rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.8rem;
+      }
+
+      .nav-logo {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      margin-top: 60px;
+      padding: 6rem 2rem;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(201, 168, 76, 0.15) 0%, transparent 100%);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+    }
+
+    .hero-emoji {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #C9A84C;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
+      font-weight: bold;
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+      color: #d4a574;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: #b8956f;
+      margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #C9A84C, #d4a574);
+      color: #080604;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+    }
+
+    .hero-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 4rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-emoji {
+        font-size: 3rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    /* ============ CONTENT ============ */
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* ============ SERIES GRID ============ */
+    .series-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .series-card {
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.08), rgba(139, 92, 246, 0.08));
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .series-card:hover {
+      border-color: #C9A84C;
+      box-shadow: 0 8px 24px rgba(201, 168, 76, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .series-card-header {
+      padding: 2rem 2rem 1rem 2rem;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), rgba(139, 92, 246, 0.1));
+    }
+
+    .series-emoji {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .series-title {
+      font-size: 1.4rem;
+      color: #C9A84C;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .series-subtitle {
+      font-size: 0.9rem;
+      color: #b8956f;
+    }
+
+    .series-card-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .series-desc {
+      color: #f5ecd7;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .series-stats {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: #b8956f;
+    }
+
+    .series-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .series-cta {
+      display: inline-block;
+      background: rgba(201, 168, 76, 0.15);
+      color: #C9A84C;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: bold;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .series-card:hover .series-cta {
+      background: rgba(201, 168, 76, 0.3);
+    }
+
+    /* ============ SECTION TITLE ============ */
+    .section-title {
+      font-size: 1.8rem;
+      color: #C9A84C;
+      margin: 3rem 0 1rem 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .section-desc {
+      text-align: center;
+      color: #b8956f;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* ============ ABOUT ============ */
+    .about {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(201, 168, 76, 0.05);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #C9A84C;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      color: #f5ecd7;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* ============ SUBSCRIBE CTA ============ */
+    .subscribe-cta {
+      margin: 3rem 0;
+      padding: 2rem;
+      background: linear-gradient(135deg, #C9A84C 0%, #d4a574 100%);
+      border-radius: 8px;
+      text-align: center;
+      color: #080604;
+    }
+
+    .subscribe-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .subscribe-text {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .subscribe-btn {
+      display: inline-block;
+      background: #080604;
+      color: #C9A84C;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+      border: 1px solid #C9A84C;
+    }
+
+    .subscribe-btn:hover {
+      background: #1a1410;
+    }
+
+    /* ============ FOOTER ============ */
+    footer {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: rgba(8, 6, 4, 0.95);
+      border-top: 1px solid rgba(201, 168, 76, 0.3);
+      text-align: center;
+      color: #b8956f;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: #C9A84C;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ============ TRANSLATE BUTTON ============ */
+    .translate-wrapper {
+      position: relative;
+    }
+
+    .translate-btn {
+      background: none;
+      border: none;
+      color: #C9A84C;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .translate-btn:hover {
+      opacity: 0.8;
+    }
+
+    #google_translate_element {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background: rgba(8, 6, 4, 0.98);
+      border: 1px solid #C9A84C;
+      border-radius: 4px;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+
+    #google_translate_element select {
+      background: #1a1410;
+      color: #C9A84C;
+      border: 1px solid #C9A84C;
+      padding: 0.4rem;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 1rem;
+      }
+
+      .series-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ============ NAVIGATION ============ -->
+  <nav>
+    <a href="/" class="nav-logo">🪔 RayalSabha</a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">హోమ్</a>
+      <a href="/tenali/" class="nav-link">తెనాలి</a>
+      <div class="translate-wrapper">
+        <button class="translate-btn" onclick="toggleTranslate(event)">🌐 భాష</button>
+        <div id="google_translate_element"></div>
+      </div>
+      <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-yt">▶ YouTube</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <span class="hero-emoji">🪔</span>
+    <h1>RayalSabha</h1>
+    <p class="hero-subtitle">తెలుగు కధలు · భారతీయ సంస్కృతి</p>
+    <p class="hero-tagline">చతురుడు తెనాలి, సాహసకారుడు విక్రమార్క — వారి కథలకు హదద్ లేదు</p>
+    <a href="/tenali/" class="hero-cta">తెనాలి కధలు చదవండి →</a>
+  </div>
+
+  <!-- ============ CONTENT ============ -->
+  <div class="content">
+
+    <!-- ============ SERIES SHOWCASE ============ -->
+    <h2 class="section-title">📚 సిరీస్ కాలెక్షన</h2>
+    <p class="section-desc">బహుసంఖ్యక కథలు, ప్రతి కథకు ఒక దర్శనం, ఒక శిక్ష</p>
+
+    <div class="series-grid">
+
+      <!-- TENALI -->
+      <a href="/tenali/" class="series-card">
+        <div class="series-card-header">
+          <span class="series-emoji">🧠</span>
+          <h3 class="series-title">తెనాలి రామకృష్ణ</h3>
+          <p class="series-subtitle">చతురుడైన పండితుడు</p>
+        </div>
+        <div class="series-card-body">
+          <p class="series-desc">విజయనగర రాజ్యంలో చతురుడైన పండితుడు తెనాలి. రాజుని సంతోషపెట్టేవాడు, దేవుళ్ళను ఠక్కున్నవాడు. అతని తెలివిలో వందల కధలున్నాయి.</p>
+          <div class="series-stats">
+            <span class="series-stat-item">✓ 3 Live</span>
+            <span class="series-stat-item">⏳ 33 Coming</span>
+          </div>
+          <span class="series-cta">కధలు చదవండి →</span>
+        </div>
+      </a>
+
+      <!-- VIKRAMARKA (Coming Soon) -->
+      <div class="series-card" style="opacity: 0.6;">
+        <div class="series-card-header">
+          <span class="series-emoji">⚔️</span>
+          <h3 class="series-title">విక్రమార్క వల్లభ</h3>
+          <p class="series-subtitle">సాహసకారుడు రాజు</p>
+        </div>
+        <div class="series-card-body">
+          <p class="series-desc">విక్రమార్క వల్లభ — సాహసకారుడైన రాజు. విజయనగర సామ్రాజ్యంలో నిర్భయంగా ఆడిన రాజు. చెట్టుకు కూర్చున్న బెత్తల గుణాలను పరీక్షించిన రాజు.</p>
+          <div class="series-stats">
+            <span class="series-stat-item">⏳ Coming Soon</span>
+          </div>
+          <span class="series-cta" style="opacity: 0.5;">Coming Soon...</span>
+        </div>
+      </div>
+
+      <!-- TEMPLES (Coming Soon) -->
+      <div class="series-card" style="opacity: 0.6;">
+        <div class="series-card-header">
+          <span class="series-emoji">🏛️</span>
+          <h3 class="series-title">మరిచిపోయిన ఆలయాలు</h3>
+          <p class="series-subtitle">చరిత్ర, సంస్కృతి, సౌందర్యం</p>
+        </div>
+        <div class="series-card-body">
+          <p class="series-desc">విజయనగర రాజ్యం నిర్మించిన ఆలయాలు — కళ, చరిత్ర, సంస్కృతితో నిండిన. ఆ ఆలయాల కధలు, నిర్మాణాలు, శిల్ర్పం.</p>
+          <div class="series-stats">
+            <span class="series-stat-item">⏳ Coming Soon</span>
+          </div>
+          <span class="series-cta" style="opacity: 0.5;">Coming Soon...</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <div class="about">
+      <h2>🎬 ఈ ప్రకల్పనం గురించి</h2>
+      <p>RayalSabha — తెలుగు కధలను, భారతీయ సంస్కృతిని ప్రపంచానికి చేరువ చేసేందుకు తీసిన ఈ చిన్న ప్రయత్నం. తెనాలి, విక్రమార్క, మరిన్ని కధలు — సినిమాటిక్ అందంగా, తెలుగులో, సకల ভాషలకు అందుబాటులో.</p>
+      <p>ప్రతి కథకు ఒక విధానం, ఒక శిక్ష, ఒక నవ్వు.</p>
+    </div>
+
+    <!-- ============ SUBSCRIBE CTA ============ -->
+    <div class="subscribe-cta">
+      <div class="subscribe-title">🎬 YouTube వద్ద నాకు Follow చేయండి</div>
+      <p class="subscribe-text">మరిన్ని కధలు, చరిత్ర, సంస్కృతి — వీడియో రూపంలో @Rayalsabha</p>
+      <a href="https://youtube.com/@Rayalsabha" target="_blank" class="subscribe-btn">▶ Subscribe చేయండి</a>
+    </div>
+
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <p>&copy; 2026 RayalSabha · తెలుగు కధలు | <a href="/">హోమ్</a> · <a href="/tenali/">తెనాలి</a></p>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">Powered by తెలుగు సంస్కృతి 🪔</p>
+  </footer>
+
+  <!-- ============ GOOGLE TRANSLATE ============ -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'te', includedLanguages: 'hi,ta,kn,ml,mr,bn,gu,pa,en,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+
+    function toggleTranslate(event) {
+      event.stopPropagation();
+      var el = document.getElementById('google_translate_element');
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.translate-wrapper')) {
+        var el = document.getElementById('google_translate_element');
+        if (el) el.style.display = 'none';
+      }
+    });
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
