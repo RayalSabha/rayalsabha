@@ -228,11 +228,19 @@
 
     /* ── IMAGE PLACEHOLDER ── */
     .scene-image {
-      width:100%; aspect-ratio:16/9;
-      border:1px solid var(--gold-border); border-radius:10px;
-      overflow:hidden; margin-bottom:24px; position:relative;
-      background:linear-gradient(135deg,#120e08,#0a0806);
-    }
+      width: 60%;
+      max-width: 900px;
+      margin: 1.5rem auto;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(139, 92, 246, 0.15));
+      border: 2px solid rgba(201, 168, 76, 0.4);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+}
     .scene-image img { width:100%; height:100%; object-fit:cover; display:block; }
     .img-placeholder {
       position:absolute; inset:0;
@@ -252,7 +260,11 @@
     }
     .scene-image::before { top:8px; left:8px; border-width:1px 0 0 1px; }
     .scene-image::after  { bottom:8px; right:8px; border-width:0 1px 1px 0; }
-    @media(max-width:480px){ .scene-image { aspect-ratio:4/3; } }
+    @media(max-width:480px){ .scene-image {
+    width: 90%;
+    max-width: 100%;
+      } 
+   }
 
     /* ── NARRATOR ── */
     .narrator {
@@ -505,12 +517,7 @@
 
         <!-- IMAGE 1 -->
         <div class="scene-image">
-          <img src="" alt="విజయనగర బజారులో ముగ్గురు దొంగలు గుసగుసలాడుతున్నారు" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">🌆</span>
-            <span class="img-ph-label">విజయనగర బజారు సాయంత్రం —<br/>ముగ్గురు దొంగలు గుసగుసలాడుతున్నారు</span>
-            <span class="img-ph-tag">Scene 01 · Add Image Here</span>
-          </div>
+          <img src="/images/t03/SCN-01.png" alt="విజయనగర బజారులో ముగ్గురు దొంగలు గుసగుసలాడుతున్నారు"/>
         </div>
 
         <p class="narrator">"విజయనగరంలో ముగ్గురు దొంగలు — ఒకడు తెలివైనవాడు (వీరన్న), ఒకడు లావైనవాడు (పోతురాజు), ఒకడు… భయపడేవాడు (తిక్కన్న)!"</p>
@@ -561,12 +568,7 @@
 
         <!-- IMAGE 2 -->
         <div class="scene-image">
-          <img src="" alt="తెనాలి నేల మీద కూర్చుని పెట్టెలో రాళ్ళు నింపుతున్నాడు" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">🪨</span>
-            <span class="img-ph-label">తెనాలి నేల మీద కూర్చుని పెట్టెలో రాళ్ళు నింపుతున్నాడు —<br/>శారద ఆశ్చర్యంగా చూస్తోంది</span>
-            <span class="img-ph-tag">Scene 02 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-02.png" alt="తెనాలి నేల మీద కూర్చుని పెట్టెలో రాళ్ళు నింపుతున్నాడు"/>
         </div>
 
         <p class="story-para action">తెనాలి నేల మీద కూర్చుని పెద్ద పెట్టెలో రాళ్ళు నింపుతున్నాడు. శారద వచ్చి చూసింది.</p>
@@ -602,12 +604,7 @@
 
         <!-- IMAGE 3 -->
         <div class="scene-image">
-          <img src="" alt="అర్థరాత్రి ముగ్గురు నీడలు గోడ వైపు వస్తున్నాయి" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">🌙</span>
-            <span class="img-ph-label">అర్థరాత్రి — మూడు నీడలు గోడ వైపు వచ్చాయి</span>
-            <span class="img-ph-tag">Scene 03 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-03.png" alt="అర్థరాత్రి ముగ్గురు నీడలు గోడ వైపు వస్తున్నాయి"/>
         </div>
 
         <p class="story-para action">అర్థరాత్రి. మూడు నీడలు గోడ వైపు వచ్చాయి.</p>
@@ -660,12 +657,7 @@
 
         <!-- IMAGE 4 -->
         <div class="scene-image">
-          <img src="" alt="తెనాలి కిటికీలోంచి చూశాడు — దొంగలు తోటలో కనిపించారు" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">👀</span>
-            <span class="img-ph-label">తెనాలి కిటికీలోంచి చూశాడు —<br/>దొంగలు తోటలో కనిపించారు. తెనాలి నవ్వాడు!</span>
-            <span class="img-ph-tag">Scene 04 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-04.png" alt="తెనాలి కిటికీలోంచి చూశాడు — దొంగలు తోటలో కనిపించారు"/>
         </div>
 
         <p class="narrator">"గోడ బయట గుసగుసలు విన్న పండితమంత్రి — దొంగలు వలలో పడిపోయారని అప్పుడే అర్థం చేసుకున్నాడు!"</p>
@@ -732,12 +724,7 @@
 
         <!-- IMAGE 5 -->
         <div class="scene-image">
-          <img src="" alt="ముగ్గురు దొంగలు బావి దగ్గర — తిక్కన్న వణుకుతున్నాడు" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">🪣</span>
-            <span class="img-ph-label">ముగ్గురు దొంగలు పరిగెత్తుకుంటూ బావి దగ్గరకు వచ్చారు —<br/>తిక్కన్న వణుకుతూ లోపలికి చూస్తున్నాడు</span>
-            <span class="img-ph-tag">Scene 05 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-05.png" alt="ముగ్గురు దొంగలు బావి దగ్గర — తిక్కన్న వణుకుతున్నాడు"/>
         </div>
 
         <p class="story-para action">ముగ్గురు దొంగలు పరిగెత్తుకుంటూ బావి దగ్గరకు వచ్చారు.</p>
@@ -782,12 +769,7 @@
 
         <!-- IMAGE 6 -->
         <div class="scene-image">
-          <img src="" alt="ముగ్గురు దొంగలు అర్థరాత్రి తోట బావిలో నీళ్ళు తోడుతున్నారు" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">💦</span>
-            <span class="img-ph-label">ఒకడు నీళ్ళు తోడుతున్నాడు… ఒకడు జారిపడుతున్నాడు…<br/>మరొకడు దెయ్యాలు వస్తున్నాయేమో అని వెనక్కి చూస్తున్నాడు!</span>
-            <span class="img-ph-tag">Scene 06 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-06.png" alt="ముగ్గురు దొంగలు అర్థరాత్రి తోట బావిలో నీళ్ళు తోడుతున్నారు" onerror="this.style.display='none'" />
         </div>
 
         <p class="narrator">"ఒకడు నీళ్ళు తోడుతున్నాడు… ఒకడు జారిపడుతున్నాడు… మరొకడు దెయ్యాలు వస్తున్నాయేమో అని వెనక్కి చూస్తున్నాడు!"</p>
@@ -803,12 +785,7 @@
 
         <!-- IMAGE 7 -->
         <div class="scene-image">
-          <img src="" alt="దొంగలు పెట్టె తెరిచారు — లోపల రాళ్ళు మాత్రమే!" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">🪨</span>
-            <span class="img-ph-label">దొంగలు పెట్టె తెరిచారు —<br/>లోపల రాళ్ళు మాత్రమే! ముగ్గురూ నోరెళ్ళబెట్టారు</span>
-            <span class="img-ph-tag">Scene 07 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-07.png" alt="దొంగలు పెట్టె తెరిచారు — లోపల రాళ్ళు మాత్రమే!" onerror="this.style.display='none'" />
         </div>
 
         <div class="dialogue dlg-veeranna">
@@ -854,12 +831,7 @@
 
         <!-- IMAGE 8 -->
         <div class="scene-image">
-          <img src="" alt="తెల్లవారు జామున తెనాలి తలుపు తీశాడు — ముగ్గురు దొంగలు అలసిపోయి బయట" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">🌅</span>
-            <span class="img-ph-label">తెల్లవారు జామున తెనాలి తలుపు తీశాడు —<br/>ముగ్గురు దొంగలు అలసిపోయి తడిసి మట్టిలో పడి ఉన్నారు. సైనికులు చుట్టుముట్టారు!</span>
-            <span class="img-ph-tag">Scene 08 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-08.png" alt="తెల్లవారు జామున తెనాలి తలుపు తీశాడు — ముగ్గురు దొంగలు అలసిపోయి బయట" onerror="this.style.display='none'" />
         </div>
 
         <p class="story-para action">తెల్లవారు జామున తెనాలి తలుపు తీశాడు. ముగ్గురు దొంగలు బయట — అలసిపోయి, తడిసి, మట్టిలో పడి. సైనికులు చుట్టుముట్టారు.</p>
@@ -910,12 +882,7 @@
 
         <!-- IMAGE 9 -->
         <div class="scene-image">
-          <img src="" alt="తెనాలి శారదతో మాట్లాడుతున్నాడు — రహస్యం వివరిస్తున్నాడు" onerror="this.style.display='none'" />
-          <div class="img-placeholder">
-            <span class="img-ph-icon">💬</span>
-            <span class="img-ph-label">తెనాలి శారదతో మాట్లాడుతున్నాడు —<br/>రహస్యం వివరిస్తూ నవ్వుతున్నాడు</span>
-            <span class="img-ph-tag">Scene 09 · Add Image Here</span>
-          </div>
+          <img src="/images/to3/SCN-09.png" alt="తెనాలి శారదతో మాట్లాడుతున్నాడు — రహస్యం వివరిస్తున్నాడు" onerror="this.style.display='none'" />
         </div>
 
         <div class="dialogue dlg-sarada">
