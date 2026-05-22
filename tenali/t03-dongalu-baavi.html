@@ -65,32 +65,6 @@
     .nav-mob-yt { display:none; background:var(--gold); color:var(--bg); font-family:var(--sans); font-weight:700; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; padding:7px 14px; border-radius:4px; }
     @media(max-width:640px){ .nav-links{display:none;} .nav-mob-yt{display:block;} }
 
-    /* Google Translate */
-    .translate-wrapper { position:relative; display:inline-block; }
-    .translate-btn {
-      display:inline-flex; align-items:center; gap:6px;
-      background:rgba(245,236,215,0.07); border:1px solid rgba(245,236,215,0.15);
-      border-radius:4px; padding:6px 12px; font-family:var(--sans);
-      font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase;
-      color:var(--text-dim); cursor:pointer; transition:border-color 0.2s, color 0.2s;
-    }
-    .translate-btn:hover { border-color:var(--gold-border); color:var(--gold); }
-    #google_translate_element {
-      display:none; position:absolute; top:42px; right:0;
-      background:#111; border:1px solid rgba(201,168,76,0.25);
-      border-radius:8px; padding:10px; z-index:9999;
-      min-width:180px; box-shadow:0 8px 32px rgba(0,0,0,0.6);
-    }
-    .goog-te-banner-frame { display:none!important; }
-    body { top:0!important; }
-    .goog-te-gadget { font-size:0!important; }
-    .goog-te-gadget select {
-      background:#1a1208!important; color:#F5ECD7!important;
-      border:1px solid rgba(201,168,76,0.3)!important;
-      border-radius:4px; padding:7px 10px; font-size:0.82rem;
-      cursor:pointer; outline:none; width:100%;
-    }
-
     /* ── BREADCRUMB ── */
     .breadcrumb {
       padding:80px clamp(1.5rem,5vw,4rem) 0;
@@ -964,28 +938,6 @@
     <p class="footer-tagline">తెనాలి కథలు · విక్రమార్క కథలు · దేవాలయాల రహస్యాలు · మర్చిపోయిన రాజ్యాలు</p>
     <p class="footer-copy">© 2025 RayalSabha · rayalsabha.com</p>
   </footer>
-
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'te',
-        includedLanguages: 'hi,ta,kn,ml,mr,bn,gu,pa,en,ur',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-    function toggleTranslate() {
-      var el = document.getElementById('google_translate_element');
-      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-    }
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.translate-wrapper')) {
-        var el = document.getElementById('google_translate_element');
-        if (el) el.style.display = 'none';
-      }
-    });
-  </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
