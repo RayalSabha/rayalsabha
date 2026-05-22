@@ -367,48 +367,7 @@
       text-decoration: underline;
     }
 
-    /* ============ TRANSLATE BUTTON ============ */
-    .translate-wrapper {
-      position: relative;
-    }
-
-    .translate-btn {
-      background: none;
-      border: none;
-      color: #C9A84C;
-      cursor: pointer;
-      font-size: 1.2rem;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .translate-btn:hover {
-      opacity: 0.8;
-    }
-
-    #google_translate_element {
-      display: none;
-      position: absolute;
-      top: 40px;
-      right: 0;
-      background: rgba(8, 6, 4, 0.98);
-      border: 1px solid #C9A84C;
-      border-radius: 4px;
-      padding: 0.5rem;
-      z-index: 1000;
-    }
-
-    #google_translate_element select {
-      background: #1a1410;
-      color: #C9A84C;
-      border: 1px solid #C9A84C;
-      padding: 0.4rem;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
+  
     @media (max-width: 768px) {
       .content {
         padding: 1rem;
@@ -529,27 +488,6 @@
     <p>&copy; 2026 RayalSabha · తెలుగు కధలు | <a href="/">హోమ్</a> · <a href="/tenali/">తెనాలి</a></p>
     <p style="margin-top: 1rem; font-size: 0.8rem;">Powered by తెలుగు సంస్కృతి 🪔</p>
   </footer>
-
-  <!-- ============ GOOGLE TRANSLATE ============ -->
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'te', includedLanguages: 'hi,ta,kn,ml,mr,bn,gu,pa,en,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-    }
-
-    function toggleTranslate(event) {
-      event.stopPropagation();
-      var el = document.getElementById('google_translate_element');
-      el.style.display = el.style.display === 'none' ? 'block' : 'none';
-    }
-
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.translate-wrapper')) {
-        var el = document.getElementById('google_translate_element');
-        if (el) el.style.display = 'none';
-      }
-    });
-  </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
