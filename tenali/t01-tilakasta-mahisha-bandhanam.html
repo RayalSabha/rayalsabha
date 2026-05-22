@@ -467,6 +467,43 @@
     }
     .moral-text em { color: var(--gold); font-style: normal; }
 
+    /* ============ STORY NAV ============ */
+    .story-nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0;
+      gap: 1rem;
+    }
+
+    .story-nav-btn {
+      flex: 1;
+      padding: 1rem;
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid #C9A84C;
+      color: #C9A84C;
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      transition: all 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .story-nav-btn:hover {
+      background: rgba(201, 168, 76, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .story-nav-btn.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .story-nav-btn.disabled:hover {
+      background: rgba(201, 168, 76, 0.1);
+      transform: none;
+    }
+
+
     /* ── SUBSCRIBE CTA ── */
     .subscribe-section {
       margin: 60px 0 80px;
@@ -948,6 +985,11 @@
           <em>తెలివి ఎల్లప్పుడూ గెలుస్తుంది!</em>
         </p>
       </div>
+
+      <div class="story-nav">
+       <a href="/tenali/" class="story-nav-btn disabled">← Series Home</a>
+       <a href="/tenali/t02-pilli-guramgalu.html" class="story-nav-btn">T02: పిల్లి & గుర్రాలు →</a>
+    </div>
 
       <!-- ══ SUBSCRIBE CTA ══ -->
       <div class="subscribe-section">
