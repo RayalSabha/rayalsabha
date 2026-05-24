@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>తిలకాష్ట మహిష బంధనం | తెనాలి కథలు T01 | RayalSabha</title>
-  <meta name="description" content="గర్విష్టి పండితుడిని తెనాలి రామకృష్ణ ఎలా ఓడించాడు? తిలకాష్ట మహిష బంధనం కథ చదవండి — RayalSabha తెనాలి కథలు T01" />
-  <meta name="keywords" content="తెనాలి రామకృష్ణ కథలు, Tenali Rama stories Telugu, తిలకాష్ట మహిష బంధనం, RayalSabha, విజయనగర కథలు, Tenali Rama T01" />
-  <meta property="og:title" content="తిలకాష్ట మహిష బంధనం | RayalSabha" />
-  <meta property="og:description" content="గర్విష్టి పండితుడిని తెనాలి ఒక్క గ్రంథం పేరుతో ఎలా ఓడించాడు? పూర్తి కథ చదవండి." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://rayalsabha.com/stories/t01-tilakasta-mahisha-bandhanam.html" />
-  <link rel="canonical" href="https://rayalsabha.com/stories/t01-tilakasta-mahisha-bandhanam.html" />
+  <title>యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి | తెనాలి కథలు T02 | RayalSabha</title>
+  <meta name="description" content="అరేబియా వ్యాపారి మహమ్మద్‌ బేగ్ తన గుర్రాల గర్వం చెప్పితే, తెనాలి తన పిల్లితో ఎలా ఆయనను ఓడించాడు? పూర్తి కథ చదవండి — RayalSabha తెనాలి కథలు T02" />
+  <meta name="keywords" content="తెనాలి రామకృష్ణ కథలు, పిల్లి గుర్రాలు కథ, మహమ్మద్ బేగ్, Tenali Rama T02, RayalSabha, తెలుగు కధలు" />
+  <meta property="og:title" content="యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి | తెనాలి కథలు T02 | RayalSabha" />
+  <meta property="og:description" content="తెలివితో మోసం చేసే వ్యాపారిని తెనాలి ఎలా ఓడించాడు — ఒక నిరపేక్ష పిల్లి సహాయంతో!" />
+  <link rel="canonical" href="https://rayalsabha.com/tenali/t02-pilli-guramgalu.html" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,10 +62,6 @@
     @keyframes spinSlow {
       from { transform: rotate(0deg); }
       to   { transform: rotate(360deg); }
-    }
-    @keyframes lineGrow {
-      from { width: 0; }
-      to   { width: 60px; }
     }
 
     .fade-up { animation: fadeUp 0.8s ease both; }
@@ -235,7 +229,7 @@
     }
 
     /* ── IMAGE PLACEHOLDER ── */
-   .scene-image {
+    .scene-image {
       width: 60%;
       max-width: 900px;
       margin: 1.5rem auto;
@@ -324,7 +318,7 @@
       line-height: 1.85;
       font-weight: 400;
     }
-    /* Tenali special dialogue — slightly different */
+    /* Tenali special dialogue */
     .dialogue-block.tenali {
       border-left-color: #C9A84C;
       background: linear-gradient(to right, rgba(201,168,76,0.09), transparent);
@@ -336,12 +330,18 @@
       background: linear-gradient(to right, rgba(224,93,68,0.07), transparent);
     }
     .dialogue-block.king .dialogue-speaker { color: var(--red); }
-    /* Pandit dialogue */
-    .dialogue-block.pandit {
+    /* Merchant dialogue */
+    .dialogue-block.merchant {
+      border-left-color: #FF6B9D;
+      background: linear-gradient(to right, rgba(255,107,157,0.07), transparent);
+    }
+    .dialogue-block.merchant .dialogue-speaker { color: #FF6B9D; }
+    /* Guest dialogue */
+    .dialogue-block.guest {
       border-left-color: rgba(245,236,215,0.3);
       background: linear-gradient(to right, rgba(245,236,215,0.04), transparent);
     }
-    .dialogue-block.pandit .dialogue-speaker { color: var(--text-dim); }
+    .dialogue-block.guest .dialogue-speaker { color: var(--text-dim); }
 
     /* ── TAUNT SPECIAL BLOCK ── */
     .taunt-block {
@@ -359,48 +359,6 @@
       line-height: 1.7;
     }
     .taunt-emoji { font-size: 1.4rem; display: block; margin-top: 10px; }
-
-    /* ── REVEAL BLOCK ── */
-    .reveal-block {
-      margin: 32px 0;
-      padding: 28px;
-      border: 1px solid var(--gold-border);
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, rgba(8,6,4,0) 100%);
-      position: relative; overflow: hidden;
-    }
-    .reveal-block::before {
-      content: '🪔';
-      position: absolute; top: -8px; right: 16px;
-      font-size: 40px; opacity: 0.08;
-    }
-    .reveal-label {
-      font-family: var(--sans); font-size: 0.65rem;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 14px;
-    }
-    .reveal-text {
-      font-family: var(--telugu);
-      font-size: clamp(1rem, 2.5vw, 1.15rem);
-      color: var(--text); line-height: 1.9;
-    }
-    .reveal-items {
-      margin: 16px 0;
-      display: flex; flex-direction: column; gap: 10px;
-    }
-    .reveal-item {
-      display: flex; align-items: flex-start; gap: 12px;
-    }
-    .reveal-item-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--gold); margin-top: 7px; flex-shrink: 0;
-    }
-    .reveal-item-text {
-      font-family: var(--telugu);
-      font-size: clamp(1rem, 2.5vw, 1.1rem);
-      color: var(--text-dim); line-height: 1.7;
-    }
-    .reveal-item-text strong { color: var(--gold); font-weight: 600; }
 
     /* ── VIDEO SECTION ── */
     .video-section {
@@ -503,7 +461,6 @@
       transform: none;
     }
 
-
     /* ── SUBSCRIBE CTA ── */
     .subscribe-section {
       margin: 60px 0 80px;
@@ -516,8 +473,7 @@
     }
     .subscribe-section::before {
       content: '';
-      position: absolute; top: -60px; left: 50%;
-      transform: translateX(-50%);
+      position: absolute; top: -60px; right: 16px;
       width: 240px; height: 240px; border-radius: 50%;
       background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
     }
@@ -617,8 +573,8 @@
         border-radius: 4px;
       }
       .dialogue-block { padding: 16px 18px; }
-      .reveal-block { padding: 20px; }
-      .scene-image { aspect-ratio: 4/3; }
+      .scene-image { aspect-ratio: 4/3; width: 90%; }
+      .story-nav { flex-direction: column; }
     }
     @media (min-width: 641px) {
       .nav-cta-mobile { display: none; }
@@ -657,7 +613,7 @@
     <span class="breadcrumb-sep">›</span>
     <a href="../index.html#series">తెనాలి కథలు</a>
     <span class="breadcrumb-sep">›</span>
-    <span style="color:var(--gold);">T01 — తిలకాష్ట మహిష బంధనం</span>
+    <span style="color:var(--gold);">T02 — యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి</span>
   </div>
 
   <!-- ── HERO ── -->
@@ -669,11 +625,11 @@
       <span>తెనాలి కథలు · Tenali Tales</span>
     </div>
 
-    <p class="story-number fade-up delay-1">Episode T01</p>
+    <p class="story-number fade-up delay-1">Episode T02</p>
 
-    <h1 class="story-title-te fade-up delay-1">తిలకాష్ట మహిష బంధనం</h1>
+    <h1 class="story-title-te fade-up delay-1">యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి</h1>
 
-    <p class="story-title-en fade-up delay-2">Tilakasta Mahisha Bandhanam — The Book That Never Existed</p>
+    <p class="story-title-en fade-up delay-2">The Cat and the Horses — Wit Against Deception</p>
 
     <div class="hero-divider fade-up delay-2">
       <div class="hero-divider-line"></div>
@@ -696,7 +652,7 @@
   </header>
 
   <!-- ══════════════════════════════════════════
-       STORY BODY
+       STORY BODY WITH VIDEO
   ══════════════════════════════════════════ -->
   <main>
 
@@ -710,8 +666,8 @@
         </div>
         <div class="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed/0_5B429SsOA"
-            title="తిలకాష్ట మహిష బంధనం | తెనాలి కథలు T01 | RayalSabha"
+            src="https://www.youtube.com/embed/2wudsVu3u3E"
+            title="యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లిం | తెనాలి కథలు T02 | RayalSabha"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             loading="lazy">
@@ -723,264 +679,232 @@
 
     <div class="story-body">
 
-      <!-- ══ SCENE 1 ══ -->
+      <!-- ══ SCENE 1: విజయనగర రాజసభ ══ -->
       <div class="scene">
         <div class="scene-header">
           <div class="scene-num">01</div>
-          <h2 class="scene-title">విజయనగర రాజ్యంలో ఒకరోజు…</h2>
+          <h2 class="scene-title">విజయనగర రాజసభ</h2>
         </div>
 
-        <!-- IMAGE 1: పండితుడు విజయనగరం వస్తున్నాడు -->
+        <!-- IMAGE 1: విజయనగర రాజసభ -->
         <div class="scene-image">
-          <img src="/images/t01/SCN-01.png" alt="పండితుడు విజయనగరానికి వస్తున్నాడు" />
+          <img src="/images/t02/SCN-01.png" alt="విజయనగర రాజసభ" />
         </div>
 
         <p class="story-para">
-          ఒక గర్విష్టి పండితుడు విజయనగరానికి వచ్చాడు. బజారంతా అతని గురించే మాట్లాడుకుంటోంది —
-          వందల సభలు జయించాడని, ఎవరూ ఓడించలేదని!
+          విజయనగర రాజసభలో ఒక రోజు… అరేబియా నుండి వచ్చిన ఓ వ్యాపారి… మూడు గుర్రాలతో సభలోకి అడుగుపెట్టాడు. ఆ గుర్రాలను చూసి… సభలో అందరూ ఆశ్చర్యపోయారు.
         </p>
 
+        <div class="dialogue-block guest">
+          <div class="dialogue-speaker">🧔 తిమ్మరుసు</div>
+          <div class="dialogue-text">ప్రభువర్యా! ఇతను అరేబియా గుర్రాల వ్యాపారి. పేరు మహమ్మద్ బేగ్. చాలా అరుదైన గుర్రాలు తెచ్చాడట.</div>
+        </div>
+
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">జహాంపనాహ్! ఇది సాధారణ గుర్రం కాదు. ఇది "హవా మహమ్మద్"! గాలికంటే వేగంగా పరుగెడుతుంది!</div>
+        </div>
+
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">ఇది "షాహీ సుల్తాన్"! యుద్ధంలో నాలుగు ఏనుగులను పడగొట్టింది!</div>
+        </div>
+
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">మరి ఇది… "ఖానే జహాన్"! దీన్ని ఒక్కసారి చూస్తే… మళ్లీ చూపు తిప్పుకోలేరు!</div>
+        </div>
+
         <p class="story-para">
-          అతను నేరుగా రాజు కృష్ణదేవరాయల సభకు వెళ్ళాడు. సభలో మంత్రులు, పండితులు అందరూ కూర్చున్నారు.
-        </p>
-
-        <!-- IMAGE 3: సవాల్ -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-03.png" alt="పండితుడు సభలో సవాల్ విసురుతున్నాడు" />
-        </div>
-
-        <div class="dialogue-block pandit">
-          <div class="dialogue-speaker">పండితుడు</div>
-          <div class="dialogue-text">"ఈ రాజ్యంలో నన్ను ఓడించగలవాడు ఎవరైనా ఉన్నారా?"</div>
-        </div>
-
-        <p class="story-para">సభలో నిశ్శబ్దం అలుముకుంది.</p>
-
-        <!-- IMAGE 4: పండితులు ఓడిపోతున్నారు -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-04.png" alt="సభలో పండితులు ఒక్కొక్కరూ ఓడిపోతున్నారు"/>
-        </div>
-
-        <p class="story-para">
-          ఒక్కొక్క పండితుడు లేచి ప్రయత్నించాడు — కానీ ప్రతిసారీ అతడు వెంటనే సమాధానం చెప్పేశాడు.
-          ఒక్కొక్కరూ తలదించుకుని కూర్చున్నారు. సభ మొత్తం నిశ్శబ్దంగా మిగిలింది.
+          వ్యాపారి మాటలు వింటూ… సభలో అందరూ మంత్రముగ్ధులయ్యారు. కానీ తెనాలి ముఖంలో మాత్రమే… చిలిపి నవ్వు.
         </p>
       </div>
 
-      <!-- ══ SCENE 2 ══ -->
+      <!-- ══ SCENE 2: ధర చర్చ ══ -->
       <div class="scene">
         <div class="scene-header">
           <div class="scene-num">02</div>
-          <h2 class="scene-title">తెనాలి లేచి నిలబడ్డాడు!</h2>
-        </div>
-
-        <!-- IMAGE 5: తెనాలి లేస్తున్నాడు -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-05.png" alt="తెనాలి రామకృష్ణ సభలో లేచి నిలబడుతున్నాడు"/>
-        </div>
-
-        <div class="dialogue-block tenali">
-          <div class="dialogue-speaker">తెనాలి రామకృష్ణ</div>
-          <div class="dialogue-text">"మహారాజా! నాకు ఒక్క రోజు సమయం ఇవ్వండి — నేను ఇతన్ని ఓడిస్తాను!"</div>
-        </div>
-
-        <p class="story-para">పండితుడు విన్నాడు. ఒక్క నిమిషం తెనాలివైపు చూశాడు. తర్వాత అంగీకరించాడు:</p>
-
-        <div class="dialogue-block pandit">
-          <div class="dialogue-speaker">పండితుడు</div>
-          <div class="dialogue-text">"సరే! రేపటి సభలో వాదన జరుగుతుంది!"</div>
+          <h2 class="scene-title">ధర చర్చ</h2>
         </div>
 
         <div class="dialogue-block king">
-          <div class="dialogue-speaker">మహారాజు కృష్ణదేవరాయలు</div>
-          <div class="dialogue-text">"రేపటి సభలో తేలుతుంది!"</div>
+          <div class="dialogue-speaker">👑 రాజు</div>
+          <div class="dialogue-text">అద్భుతం! ఇవన్నీ కలిపి ధర ఎంత?</div>
         </div>
+
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">కేవలం… పాతిక వేల వరహాలు మాత్రమే!</div>
+        </div>
+
+        <p class="story-para">
+          ఆ మాట విన్న వెంటనే… సభ మొత్తం నిశ్శబ్దమైంది.
+        </p>
+
+        <div class="dialogue-block guest">
+          <div class="dialogue-speaker">🧔 తిమ్మరుసు</div>
+          <div class="dialogue-text">పాతిక వేలా?! గుర్రాలు అమ్ముతున్నాడా… లేక రాజ్యమే కొనేస్తున్నాడా?!</div>
+        </div>
+
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">హుజూర్! ఈ గుర్రాల వంశం చాలా గొప్పది! వాటి పూర్వీకులు… అలెగ్జాండర్ గుర్రంతో కలిసి పరుగెత్తాయి!</div>
+        </div>
+
+        <p class="story-para">
+          అది విన్న వెంటనే… తెనాలి గట్టిగా నవ్వేశాడు.
+        </p>
       </div>
 
-      <!-- ══ SCENE 3 ══ -->
+      <!-- ══ SCENE 3: తెనాలి హాస్యం ══ -->
       <div class="scene">
         <div class="scene-header">
           <div class="scene-num">03</div>
-          <h2 class="scene-title">ఆ రాత్రి తెనాలి ఇంట్లో…</h2>
+          <h2 class="scene-title">తెనాలి హాస్యం</h2>
         </div>
 
-        <!-- IMAGE 6: రాత్రి తెనాలి తయారీ -->
+        <!-- IMAGE 3: తెనాలి సభలో నవ్వుతున్నాడు -->
         <div class="scene-image">
-          <img src="/images/t01/SCN-06.png" alt="తెనాలి రాత్రి దీపం వెలుగులో రహస్యంగా ఏదో తయారు చేస్తున్నాడు"/>
+          <img src="/images/t02/SCN-03.png" alt="తెనాలి సభలో నవ్వుతున్నాడు" />
+        </div>
+
+        <div class="dialogue-block king">
+          <div class="dialogue-speaker">👑 రాజు</div>
+          <div class="dialogue-text">తెనాలీ! ఎందుకు నవ్వుతున్నావు?</div>
+        </div>
+
+        <div class="dialogue-block tenali">
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">ప్రభువర్యా… ఈ గుర్రాల ధర విన్నాక… నవ్వు ఆపుకోలేకపోయాను. ఎందుకంటే… నా దగ్గర కూడా ఒక జంతువు ఉంది. దానికి… యాభై వేల వరహాలు ఇచ్చినా అమ్మను!</div>
+        </div>
+
+        <div class="dialogue-block king">
+          <div class="dialogue-speaker">👑 రాజు</div>
+          <div class="dialogue-text">ఏమిటది?! ఏనుగా? సింహమా?</div>
+        </div>
+
+        <div class="dialogue-block tenali">
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">(నాటకీయంగా) అది ఒక పిల్లి మహారాజా!! మీ అనుమతితో ఇప్పుడే సభలోకి ప్రవేశపెడతాను!</div>
         </div>
 
         <p class="story-para">
-          తెనాలి రామకృష్ణ తన ఇంట్లో దీపం వెలుగులో ఒక పెద్ద పెట్టెను తయారు చేస్తున్నాడు.
-          ఏదో వస్తువులు సర్దుతున్నాడు — ఏమి చేస్తున్నాడో కనిపించడం లేదు.
-          ఆ తర్వాత పెద్ద ఎర్రటి వస్త్రంతో దాన్ని జాగ్రత్తగా చుట్టాడు.
-        </p>
-
-        <p class="story-para" style="color:var(--gold); font-style:italic;">
-          మర్మంగా నవ్వుకున్నాడు…
+          తెనాలి నిజంగానే ఒక పిల్లిని సభలోకి తీసుకొచ్చాడు.
         </p>
       </div>
 
-      <!-- ══ SCENE 4 ══ -->
+      <!-- ══ SCENE 4: పిల్లి గుణాలు ══ -->
       <div class="scene">
         <div class="scene-header">
           <div class="scene-num">04</div>
-          <h2 class="scene-title">మరుసటి రోజు సభలో…</h2>
+          <h2 class="scene-title">పిల్లి గుణాలు</h2>
         </div>
 
-        <!-- IMAGE 7: గ్రంథంతో సభలో ప్రవేశం -->
+        <!-- IMAGE 4: పిల్లి సభలో -->
         <div class="scene-image">
-          <img src="/images/t01/SCN-07.png" alt="తెనాలి ఎర్రటి వస్త్రంతో కప్పిన గ్రంథం పట్టుకుని సభలోకి నడుస్తున్నాడు"/>
+          <img src="/images/t02/SCN-04.png" alt="పిల్లి సభలో" />
         </div>
 
-        <p class="story-para">
-          తెనాలి చేతిలో పెద్ద ఎర్రటి వస్త్రంతో కప్పిన ఒక గ్రంథం పట్టుకుని సభలోకి నడుచుకుంటూ వచ్చాడు.
-          నవ్వుతూ, నిశ్చింతగా! అందరూ ఆశ్చర్యంగా చూశారు — ఇది ఏమిటి?
-        </p>
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">పిల్లికి… యాభై వేల వరహాలా?!</div>
+        </div>
 
-        <div class="dialogue-block pandit">
-          <div class="dialogue-speaker">పండితుడు</div>
-          <div class="dialogue-text">"అది ఏ గ్రంథం?"</div>
+        <div class="dialogue-block king">
+          <div class="dialogue-speaker">👑 రాజు</div>
+          <div class="dialogue-text">ఈ పిల్లిలో అంత ప్రత్యేకత ఏమిటి తెనాలీ?</div>
         </div>
 
         <div class="dialogue-block tenali">
-          <div class="dialogue-speaker">తెనాలి రామకృష్ణ</div>
-          <div class="dialogue-text">"ఇది 'తిలకాష్ట మహిష బంధనం' అనే మహా గ్రంథం. దీనిలో ఉన్న ప్రశ్నలకు సమాధానం చెప్పగలిగితే… నేనే ఓడిపోయినట్టే!"</div>
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">ప్రభువర్యా… ఈ పిల్లి ఎప్పుడూ నిద్రపోదు! రాత్రింబవళ్లు కాపలా కాస్తుంది. దొంగలు వస్తే అరుస్తుంది. ఎలుకలు వస్తే పట్టేస్తుంది. ఇది సాధారణ పిల్లి కాదు. రాజభటుడు!</div>
         </div>
 
-        <!-- IMAGE 8: పండితుడు షాక్ -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-08.png" alt="పండితుడు తిలకాష్ట మహిష బంధనం పేరు విని షాక్ అవుతున్నాడు"/>
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">మీరు మా గుర్రాల పూర్వికులను అవమానిస్తున్నారు!</div>
+        </div>
+
+        <div class="dialogue-block tenali">
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">నీ గుర్రాల తాతలు అలెగ్జాండర్ గుర్రంతో ఆడితే… నా పిల్లి పూర్వీకులు… స్వయంగా అలెగ్జాండర్ ఒడిలో నిద్రపోయాయి! అంతే కాదు, సుస్సు కూడ పోసేవి.</div>
         </div>
 
         <p class="story-para">
-          పండితుడు ఒక్కసారిగా ఆగిపోయాడు. ఆ పేరు అతను ఎప్పుడూ వినలేదు!
-          సభలో అందరూ ఆసక్తిగా చూస్తున్నారు.
+          ఆ మాటతో… సభ మొత్తం నవ్వులతో మార్మోగిపోయింది.
         </p>
-
-        <div class="dialogue-block tenali">
-          <div class="dialogue-speaker">తెనాలి రామకృష్ణ</div>
-          <div class="dialogue-text">"ముందు ఈ గ్రంథం మొదటి అధ్యాయం అర్థం చెప్పండి."</div>
-        </div>
-
-        <p class="story-para">పండితుడు ఒక్క నిమిషం ఆలోచించాడు. తర్వాత తల పైకెత్తి అడిగాడు:</p>
-
-        <div class="dialogue-block pandit">
-          <div class="dialogue-speaker">పండితుడు</div>
-          <div class="dialogue-text">"ఈ గ్రంథం గురించి మరింత అధ్యయనం చేయడానికి నాకు ఒక్క రోజు సమయం ఇవ్వండి."</div>
-        </div>
       </div>
 
-      <!-- ══ SCENE 5 ══ -->
+      <!-- ══ SCENE 5: వ్యాపారి సత్యం ══ -->
       <div class="scene">
         <div class="scene-header">
           <div class="scene-num">05</div>
-          <h2 class="scene-title">తెనాలి taunt!</h2>
+          <h2 class="scene-title">వ్యాపారి సత్యం</h2>
         </div>
 
-        <!-- IMAGE 9: తెనాలి తాంట్ -->
+        <!-- IMAGE 5: వ్యాపారి ఆలోచిస్తున్నాడు -->
         <div class="scene-image">
-          <img src="/images/t01/SCN-09.png" alt="తెనాలి చిరునవ్వుతో పండితుడిని చూస్తున్నాడు"/>  
+          <img src="/images/t02/SCN-05.png" alt="వ్యాపారి ఆలోచిస్తున్నాడు" />
         </div>
 
-        <div class="taunt-block">
-          <div class="taunt-text">
-            "మహా పండితులు మీరు…<br/>ఒక్క రోజు సమయం అడగటం అంటే!!!"
-          </div>
-          <span class="taunt-emoji">😏</span>
-        </div>
-
-        <p class="story-para">సభలో మెల్లగా నవ్వులు మొదలయ్యాయి.</p>
-
-        <!-- IMAGE 10: పండితుడు ఆలోచిస్తున్నాడు -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-10.png" alt="పండితుడు లోపల్లోపల ఆలోచిస్తున్నాడు — ఇక తప్పదు"/>        
-        </div>
-
-        <p class="story-para">
-          పండితుడు లోపల్లోపల ఆలోచించాడు — ఈ గ్రంథం గురించి ఎక్కడా వినలేదు, ఎక్కడా చదవలేదు.
-          ఒక రోజులో ఏం తెలుసుకుంటాను? ఈ తెనాలి ముందు వాదన సాధ్యమే కాదు.
-        </p>
-      </div>
-
-      <!-- ══ SCENE 6 ══ -->
-      <div class="scene">
-        <div class="scene-header">
-          <div class="scene-num">06</div>
-          <h2 class="scene-title">గౌరవప్రదమైన ఓటమి</h2>
-        </div>
-
-        <!-- IMAGE 11: పండితుడు గౌరవంగా ఓటమి అంగీకరించడం -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-11.png" alt="పండితుడు నిటారుగా నిలబడి గంభీరంగా తల వంచి ఓటమి అంగీకరిస్తున్నాడు"/>
-        </div>
-
-        <p class="story-para">కొన్ని క్షణాల నిశ్శబ్దం తర్వాత పండితుడు నిటారుగా నిలబడ్డాడు. గంభీరంగా తల వంచాడు:</p>
-
-        <div class="dialogue-block pandit">
-          <div class="dialogue-speaker">పండితుడు</div>
-          <div class="dialogue-text">"ప్రభువులకు జయం. నా ఓటమిని అంగీకరిస్తున్నాను. నాకు సెలవు ఇప్పిస్తే వెళ్ళిపోతాను."</div>
-        </div>
-
-        <p class="story-para">రాజు గౌరవంగా సెలవు ఇచ్చారు. పండితుడు నిష్క్రమించాడు.</p>
-
-        <p class="story-para" style="color:var(--gold);">సభ నవ్వులతో మార్మోగిపోయింది! 🎉</p>
-      </div>
-
-      <!-- ══ SCENE 7 ══ -->
-      <div class="scene">
-        <div class="scene-header">
-          <div class="scene-num">07</div>
-          <h2 class="scene-title">రహస్యం బయటపడింది!</h2>
-        </div>
-
-        <div class="dialogue-block king">
-          <div class="dialogue-speaker">మహారాజు కృష్ణదేవరాయలు</div>
-          <div class="dialogue-text">"తెనాలి! నిజంగా ఆ గ్రంథం ఏమిటి?"</div>
-        </div>
-
-        <!-- IMAGE 12: రహస్యం బయటపడటం -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-12.png" alt="తెనాలి ఎర్రటి వస్త్రం తీసేయగా లోపల నువ్వుల కట్టెలు మరియు తాడు కనిపిస్తున్నాయి"/>
-        </div>
-
-        <p class="story-para">తెనాలి నవ్వుతూ ఆ ఎర్రటి వస్త్రం తీసేశాడు.</p>
-
-        <p class="story-para" style="color:var(--gold); font-size:clamp(1rem,2.5vw,1.2rem);">
-          లోపల ఏముందో తెలుసా?
-        </p>
-
-        <div class="reveal-block">
-          <div class="reveal-label">🪔 రహస్యం</div>
-          <div class="reveal-items">
-            <div class="reveal-item">
-              <div class="reveal-item-dot"></div>
-              <div class="reveal-item-text">కొన్ని <strong>ఎండు నువ్వుల కట్టెలు</strong></div>
-            </div>
-            <div class="reveal-item">
-              <div class="reveal-item-dot"></div>
-              <div class="reveal-item-text">మరియు <strong>గేదె కట్టే తాడు!</strong></div>
-            </div>
-          </div>
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">ఇది అంతా అబద్ధం! పిల్లికి అంత ధర ఎక్కడ ఉంటుంది?!</div>
         </div>
 
         <div class="dialogue-block tenali">
-          <div class="dialogue-speaker">తెనాలి రామకృష్ణ</div>
-          <div class="dialogue-text">"తిలకాష్ట అంటే నువ్వుల కట్టెలు… మహిష బంధనం అంటే గేదె కట్టే తాడు మహారాజా!"</div>
-        </div>
-
-        <!-- IMAGE 13: రాజు నవ్వడం -->
-        <div class="scene-image">
-          <img src="/images/t01/SCN-13.png" alt="మహారాజు కృష్ణదేవరాయలు పెద్దగా నవ్వుతూ భళా తెనాలి అంటున్నారు"/>        
-        </div>
-
-        <div class="dialogue-block king">
-          <div class="dialogue-speaker">మహారాజు కృష్ణదేవరాయలు</div>
-          <div class="dialogue-text">"భళా తెనాలి… భళా! 🎉"</div>
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">అవునా? అయితే… నీ గుర్రాలకు కూడా అంత ధర ఉండదు కదా?</div>
         </div>
 
         <p class="story-para">
-          మంత్రులు నవ్వారు. సభ మొత్తం సంతోషంగా మార్మోగింది.
-          తెనాలి నమ్రంగా నవ్వుతూ నిలబడ్డాడు.
+          అక్కడే… వ్యాపారికి అసలు విషయం అర్థమైంది. తెనాలి పిల్లిని అమ్మడం కాదు… గుర్రాల ధర అతిగా ఉందని తెలివిగా చెప్పాడు.
+        </p>
+
+        <div class="dialogue-block king">
+          <div class="dialogue-speaker">👑 రాజు</div>
+          <div class="dialogue-text">తెనాలీ! మాటలతో యుద్ధం చేయడంలో… నీకు సమానం లేడు.</div>
+        </div>
+
+        <div class="dialogue-block merchant">
+          <div class="dialogue-speaker">🧳 మహమ్మద్ బేగ్</div>
+          <div class="dialogue-text">ప్రభువర్యా… ధర కొంచెం తగ్గిస్తాను.</div>
+        </div>
+
+        <div class="dialogue-block tenali">
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">ఇప్పుడు బుద్ధి వచ్చింది! అయితే ముందు… నా పిల్లి ఒప్పుకోవాలి మరి!</div>
+        </div>
+
+        <p class="story-para">
+          సభ మొత్తం నవ్వులతో మార్మోగిపోయింది. పిల్లి కూడా… "మ్యావ్!" అని అంది.
+        </p>
+      </div>
+
+      <!-- ══ SCENE 6: బహుమానం ══ -->
+      <div class="scene">
+        <div class="scene-header">
+          <div class="scene-num">06</div>
+          <h2 class="scene-title">బహుమానం</h2>
+        </div>
+
+        <!-- IMAGE 6: రాజు బహుమానం ఇస్తున్నారు -->
+        <div class="scene-image">
+          <img src="/images/t02/SCN-06.png" alt="రాజు బహుమానం ఇస్తున్నారు" />
+        </div>
+
+        <div class="dialogue-block king">
+          <div class="dialogue-speaker">👑 రాజు</div>
+          <div class="dialogue-text">తెనాలీ! ఏం బహుమానం కావాలి?</div>
+        </div>
+
+        <div class="dialogue-block tenali">
+          <div class="dialogue-speaker">😏 తెనాలి</div>
+          <div class="dialogue-text">నా పిల్లికి రోజూ ఒక చెంబు పాలు ఇవ్వండి ప్రభువర్యా. రేపు మళ్లీ ఇలాంటి వ్యాపారులు వస్తే… సిద్ధంగా ఉండాలి కదా!</div>
+        </div>
+
+        <p class="story-para">
+          సభ మొత్తం నవ్వుకుంటూ రాజు తెనాలికి బహుమానం ఇచ్చాడు. సభ నుండి వెళ్ళేటప్పుడు మహమ్మద్ బేగ్ తన మనసులో మాత్రమే ఆలోచిస్తూ వెళ్లిపోయాడు — "తెలివితో నాకు సమానం ఎవరూ లేరన్న."
         </p>
       </div>
 
@@ -989,15 +913,16 @@
         <span class="moral-ornament">🪔</span>
         <span class="moral-label">నీతి — Moral of the Story</span>
         <p class="moral-text">
-          గర్వం మనిషిని గుడ్డివాడిని చేస్తుంది —
-          <em>తెలివి ఎల్లప్పుడూ గెలుస్తుంది!</em>
+          మాటలతో మోసం చేసే వారిని… తెలివితోనే ఓడించాలి.<br/><br/>
+          ఎందుకంటే… <em>తెలివి అనే ఆయుధానికి… ఎప్పుడూ తుప్పు పట్టదు.</em>
         </p>
       </div>
 
+      <!-- ══ STORY NAV ══ -->
       <div class="story-nav">
-       <a href="/tenali/" class="story-nav-btn disabled">← Series Home</a>
-       <a href="/tenali/t02-pilli-guramgalu.html" class="story-nav-btn">T02: పిల్లి & గుర్రాలు →</a>
-    </div>
+        <a href="/tenali/t01-tilakasta-mahisha-bandhanam.html" class="story-nav-btn">← T01: తిలకాష్ట మహిష బందనం</a>
+        <a href="/tenali/t03-dongalu-baavi.html" class="story-nav-btn">T03: దొంగలు & బావి →</a>
+      </div>
 
       <!-- ══ SUBSCRIBE CTA ══ -->
       <div class="subscribe-section">
@@ -1025,7 +950,7 @@
   <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="footer-logo">🪔 RayalSabha</div>
-    <p class="footer-tagline">తెనాలి కథలు · విక్రమార్క కథలు · మర్చిపోయిన రాజ్యాల కథలు</p>
+    <p class="footer-tagline">తెనాలి కథలు · విక్రమార్క కథలు · మర్చిపోయిన రాజ్యల కథలు</p>
     <p class="footer-copy">© 2025 RayalSabha · rayalsabha.com</p>
   </footer>
 </body>
