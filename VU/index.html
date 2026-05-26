@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>బేతాళ పంచవింశతి | విక్రమాదిత్యుని అద్భుత కథలు | RayalSabha</title>
+<meta name="description" content="బేతాళ పంచవింశతి — 25 కథలు, 25 పరీక్షలు. విక్రమాదిత్యుడు మరియు బేతాళుడు. 3D Pixar Telugu animation series | RayalSabha" />
+<meta name="keywords" content="బేతాళ పంచవింశతి, విక్రమాదిత్యుడు, బేతాళుడు, Bethala Pachivimshati Telugu, Vikramaditya stories, RayalSabha" />
+<meta property="og:title" content="బేతాళ పంచవింశతి | RayalSabha" />
+<meta property="og:description" content="25 కథలు. 25 పరీక్షలు. ఒక రాజు. ఒక ఆత్మ. ఒక అద్భుత యాత్ర." />
+<meta property="og:image" content="https://rayalsabha.com/images/VU/EP01/EP.01.png" />
+<link rel="canonical" href="https://rayalsabha.com/VU/" />
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Cinzel:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+:root {
+  --gold: #C9A84C;
+  --gold-dim: #8a6f2e;
+  --gold-glow: rgba(201,168,76,0.2);
+  --bg-deep: #06040a;
+  --bg-mid: #0f0b18;
+  --bg-surface: #18132a;
+  --text: #f0e6cc;
+  --text-dim: #9a8870;
+  --blood: #8b1a1a;
+  --skull: #e8e0d0;
+  --blue-mist: rgba(74,122,155,0.15);
+  --purple: rgba(106,58,138,0.15);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Tiro Telugu', 'Crimson Pro', serif;
+  background: var(--bg-deep);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Stars */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.45) 0%, transparent 100%),
+    radial-gradient(1px 1px at 38% 6%, rgba(255,255,255,0.35) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 62% 22%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 12%, rgba(255,255,255,0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 22% 45%, rgba(255,255,255,0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 73% 55%, rgba(255,255,255,0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 48% 78%, rgba(255,255,255,0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 92% 68%, rgba(255,255,255,0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 5% 88%, rgba(255,255,255,0.2) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 55% 92%, rgba(255,255,255,0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 60%, rgba(255,255,255,0.15) 0%, transparent 100%),
+    radial-gradient(1px 1px at 78% 40%, rgba(255,255,255,0.2) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---- NAV ---- */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: rgba(6,4,10,0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(201,168,76,0.18);
+  padding: 0.9rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.8);
+}
+.nav-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+.nav-links { display: flex; gap: 1.8rem; align-items: center; }
+.nav-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: 'Crimson Pro', serif;
+  transition: color 0.3s;
+}
+.nav-link:hover, .nav-link.active { color: var(--gold); }
+.nav-yt {
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold);
+  padding: 0.35rem 0.9rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.nav-yt:hover { background: rgba(201,168,76,0.22); }
+
+/* ---- HERO ---- */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Moon glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 8%; left: 50%; transform: translateX(-50%);
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(240,230,190,0.12) 0%, rgba(201,168,76,0.06) 30%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Mist */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: linear-gradient(180deg, transparent 0%, rgba(74,50,120,0.08) 50%, rgba(6,4,10,0.4) 100%);
+  pointer-events: none;
+}
+
+.hero-moon {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  filter: drop-shadow(0 0 30px rgba(240,230,190,0.4));
+  animation: moonFloat 6s ease-in-out infinite;
+}
+@keyframes moonFloat {
+  0%,100% { transform: translateY(0); filter: drop-shadow(0 0 30px rgba(240,230,190,0.4)); }
+  50% { transform: translateY(-12px); filter: drop-shadow(0 0 50px rgba(240,230,190,0.6)); }
+}
+
+.hero-series {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  color: var(--gold-dim);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: var(--gold);
+  text-shadow: 0 0 60px rgba(201,168,76,0.35), 0 6px 30px rgba(0,0,0,0.9);
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+}
+.hero-title-te {
+  font-family: 'Tiro Telugu', serif;
+  font-size: clamp(1.5rem, 4vw, 2.6rem);
+  color: var(--skull);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  opacity: 0.88;
+  display: block;
+}
+
+.hero-tagline {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  margin-bottom: 3rem;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-num {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--gold);
+  display: block;
+  text-shadow: 0 0 25px var(--gold-glow);
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), #d4a035);
+  color: #06040a;
+  padding: 0.9rem 2.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 6px 30px rgba(201,168,76,0.35);
+}
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(201,168,76,0.5);
+}
+
+/* ---- SCROLL HINT ---- */
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: var(--text-dim);
+  opacity: 0.5;
+  animation: fadeUpDown 2.5s ease-in-out infinite;
+}
+@keyframes fadeUpDown {
+  0%,100% { opacity: 0.5; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 0.8; transform: translateX(-50%) translateY(-5px); }
+}
+
+/* ---- CONTENT AREA ---- */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- SECTION HEADERS ---- */
+.section-header {
+  text-align: center;
+  padding: 4rem 0 2.5rem;
+}
+.section-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.section-title-te {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+/* ---- DIVIDER ---- */
+.divider {
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+  margin: 0 auto 1rem;
+}
+
+/* ---- CHARACTER CARDS ---- */
+.characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.char-card {
+  background: var(--bg-mid);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 4px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.char-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--char-color), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.char-card:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-3px); }
+.char-card:hover::before { opacity: 1; }
+.char-card.vikram { --char-color: #c06060; }
+.char-card.bethala { --char-color: #6aabcb; }
+.char-card.kapali { --char-color: #9a5aaa; }
+
+.char-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+.char-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+.char-name-te {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 1rem;
+  color: var(--skull);
+  margin-bottom: 0.8rem;
+}
+.char-desc {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+/* ---- EPISODES GRID ---- */
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Live episode card */
+.ep-card {
+  background: var(--bg-mid);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.ep-card:hover {
+  border-color: var(--gold-dim);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.15);
+}
+
+.ep-card-thumb {
+  aspect-ratio: 16/9;
+  background: var(--bg-surface);
+  position: relative;
+  overflow: hidden;
+}
+.ep-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+.ep-card:hover .ep-card-thumb img { transform: scale(1.04); }
+
+.ep-card-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-surface), rgba(42,26,64,0.8));
+  font-size: 3rem;
+  opacity: 0.4;
+}
+.ep-live-badge {
+  position: absolute;
+  top: 0.7rem; left: 0.7rem;
+  background: rgba(139,26,26,0.9);
+  border: 1px solid rgba(200,80,80,0.5);
+  color: #e08080;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 1.5px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.ep-live-dot {
+  width: 5px; height: 5px;
+  background: #e07070;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.ep-num-badge {
+  position: absolute;
+  bottom: 0.7rem; right: 0.7rem;
+  background: rgba(6,4,10,0.85);
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+}
+
+.ep-card-body {
+  padding: 1.3rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ep-card-num {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: var(--gold-dim);
+  margin-bottom: 0.4rem;
+}
+.ep-card-title-te {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 1.05rem;
+  color: var(--gold);
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+}
+.ep-card-title-en {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+.ep-card-desc {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+.ep-card-cta {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.ep-card-cta::after { content: '→'; transition: transform 0.3s; }
+.ep-card:hover .ep-card-cta::after { transform: translateX(4px); }
+
+/* Coming Soon card */
+.ep-card-soon {
+  background: rgba(15,11,24,0.6);
+  border: 1px solid rgba(201,168,76,0.08);
+  border-radius: 4px;
+  padding: 1.3rem;
+  opacity: 0.55;
+}
+.ep-soon-num {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  margin-bottom: 0.4rem;
+}
+.ep-soon-title {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 0.3rem;
+}
+.ep-soon-badge {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  opacity: 0.6;
+}
+
+/* ---- THE LOOP EXPLAINER ---- */
+.loop-section {
+  background: linear-gradient(135deg, rgba(42,26,64,0.4), rgba(15,11,24,0.8));
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 4px;
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.loop-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--gold-dim);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.loop-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.loop-step {
+  background: var(--bg-mid);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 3px;
+  padding: 0.8rem 1.2rem;
+  font-family: 'Tiro Telugu', serif;
+  font-size: 0.85rem;
+  color: var(--skull);
+  text-align: center;
+  min-width: 140px;
+}
+.loop-arrow {
+  color: var(--gold-dim);
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.loop-note {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- SUBSCRIBE ---- */
+.subscribe-section {
+  background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(139,26,26,0.06));
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.sub-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+.sub-desc {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.sub-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #06040a;
+  padding: 0.85rem 2.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 6px 25px rgba(201,168,76,0.3);
+}
+.sub-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 35px rgba(201,168,76,0.45);
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: rgba(0,0,0,0.6);
+  border-top: 1px solid rgba(201,168,76,0.12);
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  position: relative;
+  z-index: 1;
+}
+footer a { color: var(--gold-dim); text-decoration: none; }
+footer a:hover { color: var(--gold); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  nav { padding: 0.8rem 1rem; }
+  .nav-links { gap: 1rem; }
+  .hero { padding: 6rem 1.5rem 4rem; min-height: auto; }
+  .hero-stats { gap: 2rem; }
+  .characters { grid-template-columns: 1fr; }
+  .episodes-grid { grid-template-columns: 1fr; }
+  .loop-steps { flex-direction: column; align-items: center; }
+  .loop-arrow { transform: rotate(90deg); }
+  .content { padding: 0 1.2rem 3rem; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .characters { grid-template-columns: repeat(3, 1fr); }
+  .episodes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://rayalsabha.com/" class="nav-logo">🪔 RayalSabha</a>
+  <div class="nav-links">
+    <a href="https://rayalsabha.com/" class="nav-link">హోమ్</a>
+    <a href="https://rayalsabha.com/VU/" class="nav-link active">బేతాళ</a>
+    <a href="https://rayalsabha.com/tenali/" class="nav-link">తెనాలి</a>
+    <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-yt">▶ YouTube</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-moon">🌕</span>
+  <div class="hero-series">RayalSabha · Telugu Animation Series</div>
+  <h1 class="hero-title">
+    <span class="hero-title-te">బేతాళ పంచవింశతి</span>
+    Bethala Pachivimshati
+  </h1>
+  <p class="hero-tagline">
+    విక్రమాదిత్యుని అద్భుత కథలు<br />
+    25 కథలు. 25 పరీక్షలు. ఒక అద్భుత యాత్ర.
+  </p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">25</span>
+      <span class="hero-stat-label">Episodes</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">03</span>
+      <span class="hero-stat-label">Characters</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">1</span>
+      <span class="hero-stat-label">Live Now</span>
+    </div>
+  </div>
+  <a href="#episodes" class="hero-cta">కథలు చూడండి ↓</a>
+  <div class="scroll-hint">SCROLL DOWN ↓</div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- CHARACTERS -->
+  <div class="section-header">
+    <div class="section-tag">The Universe · పాత్రలు</div>
+    <div class="section-title">Main Characters</div>
+    <div class="section-title-te">ప్రధాన పాత్రలు</div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="characters">
+    <div class="char-card vikram">
+      <span class="char-icon">⚔️</span>
+      <div class="char-name">VIKRAMADITYA</div>
+      <div class="char-name-te">విక్రమాదిత్యుడు</div>
+      <div class="char-desc">ఉజ్జయిని మహారాజు. ధర్మానికి ప్రతిరూపం. ఎటువంటి భయమూ లేని సాహసకారుడు. ఒక్క మాట ఇస్తే — వెనక్కి తిరగడు.</div>
+    </div>
+    <div class="char-card bethala">
+      <span class="char-icon">👁️</span>
+      <div class="char-name">BETHALA</div>
+      <div class="char-name-te">బేతాళుడు</div>
+      <div class="char-desc">పురాతన ఆత్మ. స్మశానంలో చెట్టుపై నివసిస్తున్నాడు. మంచివాడు కాదు, చెడ్డవాడూ కాదు — కేవలం పురాతనమైనవాడు. కథలు చెప్పి రాజుని పరీక్షిస్తాడు.</div>
+    </div>
+    <div class="char-card kapali">
+      <span class="char-icon">🕯️</span>
+      <div class="char-name">KAPALI YOGI</div>
+      <div class="char-name-te">కపాలి యోగి</div>
+      <div class="char-desc">పైకి సాధువు. లోపల మాంత్రికుడు. రాజుని తన వలలో వేసుకున్న అసలు వాడు. అతని రహస్యం EP25లో బయటపడుతుంది.</div>
+    </div>
+  </div>
+
+  <!-- THE LOOP -->
+  <div class="loop-section">
+    <div class="loop-title">The Eternal Loop · ఒప్పందం</div>
+    <div class="loop-steps">
+      <div class="loop-step">రాజు వెళ్తాడు<br /><small style="opacity:0.6;font-size:0.75rem">స్మశానానికి</small></div>
+      <span class="loop-arrow">→</span>
+      <div class="loop-step">బేతాళుని పట్టుకుంటాడు<br /><small style="opacity:0.6;font-size:0.75rem">భుజంపై వేసుకుంటాడు</small></div>
+      <span class="loop-arrow">→</span>
+      <div class="loop-step">బేతాళుడు కథ చెప్తాడు<br /><small style="opacity:0.6;font-size:0.75rem">ప్రశ్న వేస్తాడు</small></div>
+      <span class="loop-arrow">→</span>
+      <div class="loop-step">రాజు సమాధానం చెప్తాడు<br /><small style="opacity:0.6;font-size:0.75rem">ధర్మం వల్ల మాట్లాడాల్సివస్తుంది</small></div>
+      <span class="loop-arrow">→</span>
+      <div class="loop-step">బేతాళుడు తిరిగి వెళ్తాడు<br /><small style="opacity:0.6;font-size:0.75rem">మళ్ళీ రా...</small></div>
+    </div>
+    <div class="loop-note">
+      25 సార్లు ఇది జరుగుతుంది. 25వ కథలో — రాజు మాట్లాడడు.<br />
+      అప్పుడు కపాలి యోగి రహస్యం బయటపడుతుంది.
+    </div>
+  </div>
+
+  <!-- EPISODES -->
+  <div class="section-header" id="episodes">
+    <div class="section-tag">Stories · కథలు</div>
+    <div class="section-title">Episodes</div>
+    <div class="section-title-te">25 కథలు</div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="episodes-grid">
+
+    <!-- EP01 — LIVE -->
+    <a href="https://rayalsabha.com/VU/vu01-prarabham-oppandham.html" class="ep-card">
+      <div class="ep-card-thumb">
+        <img src="/images/VU/EP01/EP.01.png" alt="బేతాళ పంచవింశతి EP01 — ప్రారంభం ఒప్పందం" />
+        <div class="ep-live-badge"><span class="ep-live-dot"></span>LIVE</div>
+        <div class="ep-num-badge">EP 01</div>
+      </div>
+      <div class="ep-card-body">
+        <div class="ep-card-num">EPISODE 01 · THE BEGINNING</div>
+        <div class="ep-card-title-te">ప్రారంభం: ఒప్పందం</div>
+        <div class="ep-card-title-en">The Beginning: The Pact</div>
+        <div class="ep-card-desc">కపాలి యోగి వల. విక్రముని సాహసం. బేతాళుని మొదటి రాక. 25 కథల యాత్ర ఇక్కడ మొదలవుతుంది.</div>
+        <div class="ep-card-cta">కథ చదవండి</div>
+      </div>
+    </a>
+
+    <!-- EP02 — COMING SOON -->
+    <div class="ep-card-soon">
+      <div class="ep-soon-num">EPISODE 02 · COMING SOON</div>
+      <div class="ep-soon-title">పతివ్రత యెవరు?</div>
+      <div class="ep-soon-badge">⏳ Coming Next</div>
+    </div>
+
+    <!-- EP03 -->
+    <div class="ep-card-soon">
+      <div class="ep-soon-num">EPISODE 03</div>
+      <div class="ep-soon-title">గుణవతి త్యాగం</div>
+      <div class="ep-soon-badge">⏳ Pending</div>
+    </div>
+
+    <!-- EP04 -->
+    <div class="ep-card-soon">
+      <div class="ep-soon-num">EPISODE 04</div>
+      <div class="ep-soon-title">లోభి బ్రాహ్మణుని కుమార్తె</div>
+      <div class="ep-soon-badge">⏳ Pending</div>
+    </div>
+
+    <!-- EP05 -->
+    <div class="ep-card-soon">
+      <div class="ep-soon-num">EPISODE 05</div>
+      <div class="ep-soon-title">రాజకుమారి వివాహం</div>
+      <div class="ep-soon-badge">⏳ Pending</div>
+    </div>
+
+    <!-- EP06–EP25 collapsed -->
+    <div class="ep-card-soon" style="grid-column: 1/-1; text-align:center; padding: 2rem;">
+      <div class="ep-soon-num" style="font-size:0.7rem; letter-spacing:2px;">EPISODES 06 — 25</div>
+      <div class="ep-soon-title" style="font-size:1rem; margin: 0.5rem 0;">EP06 మొదలు EP25 వరకు — మరిన్ని కథలు వస్తున్నాయి</div>
+      <div class="ep-soon-badge">⏳ In Production · Subscribe చేయండి</div>
+    </div>
+
+  </div>
+
+  <!-- SUBSCRIBE -->
+  <div class="subscribe-section">
+    <div class="sub-title">🌕 ఒక్క కథ Miss అవ్వకండి</div>
+    <div class="sub-desc">
+      ప్రతి వారం ఒక కొత్త కథ. ప్రతి కథలో ఒక పరీక్ష.<br />
+      @Rayalsabha YouTube Subscribe చేసి — మీ సమాధానం కామెంట్లో చెప్పండి.
+    </div>
+    <a href="https://youtube.com/@Rayalsabha" target="_blank" class="sub-btn">▶ YouTube Subscribe</a>
+  </div>
+
+</div><!-- end content -->
+
+<!-- FOOTER -->
+<footer>
+  <p>🪔 RayalSabha · బేతాళ పంచవింశతి · తెలుగు కథలు</p>
+  <p style="margin-top:0.5rem">
+    <a href="https://rayalsabha.com/">హోమ్</a> &nbsp;·&nbsp;
+    <a href="https://rayalsabha.com/VU/">బేతాళ</a> &nbsp;·&nbsp;
+    <a href="https://rayalsabha.com/tenali/">తెనాలి</a> &nbsp;·&nbsp;
+    <a href="https://youtube.com/@Rayalsabha">YouTube</a>
+  </p>
+  <p style="margin-top:0.8rem;font-size:0.62rem;opacity:0.35">© 2026 RayalSabha · Powered by తెలుగు సంస్కృతి</p>
+</footer>
+
+</body>
+</html>
