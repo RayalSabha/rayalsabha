@@ -54,11 +54,21 @@ nav {
 @media(max-width:768px){ .story-header{padding:3rem 1rem 1.5rem;} .story-header h1{font-size:1.8rem;} }
 
 /* INSTAGRAM */
-.insta-section { max-width:480px; margin:2.5rem auto; padding:0 2rem; text-align:center; }
 .insta-label { font-size:0.8rem; color:#b8956f; letter-spacing:1px; text-transform:uppercase; margin-bottom:1rem; }
 .insta-placeholder {
   background:rgba(201,168,76,0.05); border:2px dashed rgba(201,168,76,0.4);
   border-radius:12px; padding:2.5rem 1.5rem; color:#b8956f; font-size:0.88rem; line-height:2;
+}
+  .insta-section {
+  max-width: 280px;
+  transform: scale(0.75);
+  transform-origin: top center;
+  margin: 0 auto;
+}
+
+.img-wrap img, .moral-img img {
+  max-height: 300px;
+  object-fit: cover;
 }
 .ph-icon { font-size:2.5rem; display:block; margin-bottom:0.75rem; }
 .ph-title { color:#C9A84C; font-weight:bold; font-size:1rem; display:block; margin-bottom:0.5rem; }
