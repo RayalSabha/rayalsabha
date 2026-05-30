@@ -4,21 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>RayalSabha | తెలుగు కధలు · భారతీయ సంస్కృతి</title>
-<meta name="description" content="RayalSabha — తెనాలి రామకృష్ణ కథలు, బేతాళ పంచవింశతి (విక్రమాదిత్యుని కథలు), మరిన్ని భారతీయ సంస్కృతి కధలు తెలుగులో" />
-<meta name="keywords" content="తెనాలి రామకృష్ణ, బేతాళ పంచవింశతి, విక్రమాదిత్యుడు, తెలుగు కధలు, భారతీయ కథలు, తెలుగు సంస్కృతి, RayalSabha" />
+<meta name="description" content="RayalSabha — తెనాలి రామకృష్ణ కథలు, బేతాళ పంచవింశతి (విక్రమాదిత్యుని కథలు), పిట్ట కథలు, మరిన్ని భారతీయ సంస్కృతి కధలు తెలుగులో" />
+<meta name="keywords" content="తెనాలి రామకృష్ణ, బేతాళ పంచవింశతి, విక్రమాదిత్యుడు, పిట్ట కథలు, తెలుగు కధలు, భారతీయ కథలు, తెలుగు సంస్కృతి, RayalSabha" />
 <meta property="og:title" content="RayalSabha | తెలుగు కధలు · భారతీయ సంస్కృతి" />
-<meta property="og:description" content="తెలుగుకు చెందిన గ్రంథాలు, కధలు, సంస్కృతి — తెనాలి, బేతాళ పంచవింశతి, మరిన్ని" />
+<meta property="og:description" content="తెలుగుకు చెందిన గ్రంథాలు, కధలు, సంస్కృతి — తెనాలి, బేతాళ పంచవింశతి, పిట్ట కథలు, మరిన్ని" />
 <meta property="og:image" content="https://rayalsabha.com/og-image.jpg" />
 <link rel="canonical" href="https://rayalsabha.com" />
-
 <style>
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Tiro Telugu', 'Cormorant Garamond', serif;
   background: linear-gradient(135deg, #0d0805 0%, #1a1410 50%, #080604 100%);
@@ -43,7 +40,6 @@ nav {
   z-index: 100;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
-
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -51,41 +47,35 @@ nav {
   text-decoration: none;
   letter-spacing: 2px;
 }
-
 .nav-links {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
-
 .nav-link {
   color: #f5ecd7;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s;
 }
-
 .nav-link:hover {
   color: #C9A84C;
 }
-
 .nav-yt {
   color: #f5ecd7;
   text-decoration: none;
   font-size: 0.9rem;
 }
-
 .nav-yt:hover {
   color: #C9A84C;
 }
-
 @media (max-width: 768px) {
   nav {
     padding: 0.8rem 1rem;
   }
   .nav-links {
-    gap: 1rem;
-    font-size: 0.8rem;
+    gap: 0.8rem;
+    font-size: 0.75rem;
   }
   .nav-logo {
     font-size: 1.2rem;
@@ -100,19 +90,16 @@ nav {
   background: linear-gradient(180deg, rgba(201, 168, 76, 0.15) 0%, transparent 100%);
   border-bottom: 1px solid rgba(201, 168, 76, 0.2);
 }
-
 .hero-emoji {
   font-size: 4rem;
   margin-bottom: 1.5rem;
   display: block;
   animation: float 3s ease-in-out infinite;
 }
-
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
-
 .hero h1 {
   font-size: 3.5rem;
   color: #C9A84C;
@@ -120,20 +107,23 @@ nav {
   text-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
   font-weight: bold;
 }
-
 .hero-subtitle {
   font-size: 1.3rem;
   color: #d4a574;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
-
 .hero-tagline {
   font-size: 1rem;
   color: #b8956f;
   margin-bottom: 2rem;
 }
-
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .hero-cta {
   display: inline-block;
   background: linear-gradient(135deg, #C9A84C, #d4a574);
@@ -144,23 +134,26 @@ nav {
   font-weight: bold;
   transition: all 0.3s;
   box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
-  margin: 0.4rem;
 }
-
 .hero-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
 }
-
-.hero-cta.secondary {
-  background: rgba(201,168,76,0.12);
-  border: 1px solid rgba(201,168,76,0.4);
+.hero-cta-secondary {
+  display: inline-block;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.5);
   color: #C9A84C;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
 }
-.hero-cta.secondary:hover {
-  background: rgba(201,168,76,0.22);
+.hero-cta-secondary:hover {
+  background: rgba(201, 168, 76, 0.25);
+  transform: translateY(-2px);
 }
-
 @media (max-width: 768px) {
   .hero {
     padding: 4rem 1rem;
@@ -190,7 +183,6 @@ nav {
   gap: 2rem;
   margin: 3rem 0;
 }
-
 .series-card {
   background: linear-gradient(135deg, rgba(201, 168, 76, 0.08), rgba(139, 92, 246, 0.08));
   border: 1px solid rgba(201, 168, 76, 0.3);
@@ -203,77 +195,58 @@ nav {
   flex-direction: column;
   height: 100%;
 }
-
 .series-card:hover {
   border-color: #C9A84C;
   box-shadow: 0 8px 24px rgba(201, 168, 76, 0.2);
   transform: translateY(-4px);
 }
-
-/* NEW: live badge on card */
-.series-card-live-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(139,26,26,0.25);
-  border: 1px solid rgba(200,80,80,0.3);
-  color: #d48080;
-  font-size: 0.68rem;
-  letter-spacing: 1.5px;
-  padding: 0.25rem 0.7rem;
-  border-radius: 2px;
-  width: fit-content;
-  margin-bottom: 0.8rem;
-  font-family: sans-serif;
+/* Special highlight for the new పిట్ట కథలు card */
+.series-card.new-series {
+  border-color: rgba(201, 168, 76, 0.5);
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.12), rgba(139, 92, 246, 0.08));
 }
-.series-card-live-dot {
-  width: 5px; height: 5px;
-  background: #e07070;
-  border-radius: 50%;
-  animation: livepulse 2s ease-in-out infinite;
+.series-card.new-series::before {
+  content: "NEW 🆕";
+  display: block;
+  background: linear-gradient(135deg, #C9A84C, #d4a574);
+  color: #080604;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  letter-spacing: 1px;
 }
-@keyframes livepulse {
-  0%,100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
 .series-card-header {
   padding: 2rem 2rem 1rem 2rem;
   background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), rgba(139, 92, 246, 0.1));
 }
-
 .series-emoji {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   display: block;
 }
-
 .series-title {
   font-size: 1.4rem;
   color: #C9A84C;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-
 .series-subtitle {
   font-size: 0.9rem;
   color: #b8956f;
 }
-
 .series-card-body {
   padding: 1.5rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
-
 .series-desc {
   color: #f5ecd7;
   margin-bottom: 1rem;
   line-height: 1.6;
   flex-grow: 1;
 }
-
 .series-stats {
   display: flex;
   gap: 1rem;
@@ -281,13 +254,11 @@ nav {
   font-size: 0.85rem;
   color: #b8956f;
 }
-
 .series-stat-item {
   display: flex;
   align-items: center;
   gap: 0.3rem;
 }
-
 .series-cta {
   display: inline-block;
   background: rgba(201, 168, 76, 0.15);
@@ -300,7 +271,6 @@ nav {
   transition: all 0.3s;
   text-align: center;
 }
-
 .series-card:hover .series-cta {
   background: rgba(201, 168, 76, 0.3);
 }
@@ -313,7 +283,6 @@ nav {
   text-align: center;
   font-weight: bold;
 }
-
 .section-desc {
   text-align: center;
   color: #b8956f;
@@ -331,12 +300,10 @@ nav {
   border-radius: 8px;
   text-align: center;
 }
-
 .about h2 {
   color: #C9A84C;
   margin-bottom: 1rem;
 }
-
 .about p {
   color: #f5ecd7;
   line-height: 1.8;
@@ -352,18 +319,15 @@ nav {
   text-align: center;
   color: #080604;
 }
-
 .subscribe-title {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
 .subscribe-text {
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
-
 .subscribe-btn {
   display: inline-block;
   background: #080604;
@@ -374,8 +338,8 @@ nav {
   font-weight: bold;
   transition: all 0.3s;
   border: 1px solid #C9A84C;
+  margin: 0.25rem;
 }
-
 .subscribe-btn:hover {
   background: #1a1410;
 }
@@ -390,12 +354,10 @@ footer {
   color: #b8956f;
   font-size: 0.85rem;
 }
-
 footer a {
   color: #C9A84C;
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
@@ -411,7 +373,6 @@ footer a:hover {
     font-size: 1.3rem;
   }
 }
-
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
@@ -431,6 +392,7 @@ footer a:hover {
     <a href="/" class="nav-link">హోమ్</a>
     <a href="/VU/" class="nav-link">బేతాళ</a>
     <a href="/tenali/" class="nav-link">తెనాలి</a>
+    <a href="/pittakathalu/" class="nav-link">పిట్ట కథలు</a>
     <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-yt">▶ YouTube</a>
   </div>
 </nav>
@@ -440,9 +402,11 @@ footer a:hover {
   <span class="hero-emoji">🪔</span>
   <h1>RayalSabha</h1>
   <p class="hero-subtitle">తెలుగు కధలు · భారతీయ సంస్కృతి</p>
-  <p class="hero-tagline">చతురుడు తెనాలి, సాహసకారుడు విక్రమాదిత్యుడు — వారి కథలకు హద్దు లేదు</p>
-  <a href="/VU/" class="hero-cta">⚔️ విక్రమ్ – బేతాళ కథలు చదవండి</a>
-  <a href="/tenali/" class="hero-cta secondary">🧠 తెనాలి కధలు చదవండి</a>
+  <p class="hero-tagline">చతురుడు తెనాలి, సాహసకారుడు విక్రమాదిత్యుడు, చిన్న కథ పెద్ద నీతి — అన్ని కథలకు హద్దు లేదు</p>
+  <div class="hero-ctas">
+    <a href="/VU/" class="hero-cta">⚔️ విక్రమ్ – బేతాళ కథలు →</a>
+    <a href="/pittakathalu/" class="hero-cta-secondary">🐦 పిట్ట కథలు →</a>
+  </div>
 </div>
 
 <!-- ============ CONTENT ============ -->
@@ -454,7 +418,7 @@ footer a:hover {
 
   <div class="series-grid">
 
-    <!-- BETHALA PACHIVIMSHATI — LIVE -->
+    <!-- VIKRAM BETHALA -->
     <a href="/VU/" class="series-card">
       <div class="series-card-header">
         <span class="series-emoji">⚔️</span>
@@ -462,10 +426,6 @@ footer a:hover {
         <p class="series-subtitle">విక్రమాదిత్యుని అద్భుత కథలు</p>
       </div>
       <div class="series-card-body">
-        <div class="series-card-live-badge">
-          <span class="series-card-live-dot"></span>
-          EP01 LIVE NOW
-        </div>
         <p class="series-desc">విక్రమాదిత్యుడు మరియు బేతాళుడు — 25 కథలు, 25 పరీక్షలు. ప్రతి రాత్రి స్మశానంలో ఒక కొత్త రహస్యం. 3D Pixar Telugu animation series.</p>
         <div class="series-stats">
           <span class="series-stat-item">✓ EP01 Live</span>
@@ -492,6 +452,23 @@ footer a:hover {
       </div>
     </a>
 
+    <!-- పిట్ట కథలు — NEW -->
+    <a href="/pittakathalu/" class="series-card new-series">
+      <div class="series-card-header">
+        <span class="series-emoji">🐦</span>
+        <h3 class="series-title">పిట్ట కథలు</h3>
+        <p class="series-subtitle">చిన్న కథ — పెద్ద నీతి</p>
+      </div>
+      <div class="series-card-body">
+        <p class="series-desc">నీతి కథలు — పంచతంత్రం, హితోపదేశం, ఈసాప్ కథలు తెలుగులో. ప్రతి కథలో ఒక జీవిత సత్యం. చిన్నా పెద్దా అందరికీ!</p>
+        <div class="series-stats">
+          <span class="series-stat-item">✓ 1 Live</span>
+          <span class="series-stat-item">⏳ More Coming</span>
+        </div>
+        <span class="series-cta">కథలు చూడండి →</span>
+      </div>
+    </a>
+
     <!-- TEMPLES (Coming Soon) -->
     <div class="series-card" style="opacity: 0.6;">
       <div class="series-card-header">
@@ -513,22 +490,23 @@ footer a:hover {
   <!-- ============ ABOUT ============ -->
   <div class="about">
     <h2>🎬 ఈ ప్రకల్పనం గురించి</h2>
-    <p>RayalSabha — తెలుగు కధలను, భారతీయ సంస్కృతిని ప్రపంచానికి చేరువ చేసేందుకు తీసిన ఈ చిన్న ప్రయత్నం. తెనాలి, బేతాళ పంచవింశతి, మరిన్ని కధలు — సినిమాటిక్ అందంగా, తెలుగులో, సకల భాషలకు అందుబాటులో.</p>
+    <p>RayalSabha — తెలుగు కధలను, భారతీయ సంస్కృతిని ప్రపంచానికి చేరువ చేసేందుకు తీసిన ఈ చిన్న ప్రయత్నం. తెనాలి, బేతాళ పంచవింశతి, పిట్ట కథలు, మరిన్ని కధలు — సినిమాటిక్ అందంగా, తెలుగులో, సకల భాషలకు అందుబాటులో.</p>
     <p>ప్రతి కథకు ఒక విధానం, ఒక శిక్ష, ఒక నవ్వు.</p>
   </div>
 
   <!-- ============ SUBSCRIBE CTA ============ -->
   <div class="subscribe-cta">
-    <div class="subscribe-title">🎬 YouTube వద్ద నాకు Follow చేయండి</div>
-    <p class="subscribe-text">మరిన్ని కధలు, చరిత్ర, సంస్కృతి — వీడియో రూపంలో @Rayalsabha</p>
-    <a href="https://youtube.com/@Rayalsabha" target="_blank" class="subscribe-btn">▶ Subscribe చేయండి</a>
+    <div class="subscribe-title">🎬 YouTube & Instagram Follow చేయండి</div>
+    <p class="subscribe-text">మరిన్ని కధలు, చరిత్ర, సంస్కృతి — వీడియో రూపంలో @Rayalsabha · పిట్ట కథలు @pittakathalu.telugu</p>
+    <a href="https://youtube.com/@Rayalsabha" target="_blank" class="subscribe-btn">▶ YouTube Subscribe</a>
+    <a href="https://instagram.com/pittakathalu.telugu" target="_blank" class="subscribe-btn">📱 @pittakathalu.telugu</a>
   </div>
 
 </div>
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <p>&copy; 2026 RayalSabha · తెలుగు కధలు | <a href="/">హోమ్</a> · <a href="/VU/">బేతాళ</a> · <a href="/tenali/">తెనాలి</a></p>
+  <p>&copy; 2026 RayalSabha · తెలుగు కధలు | <a href="/">హోమ్</a> · <a href="/VU/">బేతాళ</a> · <a href="/tenali/">తెనాలి</a> · <a href="/pittakathalu/">పిట్ట కథలు</a></p>
   <p style="margin-top: 1rem; font-size: 0.8rem;">Powered by తెలుగు సంస్కృతి 🪔</p>
 </footer>
 
