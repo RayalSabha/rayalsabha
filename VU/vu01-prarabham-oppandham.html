@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ప్రారంభం: ఒప్పందం | విక్రమ్ – బేతాళ కథలు EP01 | RayalSabha</title>
-<meta name="description" content="విక్రమాదిత్యుడు మరియు బేతాళుడు — ఒప్పందం మొదలైంది. EP01 పూర్తి కథ చదవండి. విక్రమ్ – బేతాళ కథలు తెలుగు అనిమేషన్ సిరీస్ | RayalSabha" />
+<title>ప్రారంభం: ఒప్పందం | బేతాళ పంచవింశతి EP01 | RayalSabha</title>
+<meta name="description" content="విక్రమాదిత్యుడు మరియు బేతాళుడు — ఒప్పందం మొదలైంది. EP01 పూర్తి కథ చదవండి. బేతాళ పంచవింశతి తెలుగు అనిమేషన్ సిరీస్ | RayalSabha" />
 <meta name="keywords" content="బేతాళ పంచవింశతి, విక్రమాదిత్యుడు, బేతాళుడు, తెలుగు కథలు, Vikramarka Bethala, RayalSabha" />
-<meta property="og:title" content="ప్రారంభం: ఒప్పందం | విక్రమ్ – బేతాళ కథలు EP01" />
+<meta property="og:title" content="ప్రారంభం: ఒప్పందం | బేతాళ పంచవింశతి EP01" />
 <meta property="og:description" content="విక్రమాదిత్యుడు మరియు బేతాళుడు — ఒప్పందం మొదలైంది." />
 <meta property="og:image" content="https://rayalsabha.com/images/VU/EP01/EP.01.png" />
 <meta property="og:type" content="article" />
@@ -356,6 +356,34 @@ nav {
   border-left: 2px solid rgba(201,168,76,0.15);
 }
 
+/* Bilingual line — Telugu + English stacked, same font size */
+.bi-line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  margin-bottom: 1rem;
+}
+.bi-line:last-child { margin-bottom: 0; }
+.bi-line .te {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 1.05rem;
+  color: var(--skull-white);
+  line-height: 1.75;
+}
+.bi-line .en {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+.dialogue-text .bi-line .te { color: var(--skull-white); }
+.dialogue-text .bi-line .en { color: rgba(168,147,122,0.8); }
+.bq-text .bi-line .te { color: var(--skull-white); font-size: 1.1rem; }
+.bq-text .bi-line .en { color: rgba(168,147,122,0.75); font-size: 1.05rem; }
+.bq-cta .bi-line .te { color: var(--gold-dim); font-size: 0.82rem; letter-spacing: 0.5px; }
+.bq-cta .bi-line .en { color: rgba(138,111,46,0.7); font-size: 0.82rem; }
+
 /* Dialogue box */
 .dialogue {
   background: var(--bg-mid);
@@ -666,241 +694,336 @@ footer a:hover { color: var(--gold); }
       </div>
     </div>
 
-    <img src="/images/vu01/VU_ATMO_FULLMOON_titlecard_MASTER.png" alt="పూర్ణిమ రాత్రి స్మశానం — బేతాళ పంచవింశతి" class="scene-image" />
+    <img src="/images/VU/EP01/EP.01.png" alt="పూర్ణిమ రాత్రి స్మశానం — బేతాళ పంచవింశతి" class="scene-image" />
+    <div class="scene-image-caption">VU_ATMO_FULLMOON — పూర్ణిమ రాత్రి స్మశానం</div>
 
     <div class="narration">
-      వేలాది సంవత్సరాల క్రితం...<br />
-      ఉజ్జయిని నగరంలో...<br />
-      ఒక రాజు జీవించాడు.
-    </div>
-
-    <div class="narration">
-      ఆ రాజు ప్రతి రాత్రి...<br />
-      ఈ స్మశానానికి వచ్చేవాడు.
-    </div>
-
-    <div class="atmo-callout">
-      ☠️ &ensp; ఆ చెట్టుపై వేలాడుతున్న తెల్లని ఆకారం — అది ఏమిటి? &ensp; ☠️
-    </div>
-
-    <div class="narration">
-      ఎందుకు?<br />
-      ఆ రహస్యమే... ఈ కథ.
+      <div class="bi-line">
+        <span class="te">ప్రతి రాత్రి… ఒక రాజు… స్మశానం నుంచి ఒక శవాన్ని మోసుకుని బయలుదేరేవాడు.</span>
+        <span class="en">Every night… a king… would carry a corpse from the cremation ground and set out.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">కానీ ప్రతి సారి…</span>
+        <span class="en">But every single time…</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">ఆ శవం… మళ్లీ అదే చెట్టుపైనే కనిపించేది.</span>
+        <span class="en">That corpse… would appear again on the very same tree.</span>
+      </div>
     </div>
   </div>
 
   <div class="divider-ornate">⚔ ✦ ⚔</div>
 
-  <!-- SCENE 02 — ROYAL COURT -->
+  <!-- SCENE 02 — THE KING -->
   <div class="scene">
     <div class="scene-number">
       <div class="scene-num-circle">02</div>
       <div>
-        <div class="scene-title-text">THE ROYAL COURT</div>
-        <span class="scene-title-te">— రాజ దర్బారు</span>
+        <div class="scene-title-text">THE KING</div>
+        <span class="scene-title-te">— రాజు</span>
       </div>
     </div>
 
-    <img src="/images/vu01/VU_EP01_SCENE01_vikram_throne_closeup_MASTER.png" alt="విక్రమాదిత్యుడు సింహాసనంపై — రాజ దర్బారు" class="scene-image" />
+    <img src="/images/VU/EP01/EP.01.png" alt="విక్రమాదిత్యుడు సింహాసనంపై — రాజ దర్బారు, ఉజ్జయిని" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SCENE01 — విక్రమాదిత్యుడు, ఉజ్జయిని</div>
 
     <div class="narration">
-      అతడు విక్రమాదిత్యుడు.<br />
-      ఉజ్జయిని మహారాజు.<br />
-      ధర్మానికి ప్రతిరూపం.
+      <div class="bi-line">
+        <span class="te">అతడు విక్రమాదిత్యుడు.</span>
+        <span class="en">He was Vikramaditya.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">ఉజ్జయిని మహారాజు.</span>
+        <span class="en">The great king of Ujjaini.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">మాట ఇస్తే వెనక్కి తగ్గని రాజు.</span>
+        <span class="en">A king who never stepped back from a word once given.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider-ornate">🕯 ✦ 🕯</div>
+
+  <!-- SCENE 03 — KAPALI YOGI -->
+  <div class="scene">
+    <div class="scene-number">
+      <div class="scene-num-circle">03</div>
+      <div>
+        <div class="scene-title-text">THE SORCERER</div>
+        <span class="scene-title-te">— కపాలి యోగి</span>
+      </div>
     </div>
 
+    <img src="/images/VU/EP01/EP.01.png" alt="కపాలి యోగి దర్బారులో నమస్కరిస్తున్నాడు — కళ్ళలో మాయ" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT07 — కపాలి యోగి దర్బారు</div>
+
     <div class="narration">
-      ఆ రోజు దర్బారుకు వచ్చాడు... కపాలి యోగి.<br />
-      పైకి సాధువు.<br />
-      లోపల... మాంత్రికుడు.
+      <div class="bi-line">
+        <span class="te">ఆ రోజు దర్బారుకు వచ్చాడు... కపాలి యోగి.</span>
+        <span class="en">That day, Kapali Yogi came to the court.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">పైకి సాధువు.</span>
+        <span class="en">On the outside — a holy man.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">లోపల... మాంత్రికుడు.</span>
+        <span class="en">On the inside… a sorcerer.</span>
+      </div>
     </div>
 
-    <img src="/images/vu01/VU_EP01_SHOT07_kapali_bowing_closeup_MASTER.png" alt="కపాలి యోగి తల వంచి నమస్కరిస్తున్నాడు — కళ్ళలో మాయ" class="scene-image" />
+    <img src="/images/VU/EP01/EP.01.png" alt="కపాలి యోగి క్లోజప్ — కళ్ళు రాజు మీదే" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT08 — కపాలి కళ్ళు</div>
 
     <div class="narration">
-      అతనికి ఒక గొప్ప తంత్ర సాధన చేయాలి.<br />
-      దానికి ఒక వస్తువు కావాలి.<br />
-      స్మశానంలో వేలాడుతున్న ఒక శవం.
+      <div class="bi-line">
+        <span class="te">అతడు ఒక గొప్ప మంత్ర సాధన చేయాలని అనుకున్నాడు.</span>
+        <span class="en">He wanted to perform a powerful tantric ritual.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">దానికి ఒక వస్తువు కావాలి.</span>
+        <span class="en">For that, he needed one thing.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">స్మశానంలో వేలాడుతున్న ఒక శవం.</span>
+        <span class="en">A corpse hanging in the cremation ground.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">కపాలి యోగి తల వంచాడు.</span>
+        <span class="en">Kapali Yogi bowed his head.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">కానీ కళ్ళు మాత్రం... రాజు మీదే ఉన్నాయి.</span>
+        <span class="en">But his eyes… stayed fixed on the king.</span>
+      </div>
     </div>
 
     <div class="dialogue kapali">
       <div class="dialogue-speaker">🕯 కపాలి యోగి</div>
       <div class="dialogue-text">
-        మహారాజా... స్మశానంలో ఆ చెట్టుపై<br />
-        వేలాడుతున్న శవాన్ని... నాకు తీసుకొని రండి.<br />
-        మాట్లాడకుండా.
+        <div class="bi-line">
+          <span class="te">మహారాజా… స్మశానంలో చెట్టుపై వేలాడుతున్న శవాన్ని… నాకు తీసుకురండి.</span>
+          <span class="en">Your Majesty… bring me the corpse hanging on the tree in the cremation ground.</span>
+        </div>
       </div>
     </div>
 
-    <img src="/images/vu01/VU_EP01_SCENE02_yogi_sends_vikram_MASTER.png" alt="విక్రమాదిత్యుడు ముఖం — నిర్ణయం తీసుకుంటున్నాడు" class="scene-image" />
-
-    <div class="narration">
-      రాజు అతన్ని చూశాడు.<br />
-      ఏ భయమూ లేకుండా.
-    </div>
+    <img src="/images/VU/EP01/EP.01.png" alt="విక్రమాదిత్యుడు — నిర్ణయం తీసుకుంటున్నాడు" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT10 — విక్రముని నిర్ణయం</div>
 
     <div class="dialogue vikram">
       <div class="dialogue-speaker">⚔ విక్రమాదిత్యుడు</div>
       <div class="dialogue-text">
-        సరే స్వామీ... తీసుకొస్తాను.
+        <div class="bi-line">
+          <span class="te">సరే స్వామీ... తీసుకొస్తాను.</span>
+          <span class="en">Very well, Swami… I will bring it.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider-ornate">💀 ✦ 💀</div>
+
+  <!-- SCENE 04 — THE TRUTH -->
+  <div class="scene">
+    <div class="scene-number">
+      <div class="scene-num-circle">04</div>
+      <div>
+        <div class="scene-title-text">THE TRUTH</div>
+        <span class="scene-title-te">— రహస్యం</span>
       </div>
     </div>
 
+    <img src="/images/VU/EP01/EP.01.png" alt="బేతాళుడు చెట్టుపై — వేలాడుతున్న ఆత్మ" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT16 — బేతాళుడు చెట్టుపై</div>
+
     <div class="narration">
-      రాజు మాట ఇచ్చాడు.<br />
-      ఆ మాటే... వలలో మొదటి అడుగు.
+      <div class="bi-line">
+        <span class="te">ఆ శవంలో నివసిస్తున్నది... బేతాళుడు.</span>
+        <span class="en">Living inside that corpse… was Bethala.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">వేల సంవత్సరాల పురాతన ఆత్మ.</span>
+        <span class="en">An ancient spirit thousands of years old.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">ఆ ఆత్మను భుజంపై మోస్తూ తీసుకొని రావాలి.</span>
+        <span class="en">The king must carry that spirit on his shoulders and bring it.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">శవంతో మాట్లాడితే... అది తిరిగి చెట్టు పైకి వెళ్ళిపోతుంది.</span>
+        <span class="en">If he speaks to the corpse… it will fly back to the tree.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">అదీ నిబంధన.</span>
+        <span class="en">That is the condition.</span>
+      </div>
+    </div>
+
+    <div class="revelation">
+      <span class="revelation-icon">⚠️</span>
+      <div class="revelation-title">అంతులేని ఆట · The Endless Game</div>
+      <div class="revelation-text">
+        <div class="bi-line" style="justify-content:center;">
+          <span class="te">విక్రముడికి అప్పటికి తెలియదు…</span>
+          <span class="en">Vikrama did not know then…</span>
+        </div>
+        <div class="bi-line" style="justify-content:center;">
+          <span class="te">ఆ మాటతో…</span>
+          <span class="en">That with that single word…</span>
+        </div>
+        <div class="bi-line" style="justify-content:center;">
+          <span class="te">ఒక అంతులేని ఆట మొదలైందని.</span>
+          <span class="en">An endless game had begun.</span>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="divider-ornate">🌕 ✦ 🌕</div>
 
-  <!-- SCENE 03 — NIGHT JOURNEY -->
-  <div class="scene">
-    <div class="scene-number">
-      <div class="scene-num-circle">03</div>
-      <div>
-        <div class="scene-title-text">THE NIGHT JOURNEY</div>
-        <span class="scene-title-te">— రాత్రి యాత్ర</span>
-      </div>
-    </div>
-
-    <div class="narration">
-      ఆ రాత్రి రాజు కోట వదిలాడు.<br />
-      ఒంటరిగా. చీకటిలో.
-    </div>
-
-    <img src="/images/vu01/VU_EP01_SHOT12_forest_walk_MASTER.png" alt="అడవి చీకటిలో విక్రముడు నడుస్తున్నాడు — జంతువుల కళ్ళు" class="scene-image" />
-
-    <div class="narration">
-      అడవి చీకటిలో నడిచాడు.<br />
-      అడవి జంతువులు దారి ఇచ్చాయి.<br /><br />
-      రాజుకు భయం అంటే ఏమిటో తెలియదు.<br />
-      ఆ రాత్రి... ఆ అడవి...<br />
-      ఆ స్మశానం...<br />
-      అతనికి అడ్డు రాలేదు.
-    </div>
-
-    <img src="/images/vu01/VU_EP01_SHOT13_cremation_entry_MASTER.png" alt="స్మశానం వచ్చింది — చితులు మండుతున్నాయి" class="scene-image" />
-
-    <div class="narration">
-      స్మశానం వచ్చింది.<br />
-      చితులు మండుతున్నాయి.<br /><br />
-      వాటి వెలుతురులో... ఒక చెట్టు కనిపించింది.<br />
-      ఆ చెట్టుపై... వేలాడుతున్న తెల్లని ఆకారం.
-    </div>
-
-    <div class="revelation">
-      <span class="revelation-icon">👁️</span>
-      <div class="revelation-title">బేతాళుడు — The Vetala</div>
-      <div class="revelation-text">
-        ఆ ఆకారం శవం కాదు.<br />
-        బేతాళుడు.<br />
-        వేల సంవత్సరాలుగా ఆ చెట్టుపై నివసిస్తున్న పురాతన ఆత్మ.<br />
-        మంచివాడు కాదు. చెడ్డవాడూ కాదు.<br />
-        కేవలం... పురాతనమైనవాడు.
-      </div>
-    </div>
-  </div>
-
-<img src="/images/vu01/VU_EP01_SHOT16_bethala_hanging_closeup_MASTER.png" alt="ఆ చెట్టుపై... వేలాడుతున్న తెల్లని ఆకారం" class="scene-image" />
-  <div class="divider-ornate">💀 ✦ 💀</div>
-
-  <!-- SCENE 04 — THE CAPTURE -->
-  <div class="scene">
-    <div class="scene-number">
-      <div class="scene-num-circle">04</div>
-      <div>
-        <div class="scene-title-text">THE CAPTURE</div>
-        <span class="scene-title-te">— పట్టుకున్నాడు</span>
-      </div>
-    </div>
-
-    <img src="/images/vu01/VU_EP01_SHOT15_vikram_climbing_tree_MASTER.png" alt="విక్రముడు చెట్టు ఎక్కుతున్నాడు" class="scene-image" />
-
-
-    <div class="narration">
-      రాజు చెట్టు ఎక్కాడు.<br />
-      భయం లేకుండా. నేరుగా.
-    </div>
-
-    <div class="narration">
-      బేతాళుడికి అన్నీ తెలుసు.<br />
-      రాజు వస్తున్నాడని తెలుసు.<br />
-      తన తెలివిని పరీక్షించబోయే వాడు వస్తున్నాడని తెలుసు.<br /><br />
-      అందుకే... చిన్న నవ్వు.<br />
-      బేతాళుడు ఎదురు చూశాడు.
-    </div>
-
-    <img src="/images/vu01/VU_EP01_SHOT18_bethala_on_shoulder_MASTER.png" alt="విక్రముడు బేతాళుని భుజంపై వేసుకున్నాడు" class="scene-image" />
-
-    <div class="narration">
-      రాజు బేతాళుని పట్టుకున్నాడు.<br />
-      తన భుజంపై వేసుకున్నాడు.<br /><br />
-      బేతాళుడు భుజంపై కూర్చున్నాడు.<br />
-      రాజు నడవడం మొదలుపెట్టాడు.
-    </div>
-  </div>
-
-  <div class="divider-ornate">🌫 ✦ 🌫</div>
-
-  <!-- SCENE 05 — THE RULES -->
+  <!-- SCENE 05 — NIGHT WALK -->
   <div class="scene">
     <div class="scene-number">
       <div class="scene-num-circle">05</div>
       <div>
-        <div class="scene-title-text">THE RULES · THE TRAP</div>
-        <span class="scene-title-te">— నిబంధన, వల</span>
+        <div class="scene-title-text">THE NIGHT WALK</div>
+        <span class="scene-title-te">— రాత్రి యాత్ర</span>
       </div>
     </div>
 
-    <img src="/images/vu01/VU_EP01_SHOT23_forest_walk_dark_MASTER.png" alt="అడవిలో విక్రముడు నడుస్తున్నాడు, భుజంపై బేతాళుడు మాట్లాడుతున్నాడు" class="scene-image" />
-    <div class="scene-image-caption">VU_EP01_SCENE05 — అడవిలో నడక</div>
+    <img src="/images/VU/EP01/EP.01.png" alt="రాజు కోట వదిలి రాత్రి నడుస్తున్నాడు — ఒంటరిగా చీకటిలో" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT11 — రాత్రి యాత్ర</div>
+
+    <div class="narration">
+      <div class="bi-line">
+        <span class="te">ఆ రాత్రి రాజు కోట వదిలాడు.</span>
+        <span class="en">That night, the king left the fort.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">ఒంటరిగా. చీకటిలో.</span>
+        <span class="en">Alone. In darkness.</span>
+      </div>
+    </div>
+
+    <img src="/images/VU/EP01/EP.01.png" alt="బేతాళుడు రాజు భుజంపై కూర్చున్నాడు — అడవి నడక మొదలైంది" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT18 — భుజంపై బేతాళుడు</div>
+
+    <div class="narration">
+      <div class="bi-line">
+        <span class="te">బేతాళుడికి అన్నీ తెలుసు.</span>
+        <span class="en">Bethala knew everything.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">రాజు వస్తున్నాడని తెలుసు.</span>
+        <span class="en">He knew the king was coming.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">బేతాళుడు భుజంపై కూర్చున్నాడు.</span>
+        <span class="en">Bethala settled onto the king's shoulders.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">రాజు నడవడం మొదలుపెట్టాడు.</span>
+        <span class="en">The king began to walk.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider-ornate">👁 ✦ 👁</div>
+
+  <!-- SCENE 06 — THE STORY AND THE TRAP -->
+  <div class="scene">
+    <div class="scene-number">
+      <div class="scene-num-circle">06</div>
+      <div>
+        <div class="scene-title-text">THE STORY · THE TRAP</div>
+        <span class="scene-title-te">— కథ, వల</span>
+      </div>
+    </div>
+
+    <img src="/images/VU/EP01/EP.01.png" alt="బేతాళుడు మాట్లాడుతున్నాడు — అడవిలో విక్రముడు నడుస్తున్నాడు" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SCENE05 — కథ మొదలైంది</div>
 
     <div class="dialogue bethala">
       <div class="dialogue-speaker">👁 బేతాళుడు</div>
       <div class="dialogue-text">
-        మహారాజా... నేను నీ భుజంపై కూర్చోవచ్చు.<br />
-        కానీ ఒక్క నిబంధన.<br />
-        నువ్వు మాట్లాడకూడదు.
+        <div class="bi-line">
+          <span class="te">మహారాజా... దారి పొడవునా నీకు ఒక కథ చెప్తాను. విను.</span>
+          <span class="en">Your Majesty… I will tell you a story on the way. Listen.</span>
+        </div>
       </div>
     </div>
 
-    <div class="narration">
-      కానీ బేతాళుడికి తెలుసు,<br />
-      రాజు మాట్లాడతాడని తెలుసు.<br /><br />
-      ఎందుకు?<br /><br />
-      ఎందుకంటే... బేతాళుడు కథలు చెప్తాడు.<br />
-      న్యాయమైన ప్రశ్నలు వేస్తాడు.<br />
-      సమాధానం తెలిసిన రాజు మాట్లాడకుండా ఉండలేడు.<br /><br />
-      అదే అతని ధర్మం.<br />
-      అదే... బేతాళుని వల.
-    </div>
+    <img src="/images/VU/EP01/EP.01.png" alt="బేతాళుడు ముఖం — పురాతన చిరునవ్వు" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT20 — బేతాళుని ముఖం</div>
 
-    <div class="dialogue bethala">
-      <div class="dialogue-speaker">👁 బేతాళుడు</div>
-      <div class="dialogue-text">
-        నేను దారి పొడవునా కథలు చెప్తాను.<br />
-        ఆ కథలకు సమాధానం నీకు తెలిస్తే...<br />
-        చెప్పకుండా ఉండలేవు.
+    <div class="narration">
+      <div class="bi-line">
+        <span class="te">బేతాళుడు కథ చెప్పాడు.</span>
+        <span class="en">Bethala told a story.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">విక్రముడు మాట్లాడాడు.</span>
+        <span class="en">Vikrama spoke.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">అంతే.</span>
+        <span class="en">That was enough.</span>
       </div>
     </div>
 
-    <img src="/images/vu01/VU_EP01_SHOT24_bethala_escape_forest_MASTER.png" alt="బేతాళుడు ఎగురుతూ తన చెట్టుకు తిరిగి వెళ్ళాడు" class="scene-image" />
-
-    <div class="narration">
-      రాజు మాట్లాడాడు.<br />
-      అంతే.
+    <div class="atmo-callout">
+      <div class="bi-line" style="justify-content:center; gap:1.5rem;">
+        <span class="te">ఒక్క మాట… చాలు.</span>
+        <span class="en">One single word… that is all it takes.</span>
+      </div>
     </div>
 
     <div class="dialogue bethala">
       <div class="dialogue-speaker">👁 బేతాళుడు (దూరంగా వెళ్తూ...)</div>
       <div class="dialogue-text">
-        మళ్ళీ రా... మహారాజా...
+        <div class="bi-line">
+          <span class="te">మళ్ళీ రా... మహారాజా...</span>
+          <span class="en">Come again… Your Majesty…</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider-ornate">🌫 ✦ 🌫</div>
+
+  <!-- SCENE 07 — THE ENDLESS LOOP -->
+  <div class="scene">
+    <div class="scene-number">
+      <div class="scene-num-circle">07</div>
+      <div>
+        <div class="scene-title-text">THE LOOP</div>
+        <span class="scene-title-te">— అంతులేని ఆట</span>
       </div>
     </div>
 
+    <img src="/images/VU/EP01/EP.01.png" alt="విక్రముడు ఒంటరిగా — ఆట మళ్ళీ మొదలైంది" class="scene-image" />
+    <div class="scene-image-caption">VU_EP01_SHOT22 — మళ్ళీ మొదలు</div>
+
     <div class="narration">
-      మళ్ళీ.
+      <div class="bi-line">
+        <span class="te">కానీ…</span>
+        <span class="en">But…</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">విక్రముడు ఓడిపోలేదు.</span>
+        <span class="en">Vikrama did not lose.</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">ఆ రాత్రి…</span>
+        <span class="en">That night…</span>
+      </div>
+      <div class="bi-line">
+        <span class="te">ఆ ఆట మళ్లీ మొదలైంది.</span>
+        <span class="en">That game began again.</span>
+      </div>
     </div>
 
     <!-- CYCLE COUNTER -->
@@ -922,28 +1045,30 @@ footer a:hover { color: var(--gold); }
         <span class="cycle-label">యాత్ర · Journey</span>
       </div>
     </div>
-
-    <div class="narration">
-      ఇలా మొదలైంది.<br />
-      బేతాళ పంచవింశతి.<br />
-      25 కథలు. 25 పరీక్షలు.<br />
-      ఒక రాజు. ఒక ఆత్మ.<br />
-      ఒక అద్భుత యాత్ర.<br /><br />
-      ఒక్కసారైనా... రాజు మాట్లాడకుండా ఉంటే...<br />
-      అంతా అయిపోతుంది.<br />
-      ఆ క్షణం... 25వ కథలో వస్తుంది.
-    </div>
   </div>
 
-  <!-- BETHALA QUESTION -->
+  <!-- BETHALA QUESTION — CTA -->
   <div class="bethala-question">
-    <div class="bq-label">👁 బేతాళుని ప్రశ్న · Bethala's Question — EP02</div>
+    <div class="bq-label">👁 బేతాళుని ప్రశ్న · Bethala's Question</div>
     <div class="bq-text">
-      తదుపరి కథలో బేతాళుడు ఒక ప్రశ్న వేస్తాడు.<br />
-      మీ సమాధానం ఏమిటి?
+      <div class="bi-line" style="justify-content:center; gap:2rem;">
+        <span class="te">ఆ కథ ఏమిటి?</span>
+        <span class="en">What was that story?</span>
+      </div>
+      <div class="bi-line" style="justify-content:center; gap:2rem; margin-top:0.6rem;">
+        <span class="te">విక్రముడు ఎందుకు మాట్లాడాడు?</span>
+        <span class="en">Why did Vikrama speak?</span>
+      </div>
+      <div class="bi-line" style="justify-content:center; gap:2rem; margin-top:0.6rem;">
+        <span class="te">బేతాళుడు ఎందుకు వెళ్ళిపోయాడు?</span>
+        <span class="en">Why did Bethala fly away?</span>
+      </div>
     </div>
     <div class="bq-cta">
-      👇 కామెంట్లో మీ సమాధానం చెప్పండి — తదుపరి వీడియోలో తేలుతుంది
+      <div class="bi-line" style="justify-content:center; gap:1.5rem; font-style:italic;">
+        <span class="te">మీకు తెలిస్తే కామెంట్ చేయండి 👇</span>
+        <span class="en">If you know — comment below 👇</span>
+      </div>
     </div>
   </div>
 
