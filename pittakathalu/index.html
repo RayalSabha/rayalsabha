@@ -1,171 +1,174 @@
 <!DOCTYPE html>
 <html lang="te">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>పిట్ట కథలు | చిన్న కథ — పెద్ద నీతి | RayalSabha</title>
-<meta name="description" content="పిట్ట కథలు — పంచతంత్రం, హితోపదేశం, ఈసాప్ కథలు తెలుగులో. ప్రతి కథలో ఒక జీవిత సత్యం. చిన్నా పెద్దా అందరికీ | RayalSabha" />
-<meta name="keywords" content="పిట్ట కథలు, నీతి కథలు, Telugu moral stories, Panchatantra Telugu, Hitopadesha Telugu, pittakathalu, RayalSabha" />
-<meta property="og:title" content="పిట్ట కథలు | చిన్న కథ — పెద్ద నీతి | RayalSabha" />
-<meta property="og:description" content="పంచతంత్రం, హితోపదేశం, ఈసాప్ కథలు తెలుగులో — ప్రతి కథలో ఒక జీవిత సత్యం" />
-<meta property="og:image" content="https://rayalsabha.com/og-image.jpg" />
-<link rel="canonical" href="https://rayalsabha.com/pittakathalu/" />
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: 'Tiro Telugu', 'Cormorant Garamond', serif;
-  background: linear-gradient(135deg, #0d0805 0%, #1a1410 50%, #080604 100%);
-  color: #f5ecd7;
-  line-height: 1.8;
-  overflow-x: hidden;
-}
-nav {
-  position: fixed; top: 0; left: 0; right: 0;
-  background: rgba(8,6,4,0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(201,168,76,0.3);
-  padding: 1rem 2rem;
-  display: flex; justify-content: space-between; align-items: center;
-  z-index: 100;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
-}
-.nav-logo { font-size: 1.5rem; font-weight: bold; color: #C9A84C; text-decoration: none; letter-spacing: 2px; }
-.nav-links { display: flex; gap: 2rem; align-items: center; }
-.nav-links a { color: #f5ecd7; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
-.nav-links a:hover { color: #C9A84C; }
-@media (max-width: 768px) {
-  nav { padding: 0.8rem 1rem; }
-  .nav-links { gap: 1rem; font-size: 0.8rem; }
-  .nav-logo { font-size: 1.2rem; }
-}
-.series-hero {
-  margin-top: 60px;
-  padding: 4rem 2rem 3rem 2rem;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(201,168,76,0.12) 0%, transparent 100%);
-  border-bottom: 1px solid rgba(201,168,76,0.2);
-}
-.series-label { font-size: 0.85rem; color: #b8956f; letter-spacing: 2px; margin-bottom: 1rem; }
-.series-hero h1 { font-size: 3rem; color: #C9A84C; margin-bottom: 0.5rem; text-shadow: 0 4px 15px rgba(201,168,76,0.3); }
-.series-tagline { font-size: 1.2rem; color: #d4a574; margin-bottom: 0.5rem; }
-.series-sub { font-size: 0.9rem; color: #b8956f; margin-bottom: 1.5rem; }
-.series-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.85rem; color: #b8956f; }
-.series-stats span strong { color: #C9A84C; }
-.content { max-width: 900px; margin: 0 auto; padding: 2rem; }
-.section-label {
-  font-size: 1rem; color: #C9A84C;
-  margin: 2.5rem 0 1.5rem 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(201,168,76,0.2);
-  display: flex; align-items: center; gap: 0.8rem;
-}
-.live-count, .coming-label {
-  font-size: 0.75rem;
-  background: rgba(201,168,76,0.15);
-  border: 1px solid rgba(201,168,76,0.3);
-  color: #C9A84C;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-}
-.story-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  background: linear-gradient(135deg, rgba(201,168,76,0.07), rgba(201,168,76,0.03));
-  border: 1px solid rgba(201,168,76,0.25);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  transition: all 0.3s;
-  position: relative;
-}
-.story-card:hover {
-  border-color: #C9A84C;
-  box-shadow: 0 6px 20px rgba(201,168,76,0.15);
-  transform: translateY(-2px);
-}
-.card-meta { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; }
-.pk-num { font-size: 0.75rem; color: #b8956f; letter-spacing: 1px; }
-.emoji { font-size: 1.3rem; }
-.live-badge {
-  font-size: 0.7rem;
-  background: rgba(201,168,76,0.2);
-  color: #C9A84C;
-  padding: 0.15rem 0.6rem;
-  border-radius: 20px;
-  border: 1px solid rgba(201,168,76,0.4);
-}
-.story-card h3 { font-size: 1.2rem; color: #C9A84C; margin-bottom: 0.3rem; }
-.card-sub { font-size: 0.85rem; color: #b8956f; font-style: italic; margin-bottom: 0.8rem; }
-.card-desc { color: #f5ecd7; font-size: 0.95rem; margin-bottom: 0.5rem; line-height: 1.6; }
-.card-moral { font-size: 0.85rem; color: #b8956f; }
-.card-arrow { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: #C9A84C; font-size: 1.2rem; }
-.coming-card {
-  display: flex; align-items: flex-start; gap: 1rem;
-  background: rgba(201,168,76,0.03);
-  border: 1px solid rgba(201,168,76,0.12);
-  border-radius: 8px;
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 0.8rem;
-  opacity: 0.7;
-}
-.coming-card .pk-num { font-size: 0.75rem; color: #b8956f; white-space: nowrap; margin-top: 0.2rem; }
-.coming-card .emoji { font-size: 1.2rem; }
-.coming-title { font-size: 1rem; color: #d4a574; margin-bottom: 0.2rem; }
-.coming-sub { font-size: 0.8rem; color: #b8956f; font-style: italic; margin-bottom: 0.4rem; }
-.coming-desc { font-size: 0.85rem; color: #f5ecd7; opacity: 0.7; }
-.coming-tag { margin-left: auto; font-size: 0.75rem; color: #b8956f; white-space: nowrap; }
-.more-coming { text-align: center; color: #b8956f; font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; }
-.cta-block {
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.05));
-  border: 1px solid rgba(201,168,76,0.2);
-  border-radius: 8px;
-  margin: 2.5rem 0;
-}
-.cta-block h3 { color: #C9A84C; margin-bottom: 0.5rem; font-size: 1.1rem; }
-.cta-block p { color: #b8956f; margin-bottom: 1.5rem; font-size: 0.95rem; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-.btn-insta {
-  background: linear-gradient(135deg, #C9A84C, #d4a574);
-  color: #080604; padding: 0.7rem 1.2rem;
-  border-radius: 4px; text-decoration: none;
-  font-weight: bold; font-size: 0.9rem; transition: all 0.3s;
-}
-.btn-insta:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(201,168,76,0.3); }
-.btn-yt {
-  background: rgba(201,168,76,0.15);
-  color: #C9A84C; padding: 0.7rem 1.2rem;
-  border: 1px solid rgba(201,168,76,0.4);
-  border-radius: 4px; text-decoration: none;
-  font-size: 0.9rem; transition: all 0.3s;
-}
-.btn-yt:hover { background: rgba(201,168,76,0.25); }
-footer {
-  margin-top: 3rem; padding: 2rem;
-  background: rgba(8,6,4,0.95);
-  border-top: 1px solid rgba(201,168,76,0.3);
-  text-align: center; color: #b8956f; font-size: 0.85rem;
-}
-footer a { color: #C9A84C; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-@media (max-width: 768px) {
-  .series-hero h1 { font-size: 2rem; }
-  .content { padding: 1rem; }
-  .card-arrow { display: none; }
-  .coming-card { flex-wrap: wrap; }
-  .coming-tag { margin-left: 0; }
-}
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JXQP6MB62C');
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>పిట్ట కథలు — Telugu Moral Stories | RayalSabha</title>
+  <meta name="description" content="చిన్న కథ — పెద్ద నీతి. Telugu moral stories as Instagram Reels and YouTube Shorts. పంచతంత్రం, ఈసాప్ కథలు తెలుగులో." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Tiro Telugu', serif;
+      background: #0d0805;
+      color: #f5ecd7;
+      line-height: 1.8;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: rgba(8,6,4,0.97);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 0.9rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      z-index: 100;
+    }
+    .nav-logo { font-size: 1.3rem; font-weight: bold; color: #C9A84C; text-decoration: none; }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { color: #f5ecd7; text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+    .nav-links a:hover { color: #C9A84C; }
+    .series-hero {
+      margin-top: 56px;
+      padding: 3.5rem 2rem 2.5rem;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(201,168,76,0.06) 0%, transparent 100%);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .series-label { font-size: 0.8rem; color: #b8956f; letter-spacing: 2px; margin-bottom: 0.5rem; }
+    .series-hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      color: #C9A84C;
+      letter-spacing: 3px;
+      margin-bottom: 0.5rem;
+    }
+    .series-tagline { font-size: 1.1rem; color: #e8c96a; margin-bottom: 0.3rem; }
+    .series-sub { font-size: 0.9rem; color: #b8956f; margin-bottom: 1.5rem; }
+    .series-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.85rem; color: #b8956f; }
+    .series-stats span strong { color: #C9A84C; }
+    .content { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .section-label {
+      font-size: 1rem; color: #C9A84C;
+      margin: 2.5rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .live-count, .coming-label {
+      font-size: 0.75rem;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: #C9A84C;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+    }
+    .story-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: linear-gradient(135deg, rgba(201,168,76,0.07), rgba(201,168,76,0.03));
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .story-card:hover {
+      border-color: #C9A84C;
+      box-shadow: 0 6px 20px rgba(201,168,76,0.15);
+      transform: translateY(-2px);
+    }
+    .card-meta { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; }
+    .pk-num { font-size: 0.75rem; color: #b8956f; letter-spacing: 1px; }
+    .emoji { font-size: 1.3rem; }
+    .live-badge {
+      font-size: 0.7rem;
+      background: rgba(201,168,76,0.2);
+      color: #C9A84C;
+      padding: 0.15rem 0.6rem;
+      border-radius: 20px;
+      border: 1px solid rgba(201,168,76,0.4);
+    }
+    .story-card h3 { font-size: 1.2rem; color: #C9A84C; margin-bottom: 0.3rem; }
+    .card-sub { font-size: 0.85rem; color: #b8956f; font-style: italic; margin-bottom: 0.8rem; }
+    .card-desc { color: #f5ecd7; font-size: 0.95rem; margin-bottom: 0.5rem; line-height: 1.6; }
+    .card-moral { font-size: 0.85rem; color: #b8956f; }
+    .card-arrow { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: #C9A84C; font-size: 1.2rem; }
+    .coming-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: rgba(201,168,76,0.03);
+      border: 1px solid rgba(201,168,76,0.1);
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .coming-card .pk-num { font-size: 0.75rem; color: #b8956f; min-width: 30px; }
+    .coming-title { font-size: 1rem; color: #f5ecd7; margin-bottom: 0.2rem; }
+    .coming-sub { font-size: 0.8rem; color: #b8956f; font-style: italic; margin-bottom: 0.3rem; }
+    .coming-desc { font-size: 0.85rem; color: #b8956f; }
+    .coming-tag {
+      margin-left: auto;
+      font-size: 0.7rem;
+      color: #b8956f;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.15);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .more-coming { text-align: center; color: #b8956f; font-size: 0.85rem; margin: 1.5rem 0; }
+    .cta-block {
+      margin: 2.5rem 0;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03));
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      text-align: center;
+    }
+    .cta-block h3 { color: #e8c96a; font-family: 'Cinzel', serif; margin-bottom: 0.5rem; }
+    .cta-block p { color: #b8956f; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-insta {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: white; text-decoration: none;
+      padding: 0.6rem 1.5rem; border-radius: 20px;
+      font-size: 0.85rem; font-weight: bold;
+    }
+    .btn-yt {
+      background: #ff0000; color: white; text-decoration: none;
+      padding: 0.6rem 1.5rem; border-radius: 20px;
+      font-size: 0.85rem; font-weight: bold;
+    }
+    footer {
+      margin-top: 3rem; padding: 2rem;
+      background: rgba(8,6,4,0.95);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      text-align: center; color: #b8956f; font-size: 0.85rem;
+    }
+    footer a { color: #C9A84C; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      .series-hero h1 { font-size: 2rem; }
+      .content { padding: 1rem; }
+      .card-arrow { display: none; }
+      .coming-card { flex-wrap: wrap; }
+      .coming-tag { margin-left: 0; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: 0.8rem; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXQP6MB62C');
+  </script>
 </head>
 <body>
 
@@ -186,7 +189,7 @@ footer a:hover { text-decoration: underline; }
   <p class="series-tagline">చిన్న కథ — పెద్ద నీతి</p>
   <p class="series-sub">Small Story • Big Lesson · ప్రతి కథలో ఒక జీవిత సత్యం</p>
   <div class="series-stats">
-    <span><strong>5</strong> Live కథలు</span>
+    <span><strong>6</strong> Live కథలు</span>
     <span><strong>∞</strong> More Coming</span>
     <span>📱 @pittakathalu.telugu</span>
   </div>
@@ -194,7 +197,7 @@ footer a:hover { text-decoration: underline; }
 
 <div class="content">
 
-  <h2 class="section-label">🎬 Live కథలు <span class="live-count">4 LIVE</span></h2>
+  <h2 class="section-label">🎬 Live కథలు <span class="live-count">6 LIVE</span></h2>
 
   <a href="https://rayalsabha.com/pittakathalu/pk01-telivaina-nakka.html" class="story-card live">
     <div class="card-meta">
@@ -261,29 +264,21 @@ footer a:hover { text-decoration: underline; }
     <span class="card-arrow">→</span>
   </a>
 
+  <!-- PK06 — NEW -->
+  <a href="https://rayalsabha.com/pittakathalu/pk06-deepam.html" class="story-card live">
+    <div class="card-meta">
+      <span class="pk-num">PK06</span>
+      <span class="emoji">🪔</span>
+      <span class="live-badge">▶ LIVE ✓</span>
+    </div>
+    <h3>దీపం</h3>
+    <p class="card-sub">The Lamp</p>
+    <p class="card-desc">తనను తాను కాల్చుకుంటూ వెలుగు పంచిన ఆ దీపం... ఒక రోజు దేవుడినే ప్రశ్నించింది!</p>
+    <p class="card-moral"><strong>నీతి:</strong> గుర్తింపు రాకపోయినా... నీ త్యాగం విలువ తగ్గదు!</p>
+    <span class="card-arrow">→</span>
+  </a>
+
   <h2 class="section-label">⏳ త్వరలో వస్తున్నాయి <span class="coming-label">COMING SOON</span></h2>
-
-  <div class="coming-card">
-    <span class="pk-num">PK05</span>
-    <span class="emoji">🐦‍⬛</span>
-    <div>
-      <p class="coming-title">కాకి మరియు నక్క</p>
-      <p class="coming-sub">The Crow and the Fox</p>
-      <p class="coming-desc">పొగడ్తలకు మోసపోయిన కాకి — జున్ను ముక్క పోగొట్టుకుంది!</p>
-    </div>
-    <span class="coming-tag">⏳ Coming Soon</span>
-  </div>
-
-  <div class="coming-card">
-    <span class="pk-num">PK06</span>
-    <span class="emoji">🦁</span>
-    <div>
-      <p class="coming-title">సింహం మరియు ఎలుక</p>
-      <p class="coming-sub">The Lion and the Mouse</p>
-      <p class="coming-desc">చిన్న ఎలుక — విన్నపం విన్న సింహం. ఎప్పుడు, ఎవరి సహాయం అవసరమవుతుందో తెలియదు!</p>
-    </div>
-    <span class="coming-tag">⏳ Coming Soon</span>
-  </div>
 
   <div class="coming-card">
     <span class="pk-num">PK07</span>
