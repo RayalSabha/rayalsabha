@@ -3,53 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>పిట్ట కథలు — Telugu Moral Stories | RayalSabha</title>
-  <meta name="description" content="చిన్న కథ — పెద్ద నీతి. Telugu moral stories as Instagram Reels and YouTube Shorts. పంచతంత్రం, ఈసాప్ కథలు తెలుగులో." />
+  <title>పిట్ట కథలు | Telugu Moral Stories | RayalSabha</title>
+  <meta name="description" content="పిట్ట కథలు — చిన్న కథ, పెద్ద నీతి. పంచతంత్రం, హితోపదేశం, ఈసాప్ కథలు తెలుగులో. Telugu moral stories as Instagram Reels." />
+  <meta name="keywords" content="పిట్ట కథలు, Telugu moral stories, నీతి కథలు, Panchatantra Telugu, Aesop Telugu, RayalSabha, pittakathalu" />
+  <meta property="og:title" content="పిట్ట కథలు | Telugu Moral Stories | RayalSabha" />
+  <meta property="og:description" content="చిన్న కథ — పెద్ద నీతి · Small Story • Big Lesson" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rayalsabha.com/pittakathalu/" />
+  <link rel="canonical" href="https://rayalsabha.com/pittakathalu/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #e8c96a;
+      --gold-dim: rgba(201,168,76,0.3);
+      --bg: #0d0805;
+      --text: #f5ecd7;
+      --text-dim: #b8956f;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Tiro Telugu', serif;
-      background: #0d0805;
-      color: #f5ecd7;
+      font-family: 'Tiro Telugu', 'Cormorant Garamond', serif;
+      background: linear-gradient(135deg, #0d0805 0%, #1a1410 50%, #080604 100%);
+      color: var(--text);
       line-height: 1.8;
+      overflow-x: hidden;
     }
     nav {
       position: fixed; top: 0; left: 0; right: 0;
-      background: rgba(8,6,4,0.97);
-      border-bottom: 1px solid rgba(201,168,76,0.2);
-      padding: 0.9rem 2rem;
+      background: rgba(8,6,4,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--gold-dim);
+      padding: 1rem 2rem;
       display: flex; justify-content: space-between; align-items: center;
       z-index: 100;
     }
-    .nav-logo { font-size: 1.3rem; font-weight: bold; color: #C9A84C; text-decoration: none; }
-    .nav-links { display: flex; gap: 1.5rem; }
-    .nav-links a { color: #f5ecd7; text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
-    .nav-links a:hover { color: #C9A84C; }
-    .series-hero {
-      margin-top: 56px;
-      padding: 3.5rem 2rem 2.5rem;
-      text-align: center;
-      background: linear-gradient(180deg, rgba(201,168,76,0.06) 0%, transparent 100%);
-      border-bottom: 1px solid rgba(201,168,76,0.15);
+    .nav-logo { font-size: 1.4rem; font-weight: bold; color: var(--gold); text-decoration: none; letter-spacing: 2px; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: var(--text); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--gold); }
+    @media (max-width: 768px) {
+      nav { padding: 0.8rem 1rem; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: 0.8rem; }
     }
-    .series-label { font-size: 0.8rem; color: #b8956f; letter-spacing: 2px; margin-bottom: 0.5rem; }
+    .series-hero {
+      padding: 7rem 2rem 3rem;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.1) 0%, transparent 70%);
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+    .series-label { font-size: 0.85rem; color: var(--text-dim); letter-spacing: 2px; margin-bottom: 0.8rem; }
     .series-hero h1 {
       font-family: 'Cinzel', serif;
       font-size: clamp(2rem, 6vw, 3.5rem);
-      color: #C9A84C;
-      letter-spacing: 3px;
+      color: var(--gold);
       margin-bottom: 0.5rem;
+      letter-spacing: 3px;
     }
-    .series-tagline { font-size: 1.1rem; color: #e8c96a; margin-bottom: 0.3rem; }
-    .series-sub { font-size: 0.9rem; color: #b8956f; margin-bottom: 1.5rem; }
-    .series-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.85rem; color: #b8956f; }
-    .series-stats span strong { color: #C9A84C; }
+    .series-tagline { font-size: 1.2rem; color: var(--text-dim); margin-bottom: 0.3rem; }
+    .series-sub { font-size: 0.9rem; color: var(--text-dim); font-style: italic; margin-bottom: 1.5rem; }
+    .series-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.85rem; color: var(--text-dim); }
+    .series-stats span strong { color: var(--gold); }
     .content { max-width: 900px; margin: 0 auto; padding: 2rem; }
     .section-label {
-      font-size: 1rem; color: #C9A84C;
+      font-size: 1rem; color: var(--gold);
       margin: 2.5rem 0 1.5rem 0;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid rgba(201,168,76,0.2);
@@ -59,7 +79,7 @@
       font-size: 0.75rem;
       background: rgba(201,168,76,0.15);
       border: 1px solid rgba(201,168,76,0.3);
-      color: #C9A84C;
+      color: var(--gold);
       padding: 0.2rem 0.6rem;
       border-radius: 20px;
     }
@@ -76,92 +96,84 @@
       position: relative;
     }
     .story-card:hover {
-      border-color: #C9A84C;
+      border-color: var(--gold);
       box-shadow: 0 6px 20px rgba(201,168,76,0.15);
       transform: translateY(-2px);
     }
     .card-meta { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; }
-    .pk-num { font-size: 0.75rem; color: #b8956f; letter-spacing: 1px; }
+    .pk-num { font-size: 0.75rem; color: var(--text-dim); letter-spacing: 1px; }
     .emoji { font-size: 1.3rem; }
     .live-badge {
       font-size: 0.7rem;
       background: rgba(201,168,76,0.2);
-      color: #C9A84C;
+      color: var(--gold);
       padding: 0.15rem 0.6rem;
       border-radius: 20px;
       border: 1px solid rgba(201,168,76,0.4);
     }
-    .story-card h3 { font-size: 1.2rem; color: #C9A84C; margin-bottom: 0.3rem; }
-    .card-sub { font-size: 0.85rem; color: #b8956f; font-style: italic; margin-bottom: 0.8rem; }
-    .card-desc { color: #f5ecd7; font-size: 0.95rem; margin-bottom: 0.5rem; line-height: 1.6; }
-    .card-moral { font-size: 0.85rem; color: #b8956f; }
-    .card-arrow { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: #C9A84C; font-size: 1.2rem; }
+    .story-card h3 { font-size: 1.2rem; color: var(--gold); margin-bottom: 0.3rem; }
+    .card-sub { font-size: 0.85rem; color: var(--text-dim); font-style: italic; margin-bottom: 0.8rem; }
+    .card-desc { color: var(--text); font-size: 0.95rem; margin-bottom: 0.5rem; line-height: 1.6; }
+    .card-moral { font-size: 0.85rem; color: var(--text-dim); }
+    .card-arrow { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.2rem; }
     .coming-card {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+      display: flex; align-items: flex-start; gap: 1rem;
       background: rgba(201,168,76,0.03);
-      border: 1px solid rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.12);
       border-radius: 8px;
       padding: 1.2rem 1.5rem;
       margin-bottom: 0.8rem;
+      opacity: 0.7;
     }
-    .coming-card .pk-num { font-size: 0.75rem; color: #b8956f; min-width: 30px; }
-    .coming-title { font-size: 1rem; color: #f5ecd7; margin-bottom: 0.2rem; }
-    .coming-sub { font-size: 0.8rem; color: #b8956f; font-style: italic; margin-bottom: 0.3rem; }
-    .coming-desc { font-size: 0.85rem; color: #b8956f; }
-    .coming-tag {
-      margin-left: auto;
-      font-size: 0.7rem;
-      color: #b8956f;
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.15);
-      padding: 0.2rem 0.6rem;
-      border-radius: 20px;
-      white-space: nowrap;
-    }
-    .more-coming { text-align: center; color: #b8956f; font-size: 0.85rem; margin: 1.5rem 0; }
+    .coming-card .pk-num { font-size: 0.75rem; color: var(--text-dim); white-space: nowrap; margin-top: 0.2rem; }
+    .coming-card .emoji { font-size: 1.2rem; }
+    .coming-title { font-size: 1rem; color: #d4a574; margin-bottom: 0.2rem; }
+    .coming-sub { font-size: 0.8rem; color: var(--text-dim); font-style: italic; margin-bottom: 0.4rem; }
+    .coming-desc { font-size: 0.85rem; color: var(--text); opacity: 0.7; }
+    .coming-tag { margin-left: auto; font-size: 0.75rem; color: var(--text-dim); white-space: nowrap; }
+    .more-coming { text-align: center; color: var(--text-dim); font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; }
     .cta-block {
-      margin: 2.5rem 0;
-      padding: 2rem;
-      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03));
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: 12px;
       text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.05));
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 8px;
+      margin: 2.5rem 0;
     }
-    .cta-block h3 { color: #e8c96a; font-family: 'Cinzel', serif; margin-bottom: 0.5rem; }
-    .cta-block p { color: #b8956f; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .cta-block h3 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .cta-block p { color: var(--text-dim); margin-bottom: 1.5rem; font-size: 0.95rem; }
     .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
     .btn-insta {
-      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-      color: white; text-decoration: none;
-      padding: 0.6rem 1.5rem; border-radius: 20px;
-      font-size: 0.85rem; font-weight: bold;
+      background: linear-gradient(135deg, #C9A84C, #d4a574);
+      color: #080604; padding: 0.7rem 1.2rem;
+      border-radius: 4px; text-decoration: none;
+      font-weight: bold; font-size: 0.9rem; transition: all 0.3s;
     }
+    .btn-insta:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(201,168,76,0.3); }
     .btn-yt {
-      background: #ff0000; color: white; text-decoration: none;
-      padding: 0.6rem 1.5rem; border-radius: 20px;
-      font-size: 0.85rem; font-weight: bold;
+      background: rgba(201,168,76,0.15);
+      color: var(--gold); padding: 0.7rem 1.2rem;
+      border: 1px solid rgba(201,168,76,0.4);
+      border-radius: 4px; text-decoration: none;
+      font-size: 0.9rem; transition: all 0.3s;
     }
+    .btn-yt:hover { background: rgba(201,168,76,0.25); }
     footer {
       margin-top: 3rem; padding: 2rem;
       background: rgba(8,6,4,0.95);
-      border-top: 1px solid rgba(201,168,76,0.15);
-      text-align: center; color: #b8956f; font-size: 0.85rem;
+      border-top: 1px solid rgba(201,168,76,0.3);
+      text-align: center; color: var(--text-dim);
+      font-size: 0.8rem; letter-spacing: 1px;
     }
-    footer a { color: #C9A84C; text-decoration: none; }
+    footer a { color: var(--gold); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
     @media (max-width: 768px) {
-      .series-hero h1 { font-size: 2rem; }
       .content { padding: 1rem; }
       .card-arrow { display: none; }
       .coming-card { flex-wrap: wrap; }
       .coming-tag { margin-left: 0; }
-      .nav-links { gap: 1rem; }
-      .nav-links a { font-size: 0.8rem; }
     }
   </style>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -178,7 +190,6 @@
     <a href="https://rayalsabha.com/">హోమ్</a>
     <a href="https://rayalsabha.com/VU/">బేతాళ</a>
     <a href="https://rayalsabha.com/tenali/">తెనాలి</a>
-    <a href="https://rayalsabha.com/pittakathalu/">పిట్ట కథలు</a>
     <a href="https://youtube.com/@Rayalsabha" target="_blank">▶ YouTube</a>
   </div>
 </nav>
@@ -189,7 +200,7 @@
   <p class="series-tagline">చిన్న కథ — పెద్ద నీతి</p>
   <p class="series-sub">Small Story • Big Lesson · ప్రతి కథలో ఒక జీవిత సత్యం</p>
   <div class="series-stats">
-    <span><strong>6</strong> Live కథలు</span>
+    <span><strong>7</strong> Live కథలు</span>
     <span><strong>∞</strong> More Coming</span>
     <span>📱 @pittakathalu.telugu</span>
   </div>
@@ -197,9 +208,9 @@
 
 <div class="content">
 
-  <h2 class="section-label">🎬 Live కథలు <span class="live-count">6 LIVE</span></h2>
+  <h2 class="section-label">🎬 Live కథలు <span class="live-count">7 LIVE</span></h2>
 
-  <a href="https://rayalsabha.com/pittakathalu/pk01-telivaina-nakka.html" class="story-card live">
+  <a href="https://rayalsabha.com/pittakathalu/pk01-telivaina-nakka.html" class="story-card">
     <div class="card-meta">
       <span class="pk-num">PK01</span>
       <span class="emoji">🦊</span>
@@ -207,12 +218,12 @@
     </div>
     <h3>తెలివైన నక్క</h3>
     <p class="card-sub">The Clever Fox — Fox and the Well</p>
-    <p class="card-desc">బావిలో చిక్కుకున్న నక్క… అమాయక మేకను మోసం చేసి బయటపడింది! లోపలికి దూకే ముందు… బయటకు ఎలా వస్తామో ఆలోచించు!</p>
+    <p class="card-desc">బావిలో చిక్కుకున్న నక్క… అమాయక మేకను మోసం చేసి బయటపడింది!</p>
     <p class="card-moral"><strong>నీతి:</strong> ఏ పని చేసినా ముందు ఆలోచించు — తొందరపాటు ఎప్పుడూ నష్టమే తెస్తుంది!</p>
     <span class="card-arrow">→</span>
   </a>
 
-  <a href="https://rayalsabha.com/pittakathalu/pk02-raagi-binde-matti-kunda.html" class="story-card live">
+  <a href="https://rayalsabha.com/pittakathalu/pk02-raagi-binde-matti-kunda.html" class="story-card">
     <div class="card-meta">
       <span class="pk-num">PK02</span>
       <span class="emoji">🏺</span>
@@ -220,12 +231,12 @@
     </div>
     <h3>రాగి బిందె & మట్టి కుండ</h3>
     <p class="card-sub">The Copper Pot & The Clay Pot</p>
-    <p class="card-desc">గర్విష్ఠి రాగి బిందె… అమాయక మట్టి కుండను చులకన చేసింది. కానీ అసలైన విలువ ఎక్కడ ఉందో తెలిసింది!</p>
-    <p class="card-moral"><strong>నీతి:</strong> ఎవరినీ చులకన చేయకు — ప్రతి ఒక్కరికీ వారి స్థానంలో విలువ ఉంటుంది!</p>
+    <p class="card-desc">గర్విష్ఠి రాగి బిందె అమాయక మట్టి కుండను చులకన చేసింది... ఆ గర్వం దానికే శాపమైంది!</p>
+    <p class="card-moral"><strong>నీతి:</strong> గర్వం వినాశనానికి మొదటి అడుగు!</p>
     <span class="card-arrow">→</span>
   </a>
 
-  <a href="https://rayalsabha.com/pittakathalu/pk03-pencil-rubber.html" class="story-card live">
+  <a href="https://rayalsabha.com/pittakathalu/pk03-pencil-rubber.html" class="story-card">
     <div class="card-meta">
       <span class="pk-num">PK03</span>
       <span class="emoji">✏️</span>
@@ -233,12 +244,12 @@
     </div>
     <h3>పెన్సిల్ & రబ్బరు</h3>
     <p class="card-sub">The Pencil & The Eraser</p>
-    <p class="card-desc">రబ్బరును పనికిరానిదని అవమానించిన పెన్సిల్… ఒకరోజు తలదించుకుంది!</p>
-    <p class="card-moral"><strong>నీతి:</strong> తప్పులు సరిదిద్దగలవాడే నిజంగా గొప్పవాడు — ఎవరి విలువా వారిదే!</p>
+    <p class="card-desc">రబ్బరును పనికిరానిదని అవమానించిన పెన్సిల్... ఒకరోజు తలదించుకుంది!</p>
+    <p class="card-moral"><strong>నీతి:</strong> తప్పులు సరిద్దగలవాడు అంతకన్నా గొప్పవాడు!</p>
     <span class="card-arrow">→</span>
   </a>
 
-  <a href="https://rayalsabha.com/pittakathalu/pk04-gaayapadina-simham.html" class="story-card live">
+  <a href="https://rayalsabha.com/pittakathalu/pk04-gaayapadina-simham.html" class="story-card">
     <div class="card-meta">
       <span class="pk-num">PK04</span>
       <span class="emoji">🦁</span>
@@ -246,26 +257,25 @@
     </div>
     <h3>గాయపడిన సింహం</h3>
     <p class="card-sub">The Wounded Lion</p>
-    <p class="card-desc">చివరి క్షణం వరకూ తల వంచని ఒక సింహం కథ… నక్కల గుంపు దాడి చేసినా — సింహం తల వంచలేదు!</p>
-    <p class="card-moral"><strong>నీతి:</strong> గాయం శరీరానికే తగిలింది… సింహం ఆత్మను కాదు!</p>
+    <p class="card-desc">బలహీనంగా ఉన్న సింహాన్ని చూసి అన్ని జంతువులూ తన్నాయి... కానీ ఒక్కటి మాత్రం తన్నలేదు!</p>
+    <p class="card-moral"><strong>నీతి:</strong> గుర్తింపు రాకపోయినా నీ త్యాగం విలువ తగ్గదు!</p>
     <span class="card-arrow">→</span>
   </a>
 
-  <a href="https://rayalsabha.com/pittakathalu/pk05-moorkhudito-vadana.html" class="story-card live">
+  <a href="https://rayalsabha.com/pittakathalu/pk05-moorkhudito-vadana.html" class="story-card">
     <div class="card-meta">
       <span class="pk-num">PK05</span>
       <span class="emoji">🐸</span>
       <span class="live-badge">▶ LIVE ✓</span>
     </div>
     <h3>మూర్ఖుడితో వాదన</h3>
-    <p class="card-sub">Arguing with a Fool</p>
+    <p class="card-sub">Arguing With A Fool</p>
     <p class="card-desc">నిజం చెప్పిన కప్పకే శిక్ష పడింది... సింహం తీర్పు వెనుక అసలు కారణం తెలిసినప్పుడు అందరూ తలదించుకున్నారు!</p>
     <p class="card-moral"><strong>నీతి:</strong> మూర్ఖులతో వాదించడం కంటే మౌనంగా ఉండటమే గొప్ప!</p>
     <span class="card-arrow">→</span>
   </a>
 
-  <!-- PK06 — NEW -->
-  <a href="https://rayalsabha.com/pittakathalu/pk06-deepam.html" class="story-card live">
+  <a href="https://rayalsabha.com/pittakathalu/pk06-deepam.html" class="story-card">
     <div class="card-meta">
       <span class="pk-num">PK06</span>
       <span class="emoji">🪔</span>
@@ -273,31 +283,33 @@
     </div>
     <h3>దీపం</h3>
     <p class="card-sub">The Lamp</p>
-    <p class="card-desc">తనను తాను కాల్చుకుంటూ వెలుగు పంచిన ఆ దీపం... ఒక రోజు దేవుడినే ప్రశ్నించింది!</p>
-    <p class="card-moral"><strong>నీతి:</strong> గుర్తింపు రాకపోయినా... నీ త్యాగం విలువ తగ్గదు!</p>
+    <p class="card-desc">తాను కాలిపోతూ వేరొకరికి వెలుగు ఇచ్చే దీపానికి ఎప్పుడైనా కృతజ్ఞత చెప్పారా?</p>
+    <p class="card-moral"><strong>నీతి:</strong> గుర్తింపు రాకపోయినా నీ త్యాగం విలువ తగ్గదు!</p>
+    <span class="card-arrow">→</span>
+  </a>
+
+  <a href="https://rayalsabha.com/pittakathalu/pk07-gradda-mariyu-kaki.html" class="story-card">
+    <div class="card-meta">
+      <span class="pk-num">PK07</span>
+      <span class="emoji">🦅</span>
+      <span class="live-badge">▶ LIVE ✓</span>
+    </div>
+    <h3>గ్రద్ద మరియు కాకి</h3>
+    <p class="card-sub">The Eagle and The Crow</p>
+    <p class="card-desc">గ్రద్ద చేసింది చూసి కాకి అదే చేయాలని బయలుదేరింది... అసలేం జరిగిందో చూద్దాం!</p>
+    <p class="card-moral"><strong>నీతి:</strong> తన శక్తి తెలుసుకో — పెద్దవారిని అంధంగా అనుసరించడం అవమానానికి దారితీస్తుంది!</p>
     <span class="card-arrow">→</span>
   </a>
 
   <h2 class="section-label">⏳ త్వరలో వస్తున్నాయి <span class="coming-label">COMING SOON</span></h2>
 
   <div class="coming-card">
-    <span class="pk-num">PK07</span>
-    <span class="emoji">🐢</span>
-    <div>
-      <p class="coming-title">తాబేలు మరియు కుందేలు</p>
-      <p class="coming-sub">The Tortoise and the Hare</p>
-      <p class="coming-desc">పరుగు పందెంలో నెమ్మది తాబేలు గెలిచింది — అహంకారమే వేగమైన కుందేలిని ఓడించింది!</p>
-    </div>
-    <span class="coming-tag">⏳ Coming Soon</span>
-  </div>
-
-  <div class="coming-card">
     <span class="pk-num">PK08</span>
-    <span class="emoji">🦅</span>
+    <span class="emoji">🦁</span>
     <div>
-      <p class="coming-title">గ్రద్ద మరియు కాకి</p>
-      <p class="coming-sub">The Eagle and the Crow</p>
-      <p class="coming-desc">తన శక్తి మించి గ్రద్దను అనుకరించిన కాకి — మాన ప్రాణాలు పోగొట్టుకుంది!</p>
+      <p class="coming-title">సింహం మరియు ఎలుక</p>
+      <p class="coming-sub">The Lion and The Mouse</p>
+      <p class="coming-desc">చిన్న ఎలుక పెద్ద సింహాన్ని రక్షించింది — ఏ సహాయమూ చిన్నది కాదు!</p>
     </div>
     <span class="coming-tag">⏳ Coming Soon</span>
   </div>
@@ -306,7 +318,7 @@
 
   <section class="cta-block">
     <h3>🐦 ఒక్క కథ Miss అవ్వకండి!</h3>
-    <p>ప్రతి రోజూ ఒక కొత్త నీతి కథ — Instagram Reels గా, YouTube Shorts గా. ఇప్పుడే Follow చేయండి!</p>
+    <p>ప్రతి రోజూ ఒక కొత్త నీతి కథ — Instagram Reels గా. ఇప్పుడే Follow చేయండి!</p>
     <div class="cta-buttons">
       <a href="https://instagram.com/pittakathalu.telugu" target="_blank" class="btn-insta">📱 @pittakathalu.telugu Follow</a>
       <a href="https://youtube.com/@Rayalsabha" target="_blank" class="btn-yt">▶ YouTube Subscribe</a>
@@ -317,7 +329,7 @@
 
 <footer>
   <p>&copy; 2026 RayalSabha · పిట్ట కథలు | <a href="https://rayalsabha.com/">హోమ్</a> · <a href="https://rayalsabha.com/VU/">బేతాళ</a> · <a href="https://rayalsabha.com/tenali/">తెనాలి</a> · <a href="https://rayalsabha.com/pittakathalu/">పిట్ట కథలు</a></p>
-  <p style="margin-top: 1rem; font-size: 0.8rem;">📱 <a href="https://instagram.com/pittakathalu.telugu">@pittakathalu.telugu</a> · Powered by తెలుగు సంస్కృతి 🪔</p>
+  <p style="margin-top:1rem;font-size:0.8rem;">📱 <a href="https://instagram.com/pittakathalu.telugu">@pittakathalu.telugu</a> · Powered by తెలుగు సంస్కృతి 🪔</p>
 </footer>
 
 </body>
