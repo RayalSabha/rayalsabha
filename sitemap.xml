@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://rayalsabha.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Tenali Series -->
+  <url>
+    <loc>https://rayalsabha.com/tenali/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/tenali/t01-tilakasta-mahisha-bandhanam.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/tenali/t02-pilli-guramgalu.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/tenali/t03-dongalu-baavi.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/tenali/t04-vankaya-dongatanam.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Vikram-Betaal Series -->
+  <url>
+    <loc>https://rayalsabha.com/VU/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/VU/vu01-prarabham-oppandham.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/VU/vu02-muggurilo-okaru.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/VU/vu03-gunavathi-tyagam.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/VU/vu04-lobhi-brahmanuni-kumarte.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Pitta Kathalu Series -->
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk01-telivaina-nakka.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk02-raagi-binde-matti-kunda.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk03-pencil-rubber.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk04-gaayapadina-simham.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk05-moorkhudito-vadana.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk06-deepam.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk07-gradda-mariyu-kaki.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
