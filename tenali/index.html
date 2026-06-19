@@ -3,444 +3,286 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>తెనాలి రామకృష్ణ కథలు | RayalSabha</title>
-  <meta name="description" content="తెనాలి రామకృష్ణ కధలు — చతురుడైన పండితుడు, తెలివితో దేవుళ్ళను కూడా ఠక్కున్నాడు. తెలుగు కథలు, భారతీయ సంస్కృతి | RayalSabha" />
-  <meta name="keywords" content="తెనాలి రామకృష్ణ, తెనాలి కథలు, Tenali Rama stories Telugu, భారతీయ కధలు, విజయనగర రాజ్యం, RayalSabha" />
-  <meta property="og:title" content="తెనాలి రామకృష్ణ కథలు | RayalSabha" />
-  <meta property="og:description" content="చతురుడైన తెనాలి ఎలా దేవుళ్ళను ఠక్కున్నాడు, రాజుని సంతోషపెట్టాడు — తెలుగు కథలు" />
-  <meta property="og:image" content="https://rayalsabha.com/tenali/og-image.jpg" />
-  
+
+  <!-- ✅ SEO Title -->
+  <title>తెనాలి రామకృష్ణ కథలు | Telugu Niti Kathalu | RayalSabha</title>
+
+  <!-- ✅ Meta Description -->
+  <meta name="description" content="తెనాలి రామకృష్ణ కథలు తెలుగులో చదవండి. విజయనగర సామ్రాజ్యంలో తెనాలి చేసిన హాస్య, తెలివి మరియు నీతి నిండిన కథలు — పిల్లలకు మరియు పెద్దలకు. 4 కథలు Live, మరిన్ని వస్తున్నాయి!" />
+
+  <!-- ✅ Author + date -->
+  <meta name="author" content="RayalSabha" />
+  <meta property="article:modified_time" content="2026-06-19" />
+
+  <!-- ✅ OG tags -->
+  <meta property="og:title" content="తెనాలి రామకృష్ణ కథలు | Telugu Niti Kathalu | RayalSabha" />
+  <meta property="og:description" content="తెనాలి రామకృష్ణ కథలు తెలుగులో చదవండి. విజయనగర సామ్రాజ్యంలో తెనాలి చేసిన హాస్య, తెలివి మరియు నీతి నిండిన కథలు." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rayalsabha.com/tenali/" />
+  <meta property="og:image" content="https://rayalsabha.com/images/tenali-og.png" />
+  <meta property="og:site_name" content="RayalSabha" />
+
+  <!-- ✅ Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="తెనాలి రామకృష్ణ కథలు | RayalSabha" />
+  <meta name="twitter:description" content="తెలుగు నీతి కథలు — తెనాలి రామకృష్ణ హాస్యం, తెలివి మరియు జ్ఞానంతో నిండిన 4 కథలు Live!" />
+  <meta name="twitter:image" content="https://rayalsabha.com/images/tenali-og.png" />
+
+  <link rel="canonical" href="https://rayalsabha.com/tenali/" />
+
+  <!-- ✅ JSON-LD: CollectionPage / Series Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "తెనాలి రామకృష్ణ కథలు",
+      "description": "తెనాలి రామకృష్ణ కథలు తెలుగులో చదవండి. విజయనగర సామ్రాజ్యంలో తెనాలి చేసిన హాస్య, తెలివి మరియు నీతి నిండిన కథలు.",
+      "url": "https://rayalsabha.com/tenali/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RayalSabha",
+        "url": "https://rayalsabha.com",
+        "logo": { "@type": "ImageObject", "url": "https://rayalsabha.com/logo.png" }
+      },
+      "inLanguage": ["te", "en"],
+      "hasPart": [
+        {
+          "@type": "Article",
+          "name": "తిలకాష్ట మహిష బంధనం",
+          "url": "https://rayalsabha.com/tenali/t01-tilakasta-mahisha-bandhanam.html",
+          "description": "గర్విష్టి పండితుడిని తెనాలి ఒక్క గ్రంథం పేరుతో ఓడించాడు!"
+        },
+        {
+          "@type": "Article",
+          "name": "యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి",
+          "url": "https://rayalsabha.com/tenali/t02-pilli-guramgalu.html",
+          "description": "అరేబియా వ్యాపారి మోసాన్ని తెనాలి పిల్లితో బట్టబయలు చేశాడు!"
+        },
+        {
+          "@type": "Article",
+          "name": "దొంగలు & బావి",
+          "url": "https://rayalsabha.com/tenali/t03-dongalu-baavi.html",
+          "description": "దురాశ పడిన దొంగలను తన తోటకు నీళ్ళు పోయించాడు — ఒక్క పైసా ఖర్చు లేకుండా!"
+        },
+        {
+          "@type": "Article",
+          "name": "వంకాయ దొంగతనం",
+          "url": "https://rayalsabha.com/tenali/t04-vankaya-dongatanam.html",
+          "description": "రాజు వంకాయలు దొంగిలించి నకిలీ జ్ఞాపకంతో తప్పించుకున్న తెనాలి!"
+        }
+      ]
+    }
+  </script>
+
+  <!-- ✅ JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "హోమ్", "item": "https://rayalsabha.com/" },
+        { "@type": "ListItem", "position": 2, "name": "తెనాలి రామకృష్ణ కథలు", "item": "https://rayalsabha.com/tenali/" }
+      ]
+    }
+  </script>
+
+  <!-- ✅ JSON-LD: Organization -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RayalSabha",
+      "url": "https://rayalsabha.com",
+      "logo": "https://rayalsabha.com/logo.png",
+      "email": "iloveindia1987@gmail.com",
+      "sameAs": ["https://youtube.com/@Rayalsabha", "https://instagram.com/pittakathalu.telugu"]
+    }
+  </script>
+
+  <!-- ✅ JSON-LD: WebSite -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://rayalsabha.com",
+      "name": "RayalSabha"
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root {
+      --gold: #C9A84C;
+      --gold-border: rgba(201,168,76,0.25);
+      --gold-dim: rgba(201,168,76,0.1);
+      --bg: #080604;
+      --text: #F5ECD7;
+      --text-dim: rgba(245,236,215,0.55);
+      --text-faint: rgba(245,236,215,0.3);
+      --red: #E05D44;
+      --purple: #8B5CF6;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --telugu: 'Tiro Telugu', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
     }
 
-    body {
-      font-family: 'Tiro Telugu', 'Cormorant Garamond', sans-serif;
-      background: linear-gradient(135deg, #0d0805 0%, #1a1410 50%, #080604 100%);
-      color: #f5ecd7;
-      line-height: 1.8;
-      overflow-x: hidden;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: rgba(201,168,76,0.3); color: var(--text); }
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 2px; }
+
+    @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+    .fade-up { animation: fadeUp 0.8s ease both; }
+    .d1{animation-delay:.1s} .d2{animation-delay:.25s} .d3{animation-delay:.4s} .d4{animation-delay:.55s}
+
+    /* ── NAV ── */
+    .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:16px clamp(1.5rem,5vw,4rem); display:flex; align-items:center; justify-content:space-between; background:linear-gradient(to bottom,rgba(8,6,4,0.95),transparent); backdrop-filter:blur(8px); }
+    .nav-logo { font-family:var(--serif); font-size:1.25rem; font-weight:700; color:var(--gold); display:flex; align-items:center; gap:8px; }
+    .nav-links { display:flex; align-items:center; gap:24px; font-family:var(--sans); font-size:0.78rem; letter-spacing:0.06em; }
+    .nav-links a { color:var(--text-dim); transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--gold); }
+    .nav-cta { background:var(--gold); color:var(--bg)!important; font-weight:700; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; padding:8px 18px; border-radius:4px; transition:opacity 0.2s!important; }
+    .nav-cta:hover { opacity:0.85; }
+    .nav-contact { color:var(--text-faint)!important; border:1px solid var(--gold-border); padding:6px 14px; border-radius:4px; font-size:0.72rem; transition:border-color 0.2s,color 0.2s!important; }
+    .nav-contact:hover { border-color:var(--gold); color:var(--gold)!important; }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb { padding:84px clamp(1.5rem,5vw,4rem) 0; max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:8px; font-family:var(--sans); font-size:0.72rem; color:var(--text-faint); letter-spacing:0.06em; }
+    .breadcrumb a { color:var(--text-faint); transition:color 0.2s; }
+    .breadcrumb a:hover { color:var(--gold); }
+    .breadcrumb-sep { color:rgba(245,236,215,0.2); }
+
+    /* ── HERO ── */
+    .series-hero { min-height:52vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:80px clamp(1.5rem,5vw,4rem) 60px; position:relative; overflow:hidden; }
+    .hero-glow { position:absolute; top:0; left:50%; transform:translateX(-50%); width:600px; height:400px; border-radius:50%; background:radial-gradient(ellipse, rgba(201,168,76,0.08) 0%, transparent 70%); pointer-events:none; }
+    .hero-grain { position:absolute; inset:0; z-index:0; opacity:0.03; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); }
+    .hero-badge { position:relative; z-index:1; display:inline-flex; align-items:center; gap:8px; background:var(--gold-dim); border:1px solid var(--gold-border); border-radius:100px; padding:6px 18px; margin-bottom:24px; font-family:var(--sans); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); }
+    .hero-title-te { position:relative; z-index:1; font-family:var(--telugu); font-size:clamp(2.2rem,7vw,5rem); color:var(--gold); line-height:1.1; margin-bottom:10px; }
+    .hero-title-en { position:relative; z-index:1; font-family:var(--serif); font-style:italic; font-size:clamp(1rem,3vw,1.5rem); color:var(--text-dim); margin-bottom:28px; }
+    .hero-desc { position:relative; z-index:1; font-family:var(--telugu); font-size:clamp(0.95rem,2vw,1.1rem); color:var(--text-faint); max-width:560px; line-height:1.7; margin-bottom:36px; }
+    .hero-divider { position:relative; z-index:1; display:flex; align-items:center; gap:16px; margin-bottom:32px; }
+    .hero-divider-line { width:60px; height:1px; background:linear-gradient(to right,transparent,var(--gold-border)); }
+    .hero-divider-line.r { background:linear-gradient(to left,transparent,var(--gold-border)); }
+    .hero-stats { position:relative; z-index:1; display:flex; align-items:center; gap:32px; flex-wrap:wrap; justify-content:center; }
+    .hero-stat { text-align:center; }
+    .hero-stat-val { display:block; font-family:var(--serif); font-size:2rem; font-weight:700; color:var(--gold); line-height:1; margin-bottom:4px; }
+    .hero-stat-label { display:block; font-family:var(--sans); font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-faint); }
+    .hero-stat-div { width:1px; height:40px; background:var(--gold-border); }
+
+    /* ── WRAPPER ── */
+    .page-content { max-width:1100px; margin:0 auto; padding:0 clamp(1.5rem,5vw,3rem); }
+
+    /* ── SECTION HEADER ── */
+    .section-header { margin:clamp(3rem,6vw,5rem) 0 2rem; }
+    .section-label { font-family:var(--sans); font-size:0.65rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; display:block; }
+    .section-title { font-family:var(--telugu); font-size:clamp(1.4rem,4vw,2rem); color:var(--text); margin-bottom:8px; }
+    .section-desc-te { font-family:var(--telugu); font-size:0.95rem; color:var(--text-faint); line-height:1.7; }
+
+    /* ── SERIES INTRO ── */
+    .series-intro { margin:clamp(2rem,5vw,4rem) 0; padding:clamp(1.5rem,4vw,2.5rem) clamp(1.5rem,4vw,2.5rem); border:1px solid var(--gold-border); border-radius:16px; background:radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.05) 0%, transparent 60%); }
+    .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+    .intro-col-label { font-family:var(--sans); font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; display:block; border-bottom:1px solid var(--gold-border); padding-bottom:8px; }
+    .intro-te { font-family:var(--telugu); font-size:1rem; color:var(--text-dim); line-height:1.9; }
+    .intro-en { font-family:var(--serif); font-style:italic; font-size:0.92rem; color:rgba(245,236,215,0.4); line-height:1.75; }
+
+    /* ── WHO IS TENALI ── */
+    .tenali-profile { margin:2.5rem 0; display:grid; grid-template-columns:1fr 1fr; gap:clamp(1rem,3vw,2rem); }
+    .tenali-fact { padding:20px; border:1px solid var(--gold-border); border-radius:10px; background:rgba(201,168,76,0.03); }
+    .tenali-fact-icon { font-size:1.5rem; margin-bottom:10px; display:block; }
+    .tenali-fact-label { font-family:var(--sans); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; display:block; }
+    .tenali-fact-text { font-family:var(--telugu); font-size:0.9rem; color:var(--text-dim); line-height:1.6; }
+    .tenali-fact-en { font-family:var(--serif); font-style:italic; font-size:0.78rem; color:var(--text-faint); margin-top:4px; }
+
+    /* ── EPISODE GRID ── */
+    .episodes-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:clamp(1rem,2.5vw,1.5rem); margin:1.5rem 0; }
+
+    /* ── EPISODE CARD ── */
+    .ep-card { display:flex; flex-direction:column; border:1px solid var(--gold-border); border-radius:12px; overflow:hidden; background:rgba(201,168,76,0.03); transition:border-color 0.25s,transform 0.25s,box-shadow 0.25s; text-decoration:none; color:inherit; }
+    .ep-card:hover { border-color:rgba(201,168,76,0.6); transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,0.4); }
+    .ep-card.coming-soon-card { opacity:0.45; pointer-events:none; }
+
+    /* Thumbnail */
+    .ep-thumb { position:relative; aspect-ratio:16/9; background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(139,92,246,0.15)); display:flex; align-items:center; justify-content:center; overflow:hidden; border-bottom:1px solid var(--gold-border); }
+    .ep-thumb-emoji { font-size:2.8rem; z-index:1; }
+    .ep-thumb-series { position:absolute; bottom:10px; left:12px; font-family:var(--sans); font-size:0.6rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(201,168,76,0.7); z-index:1; }
+    .ep-play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:44px; height:44px; border-radius:50%; background:rgba(201,168,76,0.15); border:1px solid var(--gold-border); display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:1rem; opacity:0; transition:opacity 0.2s; z-index:2; }
+    .ep-card:hover .ep-play { opacity:1; }
+    .ep-live-badge { position:absolute; top:10px; right:10px; font-family:var(--sans); font-size:0.58rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; background:rgba(76,175,125,0.2); color:#4CAF7D; border:1px solid rgba(76,175,125,0.35); border-radius:4px; padding:3px 8px; z-index:2; }
+    .ep-coming-badge { position:absolute; top:10px; right:10px; font-family:var(--sans); font-size:0.58rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; background:rgba(139,92,246,0.15); color:rgba(139,92,246,0.8); border:1px solid rgba(139,92,246,0.3); border-radius:4px; padding:3px 8px; z-index:2; }
+
+    /* Card body */
+    .ep-body { padding:clamp(1rem,2.5vw,1.25rem); flex:1; display:flex; flex-direction:column; }
+    .ep-num { font-family:var(--sans); font-size:0.62rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-faint); margin-bottom:6px; }
+    .ep-title-te { font-family:var(--telugu); font-size:1.05rem; color:var(--text); line-height:1.35; margin-bottom:4px; }
+    .ep-title-en { font-family:var(--serif); font-style:italic; font-size:0.8rem; color:var(--text-faint); margin-bottom:10px; }
+    .ep-moral { font-family:var(--telugu); font-size:0.85rem; color:var(--text-faint); line-height:1.6; flex:1; margin-bottom:14px; }
+    .ep-footer { display:flex; align-items:center; justify-content:space-between; padding-top:12px; border-top:1px solid var(--gold-border); }
+    .ep-read { font-family:var(--sans); font-size:0.72rem; color:var(--gold); letter-spacing:0.06em; }
+    .ep-yt { font-family:var(--sans); font-size:0.68rem; background:var(--gold-dim); color:var(--gold); padding:4px 10px; border-radius:4px; border:1px solid var(--gold-border); }
+
+    /* ── COMING SOON STRIP ── */
+    .coming-strip { margin:2rem 0; padding:20px 24px; border:1px dashed rgba(139,92,246,0.3); border-radius:10px; background:rgba(139,92,246,0.04); display:flex; align-items:center; gap:16px; }
+    .coming-strip-icon { font-size:1.5rem; flex-shrink:0; }
+    .coming-strip-text { font-family:var(--telugu); font-size:0.95rem; color:rgba(139,92,246,0.7); line-height:1.6; }
+    .coming-strip-en { font-family:var(--serif); font-style:italic; font-size:0.82rem; color:rgba(139,92,246,0.4); margin-top:3px; }
+
+    /* ── WHY READ ── */
+    .why-read { margin:clamp(3rem,5vw,4rem) 0; }
+    .why-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; margin-top:1.5rem; }
+    .why-card { padding:20px; border:1px solid var(--gold-border); border-radius:10px; background:rgba(201,168,76,0.03); }
+    .why-icon { font-size:1.6rem; margin-bottom:10px; display:block; }
+    .why-title { font-family:var(--telugu); font-size:0.95rem; color:var(--gold); margin-bottom:6px; }
+    .why-desc { font-family:var(--telugu); font-size:0.82rem; color:var(--text-faint); line-height:1.6; }
+
+    /* ── SUBSCRIBE ── */
+    .subscribe-section { margin:clamp(3rem,6vw,5rem) 0; padding:clamp(2rem,5vw,3.5rem); border:1px solid var(--gold-border); border-radius:16px; text-align:center; background:linear-gradient(135deg,rgba(201,168,76,0.05) 0%,rgba(8,6,4,0) 100%); position:relative; overflow:hidden; }
+    .subscribe-section::before { content:''; position:absolute; top:-60px; left:50%; transform:translateX(-50%); width:300px; height:300px; border-radius:50%; background:radial-gradient(circle,rgba(201,168,76,0.07) 0%,transparent 70%); }
+    .sub-badge { display:inline-flex; align-items:center; gap:8px; background:var(--gold-dim); border:1px solid var(--gold-border); border-radius:100px; padding:5px 16px; margin-bottom:20px; font-family:var(--sans); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); }
+    .sub-title { font-family:var(--telugu); font-size:clamp(1.2rem,3.5vw,1.8rem); color:var(--text); margin-bottom:10px; position:relative; z-index:1; }
+    .sub-desc { font-family:var(--sans); font-size:0.85rem; color:var(--text-faint); margin-bottom:28px; position:relative; z-index:1; }
+    .sub-buttons { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; position:relative; z-index:1; }
+    .btn-primary { background:var(--gold); color:var(--bg); font-family:var(--sans); font-weight:700; font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; padding:13px 28px; border-radius:5px; border:none; cursor:pointer; text-decoration:none; transition:transform 0.2s,box-shadow 0.2s; display:inline-block; }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(201,168,76,0.35); }
+    .btn-secondary { background:transparent; color:var(--text); font-family:var(--sans); font-weight:600; font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; padding:13px 28px; border-radius:5px; border:1px solid rgba(245,236,215,0.2); cursor:pointer; text-decoration:none; transition:border-color 0.2s,color 0.2s; display:inline-block; }
+    .btn-secondary:hover { border-color:var(--gold-border); color:var(--gold); }
+
+    /* ── OTHER SERIES ── */
+    .other-series { margin:3rem 0; }
+    .other-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1rem; margin-top:1.5rem; }
+    .series-link { padding:18px 20px; border:1px solid var(--gold-border); border-radius:10px; background:rgba(201,168,76,0.03); transition:border-color 0.2s,background 0.2s; display:block; }
+    .series-link:hover { border-color:rgba(201,168,76,0.5); background:rgba(201,168,76,0.07); }
+    .series-link-icon { font-size:1.4rem; margin-bottom:8px; display:block; }
+    .series-link-title { font-family:var(--telugu); font-size:1rem; color:var(--text); margin-bottom:4px; }
+    .series-link-desc { font-family:var(--sans); font-size:0.75rem; color:var(--text-faint); }
+
+    /* ── FOOTER ── */
+    .footer { border-top:1px solid var(--gold-border); padding:clamp(2rem,5vw,4rem) clamp(1.5rem,5vw,3rem); text-align:center; margin-top:clamp(3rem,6vw,5rem); }
+    .footer-logo { font-family:var(--serif); font-size:1.3rem; font-weight:700; color:var(--text); margin-bottom:8px; }
+    .footer-tagline { font-family:var(--sans); font-size:0.75rem; color:var(--text-faint); margin-bottom:8px; }
+    .footer-contact { font-family:var(--sans); font-size:0.72rem; color:var(--text-faint); margin-bottom:16px; }
+    .footer-contact a { color:var(--gold); }
+    .footer-copy { font-family:var(--sans); font-size:0.68rem; color:rgba(245,236,215,0.2); letter-spacing:0.06em; }
+
+    /* ── MOBILE ── */
+    @media (max-width:640px) {
+      .nav-links { display:none; }
+      .nav-cta-mobile { background:var(--gold); color:var(--bg); font-family:var(--sans); font-weight:700; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; padding:7px 14px; border-radius:4px; }
+      .intro-grid { grid-template-columns:1fr; }
+      .tenali-profile { grid-template-columns:1fr; }
+      .episodes-grid { grid-template-columns:1fr; }
     }
-
-    /* ============ NAVIGATION ============ */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: rgba(8, 6, 4, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(201, 168, 76, 0.3);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .nav-logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #C9A84C;
-      text-decoration: none;
-      letter-spacing: 2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .nav-link {
-      color: #f5ecd7;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.3s;
-    }
-
-    .nav-link.active {
-      color: #C9A84C;
-      border-bottom: 2px solid #C9A84C;
-      padding-bottom: 0.2rem;
-    }
-
-    .nav-link:hover {
-      color: #C9A84C;
-    }
-
-    .nav-yt {
-      color: #f5ecd7;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .nav-yt:hover {
-      color: #C9A84C;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        padding: 0.8rem 1rem;
-      }
-
-      .nav-links {
-        gap: 1rem;
-        font-size: 0.8rem;
-      }
-
-      .nav-logo {
-        font-size: 1.2rem;
-      }
-    }
-
-    /* ============ HERO ============ */
-    .hero {
-      margin-top: 60px;
-      padding: 4rem 2rem;
-      text-align: center;
-      background: linear-gradient(180deg, rgba(201, 168, 76, 0.1) 0%, transparent 100%);
-      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-    }
-
-    .hero-emoji {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #C9A84C;
-      margin-bottom: 0.5rem;
-      text-shadow: 0 2px 10px rgba(201, 168, 76, 0.3);
-    }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-      color: #d4a574;
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
-
-    .hero-meta {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      font-size: 0.9rem;
-      color: #b8956f;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-
-      .hero-emoji {
-        font-size: 2.5rem;
-      }
-
-      .hero-meta {
-        gap: 1rem;
-        font-size: 0.8rem;
-      }
-    }
-
-    /* ============ CONTENT ============ */
-    .content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    /* ============ SERIES STATS ============ */
-    .series-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin: 3rem 0;
-      padding: 2rem;
-      background: rgba(201, 168, 76, 0.05);
-      border: 1px solid rgba(201, 168, 76, 0.2);
-      border-radius: 8px;
-    }
-
-    .series-stat {
-      text-align: center;
-    }
-
-    .series-stat-value {
-      display: block;
-      font-size: 2.5rem;
-      color: #C9A84C;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .series-stat-label {
-      display: block;
-      font-size: 0.9rem;
-      color: #b8956f;
-    }
-
-    /* ============ SECTION TITLE ============ */
-    .section-title {
-      font-size: 1.5rem;
-      color: #C9A84C;
-      margin: 2rem 0 1rem 0;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .section-title::before {
-      content: '';
-      display: inline-block;
-      width: 40px;
-      height: 2px;
-      background: linear-gradient(90deg, #C9A84C, transparent);
-    }
-
-    /* ============ EPISODES GRID ============ */
-    .episodes {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-
-    .ep-card {
-      background: linear-gradient(135deg, rgba(201, 168, 76, 0.08), rgba(139, 92, 246, 0.08));
-      border: 1px solid rgba(201, 168, 76, 0.3);
-      border-radius: 8px;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.3s;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .ep-card:hover {
-      border-color: #C9A84C;
-      box-shadow: 0 8px 24px rgba(201, 168, 76, 0.2);
-      transform: translateY(-4px);
-    }
-
-    .ep-card-thumb {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: linear-gradient(135deg, rgba(201, 168, 76, 0.2), rgba(139, 92, 246, 0.2));
-      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .ep-card-thumb-placeholder {
-      text-align: center;
-      z-index: 2;
-      position: relative;
-    }
-
-    .ep-thumb-emoji {
-      display: block;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .ep-thumb-label {
-      display: block;
-      font-size: 0.75rem;
-      color: #b8956f;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .ep-play-btn {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 50px;
-      height: 50px;
-      background: rgba(201, 168, 76, 0.2);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      color: #C9A84C;
-      opacity: 0;
-      transition: all 0.3s;
-    }
-
-    .ep-card:hover .ep-play-btn {
-      opacity: 1;
-    }
-
-    .ep-card-body {
-      padding: 1.5rem;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .ep-number {
-      font-size: 0.75rem;
-      color: #b8956f;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.5rem;
-    }
-
-    .ep-title {
-      font-size: 1.3rem;
-      color: #C9A84C;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-
-    .ep-hook {
-      font-size: 0.95rem;
-      color: #f5ecd7;
-      font-style: italic;
-      margin-bottom: 0.8rem;
-      flex-grow: 1;
-    }
-
-    .ep-desc {
-      font-size: 0.85rem;
-      color: #b8956f;
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-
-    .ep-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 1rem;
-      border-top: 1px solid rgba(201, 168, 76, 0.2);
-    }
-
-    .ep-read-btn {
-      font-size: 0.85rem;
-      color: #C9A84C;
-      cursor: pointer;
-      transition: color 0.3s;
-    }
-
-    .ep-card:hover .ep-read-btn {
-      color: #d4a574;
-    }
-
-    .ep-yt-btn {
-      font-size: 0.8rem;
-      background: rgba(201, 168, 76, 0.15);
-      color: #C9A84C;
-      padding: 0.3rem 0.8rem;
-      border-radius: 12px;
-      transition: all 0.3s;
-    }
-
-    .ep-card:hover .ep-yt-btn {
-      background: rgba(201, 168, 76, 0.3);
-    }
-
-    .episodes-count {
-      font-size: 0.9rem;
-      color: #b8956f;
-    }
-
-    /* ============ COMING SOON ============ */
-    .coming-soon {
-      padding: 2rem;
-      background: rgba(139, 92, 246, 0.05);
-      border: 1px dashed rgba(139, 92, 246, 0.3);
-      border-radius: 8px;
-      text-align: center;
-      color: #b8956f;
-      margin-top: 1rem;
-    }
-
-    /* ============ SUBSCRIBE CTA ============ */
-    .subscribe-cta {
-      margin: 4rem 0 2rem 0;
-      padding: 2rem;
-      background: linear-gradient(135deg, #C9A84C 0%, #d4a574 100%);
-      border-radius: 8px;
-      text-align: center;
-      color: #080604;
-    }
-
-    .subscribe-title {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .subscribe-text {
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-
-    .subscribe-btn {
-      display: inline-block;
-      background: #080604;
-      color: #C9A84C;
-      padding: 0.8rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s;
-      border: 1px solid #C9A84C;
-    }
-
-    .subscribe-btn:hover {
-      background: #1a1410;
-    }
-
-    /* ============ FOOTER ============ */
-    footer {
-      margin-top: 3rem;
-      padding: 2rem;
-      background: rgba(8, 6, 4, 0.95);
-      border-top: 1px solid rgba(201, 168, 76, 0.3);
-      text-align: center;
-      color: #b8956f;
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: #C9A84C;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 768px) {
-      .content {
-        padding: 1rem;
-      }
-
-      .episodes {
-        grid-template-columns: 1fr;
-      }
-
-      .series-stats {
-        gap: 1rem;
-      }
-    }
+    @media (min-width:641px) { .nav-cta-mobile { display:none; } }
   </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
   <script>
@@ -450,160 +292,316 @@
     gtag("config", "G-JXQP6MB62C");
   </script>
 </head>
+
 <body>
-  <!-- ============ NAVIGATION ============ -->
-  <nav>
-    <a href="/" class="nav-logo">🪔 RayalSabha</a>
-    <div class="nav-links">
-      <a href="/" class="nav-link">హోమ్</a>
-      <a href="/tenali/" class="nav-link active">తెనాలి</a>
-      <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-yt">▶ YouTube</a>
-    </div>
-  </nav>
 
-  <!-- ============ HERO ============ -->
-  <div class="hero">
-    <span class="hero-emoji">📖</span>
-    <h1>తెనాలి రామకృష్ణ కథలు</h1>
-    <p class="hero-subtitle">చతురుడైన పండితుడు, ఆరు తెలివితో రాజుని, దేవుళ్ళను ఠక్కున్నాడు</p>
-    <div class="hero-meta">
-      <span>తెలుగు కథలు</span>
-      <span>విజయనగర రాజ్యం</span>
-      <span>భారతీయ సంస్కృతి</span>
-    </div>
+<!-- NAV -->
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">🪔 RayalSabha</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="./index.html" class="active">తెనాలి కథలు</a>
+    <a href="../pittakathalu/index.html">పిట్ట కథలు</a>
+    <a href="../VU/index.html">బేతాళ</a>
+    <a href="../contact.html" class="nav-contact">✉ Contact / Sponsor</a>
+    <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-cta">▶ Subscribe</a>
+  </div>
+  <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-cta-mobile">▶ Subscribe</a>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="../index.html">RayalSabha</a>
+  <span class="breadcrumb-sep">›</span>
+  <span style="color:var(--gold);">తెనాలి రామకృష్ణ కథలు</span>
+</nav>
+
+<!-- HERO -->
+<header class="series-hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grain"></div>
+
+  <div class="hero-badge fade-up"><span>🪔</span><span>తెనాలి కథలు · Tenali Tales</span></div>
+  <h1 class="hero-title-te fade-up d1">తెనాలి రామకృష్ణ కథలు</h1>
+  <p class="hero-title-en fade-up d2">Tenali Ramakrishna Stories — Wit, Wisdom & Wonder</p>
+  <p class="hero-desc fade-up d2">విజయనగర రాజ్యంలో అష్టదిగ్గజుడైన తెనాలి రామకృష్ణ హాస్యం, తెలివి మరియు నీతి నిండిన కథలు — పిల్లలకు మరియు పెద్దలకు!</p>
+
+  <div class="hero-divider fade-up d3">
+    <div class="hero-divider-line"></div>
+    <span style="font-size:22px;">🪔</span>
+    <div class="hero-divider-line r"></div>
   </div>
 
-  <!-- ============ CONTENT ============ -->
-  <div class="content">
-
-    <!-- ============ SERIES STATS ============ -->
-    <div class="series-stats">
-      <div class="series-stat">
-        <span class="series-stat-value">4</span>
-        <span class="series-stat-label">Live ఉన్న కథలు</span>
-      </div>
-      <div class="series-stat">
-        <span class="series-stat-value">33</span>
-        <span class="series-stat-label">Coming Soon</span>
-      </div>
-      <div class="series-stat">
-        <span class="series-stat-value">∞</span>
-        <span class="series-stat-label">తెలివి & హాస్యం</span>
-      </div>
+  <div class="hero-stats fade-up d4">
+    <div class="hero-stat">
+      <span class="hero-stat-val">4</span>
+      <span class="hero-stat-label">Live కథలు</span>
     </div>
-
-    <!-- ============ LIVE EPISODES ============ -->
-    <div>
-      <h2 class="section-title">🎬 Live కథలు <span class="episodes-count">4 Live · 32 Coming Soon</span></h2>
-      
-      <div class="episodes">
-
-        <!-- T01 — LIVE -->
-        <a href="/tenali/t01-tilakasta-mahisha-bandhanam.html" class="ep-card">
-          <div class="ep-card-thumb">
-            <div class="ep-card-thumb-placeholder">
-              <span class="ep-thumb-emoji">🐂</span>
-              <span class="ep-thumb-label">T01 · తెనాలి కథలు</span>
-            </div>
-            <div class="ep-play-btn">▶</div>
-          </div>
-          <div class="ep-card-body">
-            <div class="ep-number">Episode T01 · Live ✓</div>
-            <h3 class="ep-title">తిలకాస్త మహిష బందనం</h3>
-            <p class="ep-hook">"బజారులో దొంగ అవ్వకుండా తెనాలి ఏ తిలకం పెట్టాడు?"</p>
-            <p class="ep-desc">చెత్త రాళ్ళను బంగారం చేసిన తెనాలి — ఒక్క తిలకం పెట్టకుండానే!</p>
-            <div class="ep-footer">
-              <span class="ep-read-btn">పూర్తి కథ చదవండి →</span>
-              <span class="ep-yt-btn">▶ Video</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- T02 — LIVE -->
-        <a href="/tenali/t02-pilli-guramgalu.html" class="ep-card">
-          <div class="ep-card-thumb">
-            <div class="ep-card-thumb-placeholder">
-              <span class="ep-thumb-emoji">🐱🐎</span>
-              <span class="ep-thumb-label">T02 · తెనాలి కథలు</span>
-            </div>
-            <div class="ep-play-btn">▶</div>
-          </div>
-          <div class="ep-card-body">
-            <div class="ep-number">Episode T02 · Live ✓</div>
-            <h3 class="ep-title">యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి</h3>
-            <p class="ep-hook">"మాటలతో మోసం చేసేవారిని తెలివితోనే ఓడించాలి"</p>
-            <p class="ep-desc">అరేబియా గుర్రాల ధరని నిర్లక్ష్యం చేసిన తెనాలి ఒక నిరపేక్ష పిల్లితో!</p>
-            <div class="ep-footer">
-              <span class="ep-read-btn">పూర్తి కథ చదవండి →</span>
-              <span class="ep-yt-btn">▶ Video</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- T03 — LIVE -->
-        <a href="/tenali/t03-dongalu-baavi.html" class="ep-card">
-          <div class="ep-card-thumb">
-            <div class="ep-card-thumb-placeholder">
-              <span class="ep-thumb-emoji">🪣</span>
-              <span class="ep-thumb-label">T03 · తెనాలి కధలు</span>
-            </div>
-            <div class="ep-play-btn">▶</div>
-          </div>
-          <div class="ep-card-body">
-            <div class="ep-number">Episode T03 · Live ✓</div>
-            <h3 class="ep-title">దొంగలు & బావి</h3>
-            <p class="ep-hook">"దురాశ పడిన దొంగలను తన తోటకు నీళ్ళు పోయించిన తెనాలి!"</p>
-            <p class="ep-desc">ముగ్గురు దొంగలు బంగారం కోసం వచ్చారు — చివరికి కూలీలుగా పని చేసి వెళ్లారు!</p>
-            <div class="ep-footer">
-              <span class="ep-read-btn">పూర్తి కథ చదవండి →</span>
-              <span class="ep-yt-btn">▶ Video</span>
-            </div>
-          </div>
-        </a>
-
-
-        <!-- T04 — LIVE -->
-        <a href="/tenali/t04-vankaya-dongatanam.html" class="ep-card">
-          <div class="ep-card-thumb">
-            <div class="ep-card-thumb-placeholder">
-              <span class="ep-thumb-emoji">🍆</span>
-              <span class="ep-thumb-label">T04 · తెనాలి కథలు</span>
-            </div>
-            <div class="ep-play-btn">▶</div>
-          </div>
-          <div class="ep-card-body">
-            <div class="ep-number">Episode T04 · Live ✓</div>
-            <h3 class="ep-title">రాజభవనంలో వంకాయ దొంగతనం చేసిన తెనాలి!</h3>
-            <p class="ep-hook">&quot;రాజ వంకాయలు దొంగిలించి, కొడుకు మదిలో తప్పుడు జ్ఞాపకం నాటిన తెనాలి!&quot;</p>
-            <p class="ep-desc">రాజు తోటలో పండిన అరుదైన వంకాయలు, భటుల విచారణ, అమాయక కొడుకు — తెనాలి జీనియస్ మాస్టర్‌ప్లాన్!</p>
-            <div class="ep-footer">
-              <span class="ep-read-btn">పూర్తి కథ చదవండి →</span>
-              <span class="ep-yt-btn">▶ Video</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <div class="coming-soon">
-        <p>🕐 T05 నుండి T35 వరకు — ఇప్పుడు తీసుకొస్తున్నాము</p>
-      </div>
+    <div class="hero-stat-div"></div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">36</span>
+      <span class="hero-stat-label">Coming Soon</span>
     </div>
-
-    <!-- ============ SUBSCRIBE CTA ============ -->
-    <div class="subscribe-cta">
-      <div class="subscribe-title">🎬 మరిన్ని కథలు చూడండి</div>
-      <p class="subscribe-text">YouTube వద్ద @Rayalsabha Subscribe చేయండి — తెనాలి కధలు, విక్రమార్క వల్లభ, మరిన్ని!</p>
-      <a href="https://youtube.com/@Rayalsabha" target="_blank" class="subscribe-btn">▶ Subscribe చేయండి</a>
+    <div class="hero-stat-div"></div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">16వ శతాబ్దం</span>
+      <span class="hero-stat-label">విజయనగర రాజ్యం</span>
     </div>
-
   </div>
+</header>
 
-  <!-- ============ FOOTER ============ -->
-  <footer>
-    <p>&copy; 2026 RayalSabha · తెనాలి కథలు | <a href="/">హోమ్</a> · <a href="/tenali/">సిరీస్</a></p>
-    <p style="margin-top: 1rem; font-size: 0.8rem;">Powered by తెలుగు కధలు 🪔</p>
-  </footer>
+<main>
+  <div class="page-content">
+
+    <!-- ══ SERIES INTRO (600–1000w for SEO) ══ -->
+    <section class="series-intro">
+      <div class="intro-grid">
+        <div>
+          <span class="intro-col-label">🪔 తెనాలి గురించి · About Tenali</span>
+          <p class="intro-te">
+            తెనాలి రామకృష్ణ — విజయనగర సామ్రాజ్యంలో మహారాజు కృష్ణదేవరాయల ఆస్థానంలో అష్టదిగ్గజాలలో ఒకడు. 16వ శతాబ్దంలో జీవించిన తెనాలి హాస్యం, తెలివి మరియు కవిత్వానికి ప్రసిద్ధి పొందాడు. అతను "వికట కవి" గా పేరొందాడు — అంటే హాస్య రసంతో తెలివైన కవిత్వం చెప్పేవాడు అని అర్థం.
+          </p>
+          <br />
+          <p class="intro-te">
+            తెనాలి కేవలం నవ్వించేవాడు మాత్రమే కాదు — గర్విష్టి పండితులను ఓడించాడు, మోసగాళ్ళను బట్టబయలు చేశాడు, రాజు ముందే తెలివిగా మాట్లాడాడు. ప్రతి కథలో ఒక లోతైన నీతి దాగి ఉంటుంది — పిల్లలు మరియు పెద్దలు ఇద్దరికీ జీవితంలో ఉపయోగపడేది.
+          </p>
+          <br />
+          <p class="intro-te">
+            RayalSabha లో మేము తెనాలి కథలను తెలుగు మరియు ఆంగ్లం రెండు భాషల్లో అందిస్తున్నాం — యాభై కోట్ల తెలుగు ప్రజలకు మరియు ప్రపంచవ్యాప్తంగా ఉన్న తెలుగు వారసత్వాన్ని ప్రేమించే వారికి.
+          </p>
+        </div>
+        <div>
+          <span class="intro-col-label">🌿 About Tenali in English</span>
+          <p class="intro-en">
+            Tenali Ramakrishna was one of the Ashtadiggajas (Eight Poets) in the court of Emperor Krishnadevaraya of the Vijayanagara Empire in the 16th century. Known as "Vikata Kavi" (the humorous poet), he was celebrated for his extraordinary wit, clever wordplay, and deep wisdom hidden within laughter.
+          </p>
+          <br />
+          <p class="intro-en">
+            Each Tenali story carries a profound moral — defeating arrogance with wit, exposing deception with intelligence, or outmanoeuvring injustice with humour. These are not just children's tales; they are life lessons wrapped in laughter that resonate across generations.
+          </p>
+          <br />
+          <p class="intro-en">
+            At RayalSabha, we bring these timeless stories to life in both Telugu and English — for the 500 million Telugu speakers worldwide and for anyone who loves the rich heritage of Indian storytelling.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ WHO WAS TENALI (facts grid) ══ -->
+    <div class="section-header">
+      <span class="section-label">📜 చరిత్ర · History</span>
+      <h2 class="section-title">తెనాలి రామకృష్ణ ఎవరు?</h2>
+      <p class="section-desc-te">Who was Tenali Ramakrishna?</p>
+    </div>
+
+    <div class="tenali-profile">
+      <div class="tenali-fact">
+        <span class="tenali-fact-icon">🏰</span>
+        <span class="tenali-fact-label">రాజ్యం · Kingdom</span>
+        <p class="tenali-fact-text">విజయనగర సామ్రాజ్యం — మహారాజు కృష్ణదేవరాయల ఆస్థానం</p>
+        <p class="tenali-fact-en">Vijayanagara Empire — Court of Emperor Krishnadevaraya</p>
+      </div>
+      <div class="tenali-fact">
+        <span class="tenali-fact-icon">📅</span>
+        <span class="tenali-fact-label">కాలం · Period</span>
+        <p class="tenali-fact-text">16వ శతాబ్దం (1480–1528 CE)</p>
+        <p class="tenali-fact-en">16th Century (approx. 1480–1528 CE)</p>
+      </div>
+      <div class="tenali-fact">
+        <span class="tenali-fact-icon">🎭</span>
+        <span class="tenali-fact-label">పాత్ర · Role</span>
+        <p class="tenali-fact-text">అష్టదిగ్గజాలలో ఒకడు — వికట కవి, రాజ పండితుడు</p>
+        <p class="tenali-fact-en">One of the Eight Poets — Vikata Kavi (Humorous Poet), Royal Scholar</p>
+      </div>
+      <div class="tenali-fact">
+        <span class="tenali-fact-icon">✨</span>
+        <span class="tenali-fact-label">ప్రత్యేకత · Specialty</span>
+        <p class="tenali-fact-text">హాస్యం, తెలివి, గర్వాన్ని ఓడించే చమత్కారం</p>
+        <p class="tenali-fact-en">Humour, Wit, Cleverness — defeating arrogance with intelligence</p>
+      </div>
+    </div>
+
+    <!-- ══ LIVE EPISODES ══ -->
+    <div class="section-header">
+      <span class="section-label">🎬 Live కథలు · Stories</span>
+      <h2 class="section-title">ఇప్పుడు చదవండి — 4 కథలు Live!</h2>
+      <p class="section-desc-te">Read now — 4 stories live with bilingual Telugu + English content</p>
+    </div>
+
+    <div class="episodes-grid">
+
+      <!-- T01 -->
+      <a href="./t01-tilakasta-mahisha-bandhanam.html" class="ep-card">
+        <div class="ep-thumb">
+          <span class="ep-thumb-emoji">📜</span>
+          <span class="ep-thumb-series">T01 · తెనాలి కథలు</span>
+          <div class="ep-play">▶</div>
+          <span class="ep-live-badge">✓ Live</span>
+        </div>
+        <div class="ep-body">
+          <div class="ep-num">Episode T01</div>
+          <h3 class="ep-title-te">తిలకాష్ట మహిష బంధనం</h3>
+          <p class="ep-title-en">The Book That Never Existed</p>
+          <p class="ep-moral">గర్విష్టి పండితుడిని తెనాలి ఒక్క గ్రంథం పేరుతో ఓడించాడు! నీతి: గర్వం మనిషిని గుడ్డివాడిని చేస్తుంది.</p>
+          <div class="ep-footer">
+            <span class="ep-read">పూర్తి కథ చదవండి →</span>
+            <span class="ep-yt">▶ Video</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- T02 -->
+      <a href="./t02-pilli-guramgalu.html" class="ep-card">
+        <div class="ep-thumb">
+          <span class="ep-thumb-emoji">🐱🐎</span>
+          <span class="ep-thumb-series">T02 · తెనాలి కథలు</span>
+          <div class="ep-play">▶</div>
+          <span class="ep-live-badge">✓ Live</span>
+        </div>
+        <div class="ep-body">
+          <div class="ep-num">Episode T02</div>
+          <h3 class="ep-title-te">యుద్ధ గుర్రాలను గెలిచిన తెనాలి పిల్లి</h3>
+          <p class="ep-title-en">The Cat and the Horses</p>
+          <p class="ep-moral">అరేబియా వ్యాపారి మోసాన్ని తెనాలి పిల్లితో బట్టబయలు చేశాడు! నీతి: మాటలతో మోసం చేసేవారిని తెలివితోనే ఓడించాలి.</p>
+          <div class="ep-footer">
+            <span class="ep-read">పూర్తి కథ చదవండి →</span>
+            <span class="ep-yt">▶ Video</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- T03 -->
+      <a href="./t03-dongalu-baavi.html" class="ep-card">
+        <div class="ep-thumb">
+          <span class="ep-thumb-emoji">🪣</span>
+          <span class="ep-thumb-series">T03 · తెనాలి కథలు</span>
+          <div class="ep-play">▶</div>
+          <span class="ep-live-badge">✓ Live</span>
+        </div>
+        <div class="ep-body">
+          <div class="ep-num">Episode T03</div>
+          <h3 class="ep-title-te">దొంగలు & బావి</h3>
+          <p class="ep-title-en">The Thieves & The Well</p>
+          <p class="ep-moral">దురాశ పడిన దొంగలను తన తోటకు నీళ్ళు పోయించాడు — ఒక్క పైసా ఖర్చు లేకుండా! నీతి: దురాశ చాలు.</p>
+          <div class="ep-footer">
+            <span class="ep-read">పూర్తి కథ చదవండి →</span>
+            <span class="ep-yt">▶ Video</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- T04 -->
+      <a href="./t04-vankaya-dongatanam.html" class="ep-card">
+        <div class="ep-thumb">
+          <span class="ep-thumb-emoji">🍆</span>
+          <span class="ep-thumb-series">T04 · తెనాలి కథలు</span>
+          <div class="ep-play">▶</div>
+          <span class="ep-live-badge">✓ Live</span>
+        </div>
+        <div class="ep-body">
+          <div class="ep-num">Episode T04</div>
+          <h3 class="ep-title-te">వంకాయ దొంగతనం</h3>
+          <p class="ep-title-en">The Royal Brinjal Heist</p>
+          <p class="ep-moral">రాజు వంకాయలు దొంగిలించి కొడుకు మనసులో నకిలీ జ్ఞాపకం నాటాడు! నీతి: తెలివి ఉన్నవాడిని పట్టుకోవడమే కష్టం.</p>
+          <div class="ep-footer">
+            <span class="ep-read">పూర్తి కథ చదవండి →</span>
+            <span class="ep-yt">▶ Video</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Coming Soon strip -->
+    <div class="coming-strip">
+      <span class="coming-strip-icon">🕐</span>
+      <div>
+        <p class="coming-strip-text">T05 నుండి T40 వరకు — త్వరలో వస్తున్నాయి! Subscribe చేయండి, ఒక్క కథ కూడా miss అవ్వకండి.</p>
+        <p class="coming-strip-en">Episodes T05 through T40 coming soon — subscribe to never miss a story!</p>
+      </div>
+    </div>
+
+    <!-- ══ WHY READ TENALI ══ -->
+    <section class="why-read">
+      <div class="section-header" style="margin-top:0;">
+        <span class="section-label">💡 ఎందుకు చదవాలి · Why Read</span>
+        <h2 class="section-title">తెనాలి కథలు ఎందుకు ప్రత్యేకం?</h2>
+        <p class="section-desc-te">What makes Tenali stories special?</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">🧠</span>
+          <p class="why-title">తెలివి అనే ఆయుధం</p>
+          <p class="why-desc">ప్రతి కథలో తెనాలి శత్రువులను శారీరక శక్తితో కాదు — తెలివితో ఓడిస్తాడు. పిల్లలకు క్రిటికల్ థింకింగ్ నేర్పుతుంది.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">😄</span>
+          <p class="why-title">హాస్యం + నీతి</p>
+          <p class="why-desc">నవ్వుతూ నేర్చుకోవడం అత్యుత్తమం. తెనాలి కథలు నవ్విస్తూ జీవితంలో ఉపయోగపడే నీతులు చెబుతాయి.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🌏</span>
+          <p class="why-title">తెలుగు వారసత్వం</p>
+          <p class="why-desc">500 ఏళ్ళ తెలుగు సాహిత్యం, విజయనగర రాజ్యం చరిత్ర — మన పిల్లలు తెలుసుకోవాల్సిన మన స్వంత గొప్పతనం.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">📖</span>
+          <p class="why-title">ద్విభాష కంటెంట్</p>
+          <p class="why-desc">తెలుగు + ఆంగ్లం రెండు భాషల్లో — ప్రవాస తెలుగు పిల్లలు ఆంగ్లంలో కూడా చదవగలరు.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ OTHER SERIES ══ -->
+    <section class="other-series">
+      <div class="section-header" style="margin-top:0;">
+        <span class="section-label">📚 మరిన్ని Series · More Stories</span>
+        <h2 class="section-title">RayalSabha లో మరిన్ని కథలు</h2>
+      </div>
+      <div class="other-grid">
+        <a href="../pittakathalu/index.html" class="series-link">
+          <span class="series-link-icon">🐦</span>
+          <p class="series-link-title">పిట్ట కథలు</p>
+          <p class="series-link-desc">90-second short stories · 7 Live · Instagram Reels format</p>
+        </a>
+        <a href="../VU/index.html" class="series-link">
+          <span class="series-link-icon">⚔️</span>
+          <p class="series-link-title">విక్రమార్క బేతాళ కథలు</p>
+          <p class="series-link-desc">3D animation · 25-episode series · Mystery & wisdom</p>
+        </a>
+        <a href="../index.html" class="series-link">
+          <span class="series-link-icon">🪔</span>
+          <p class="series-link-title">RayalSabha Home</p>
+          <p class="series-link-desc">All series · తెలుగు కథలు hub</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══ SUBSCRIBE CTA ══ -->
+    <div class="subscribe-section">
+      <div class="sub-badge"><span>🪔</span><span>RayalSabha · తెనాలి కథలు</span></div>
+      <h3 class="sub-title">ఇంకా 36 తెనాలి కథలు వస్తున్నాయి!</h3>
+      <p class="sub-desc">Subscribe చేయండి — ఒక్క కథ కూడా miss అవ్వకండి. Every week, a new story.</p>
+      <div class="sub-buttons">
+        <a href="https://youtube.com/@Rayalsabha" target="_blank" class="btn-primary">▶ YouTube Subscribe</a>
+        <a href="../contact.html" class="btn-secondary">✉ Sponsor / Collaborate</a>
+      </div>
+    </div>
+
+  </div><!-- /page-content -->
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">🪔 RayalSabha</div>
+  <p class="footer-tagline">తెనాలి కథలు · విక్రమార్క కథలు · పిట్ట కథలు · మర్చిపోయిన రాజ్యాల కథలు</p>
+  <p class="footer-contact">
+    Sponsorships &amp; Collaborations:
+    <a href="../contact.html">contact page</a> ·
+    <a href="mailto:iloveindia1987@gmail.com">iloveindia1987@gmail.com</a>
+  </p>
+  <p class="footer-copy">© 2026 RayalSabha · rayalsabha.com</p>
+</footer>
 
 </body>
 </html>
