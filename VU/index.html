@@ -1,620 +1,968 @@
 <!DOCTYPE html>
 <html lang="te">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>విక్రమ్ – బేతాళ కథలు | విక్రమాదిత్యుని అద్భుత కథలు | RayalSabha</title>
-<meta name="description" content="విక్రమ్ – బేతాళ కథలు — 25 కథలు, 25 పరీక్షలు. విక్రమాదిత్యుడు మరియు బేతాళుడు. 3D Pixar Telugu animation series | RayalSabha">
-<meta name="keywords" content="విక్రమ్ – బేతాళ కథలు, విక్రమాదిత్యుడు, బేతాళుడు, Bethala Pachivimshati Telugu, Vikramaditya stories, RayalSabha">
-<meta property="og:title" content="విక్రమ్ – బేతాళ కథలు | RayalSabha">
-<meta property="og:description" content="25 కథలు. 25 పరీక్షలు. ఒక రాజు. ఒక ఆత్మ. ఒక అద్భుత యాత్ర.">
-<meta property="og:image" content="https://rayalsabha.com/images/VU/EP01/EP.01.png">
-<link rel="canonical" href="https://rayalsabha.com/VU/">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;600;700&family=Cinzel:wght@400;600;700&family=Noto+Sans+Telugu:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --gold: #D4A838;
-    --gold-bright: #FFD700;
-    --crimson: #8B1A1A;
-    --crimson-deep: #3D0A0A;
-    --dark: #0A0A0A;
-    --dark-mid: #111111;
-    --dark-surface: #1A1A1A;
-    --text-primary: #F0E6D3;
-    --text-muted: #8A7A6A;
-    --green-live: #22C55E;
-  }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+    <!-- ✅ SEO: Strengthened title -->
+    <title>విక్రమార్క – బేతాళ కథలు | Vikramarka Bethala Stories Telugu | RayalSabha</title>
 
-  body {
-    background: var(--dark);
-    color: var(--text-primary);
-    font-family: 'Noto Serif Telugu', serif;
-    line-height: 1.8;
-    overflow-x: hidden;
-  }
+    <!-- ✅ SEO: Meta description -->
+    <meta name="description" content="25 విక్రమార్క బేతాళ కథలు తెలుగులో చదవండి. ధర్మం, ప్రేమ, నీతి గురించి 2,500 సంవత్సరాల పాత భారతీయ జానపద కథలు. 3D Animation · RayalSabha." />
 
-  /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0;
-    z-index: 100;
-    background: rgba(10,10,10,0.95);
-    border-bottom: 1px solid rgba(212,168,56,0.2);
-    padding: 14px 24px;
-    display: flex; align-items: center; justify-content: space-between;
-    backdrop-filter: blur(10px);
-  }
-  .nav-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
-    color: var(--gold);
-    text-decoration: none;
-    letter-spacing: 0.05em;
-  }
-  .nav-links { display: flex; gap: 24px; list-style: none; }
-  .nav-links a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.85rem;
-    transition: color 0.3s;
-  }
-  .nav-links a:hover { color: var(--gold); }
+    <!-- ✅ Author + dates -->
+    <meta name="author" content="RayalSabha" />
+    <meta property="article:modified_time" content="2026-06-19" />
 
-  /* HERO */
-  .hero {
-    margin-top: 60px;
-    padding: 80px 24px 60px;
-    text-align: center;
-    background: radial-gradient(ellipse at center, var(--crimson-deep) 0%, var(--dark) 70%);
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%238B1A1A' fill-opacity='0.07'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
-  .hero-moon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 16px;
-    position: relative;
-    filter: drop-shadow(0 0 20px rgba(212,168,56,0.4));
-  }
-  .hero-series {
-    font-family: 'Cinzel', serif;
-    font-size: 0.72rem;
-    letter-spacing: 0.25em;
-    color: var(--text-muted);
-    margin-bottom: 8px;
-    position: relative;
-  }
-  .hero h1 {
-    font-family: 'Noto Serif Telugu', serif;
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 700;
-    color: var(--gold-bright);
-    text-shadow: 0 0 40px rgba(255,215,0,0.25);
-    line-height: 1.3;
-    margin-bottom: 4px;
-    position: relative;
-  }
-  .hero-english {
-    font-family: 'Cinzel', serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
-    color: var(--text-muted);
-    letter-spacing: 0.15em;
-    margin-bottom: 24px;
-    position: relative;
-  }
-  .hero-subtitle {
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.95rem;
-    color: var(--text-primary);
-    opacity: 0.75;
-    margin-bottom: 32px;
-    position: relative;
-  }
+    <!-- ✅ OG tags -->
+    <meta property="og:title" content="విక్రమార్క – బేతాళ కథలు | Vikramarka Bethala Telugu | RayalSabha" />
+    <meta property="og:description" content="25 విక్రమార్క బేతాళ కథలు తెలుగులో. ధర్మం, ప్రేమ, నీతి గురించి 2,500 సంవత్సరాల పాత జానపద కథలు. 3D Animation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rayalsabha.com/VU/" />
+    <meta property="og:image" content="https://rayalsabha.com/images/vu03/VU_EP03_THUMBNAIL_FINAL_MASTER.png" />
 
-  /* STATS */
-  .stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-    position: relative;
-  }
-  .stat {
-    text-align: center;
-  }
-  .stat-num {
-    font-family: 'Cinzel', serif;
-    font-size: 1.8rem;
-    color: var(--gold);
-    display: block;
-    line-height: 1;
-  }
-  .stat-label {
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    letter-spacing: 0.1em;
-    margin-top: 4px;
-  }
+    <!-- ✅ Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="విక్రమార్క – బేతాళ కథలు | RayalSabha" />
+    <meta name="twitter:description" content="25 విక్రమార్క బేతాళ కథలు తెలుగులో. 3D Animation · RayalSabha." />
+    <meta name="twitter:image" content="https://rayalsabha.com/images/vu03/VU_EP03_THUMBNAIL_FINAL_MASTER.png" />
 
-  .hero-cta {
-    display: inline-block;
-    background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    font-family: 'Cinzel', serif;
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    padding: 12px 28px;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: background 0.3s, color 0.3s;
-    position: relative;
-  }
-  .hero-cta:hover { background: var(--gold); color: var(--dark); }
+    <link rel="canonical" href="https://rayalsabha.com/VU/" />
 
-  /* SECTION HEADER */
-  .section-header {
-    text-align: center;
-    padding: 60px 24px 40px;
-  }
-  .section-label {
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    color: var(--text-muted);
-    margin-bottom: 8px;
-  }
-  .section-title {
-    font-family: 'Noto Serif Telugu', serif;
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    color: var(--gold);
-  }
+    <!-- ✅ JSON-LD: CollectionPage / Series Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "విక్రమార్క – బేతాళ కథలు | Vikramarka Bethala Stories",
+      "description": "25 విక్రమార్క బేతాళ కథలు తెలుగులో. ధర్మం, ప్రేమ, నీతి గురించి 2,500 సంవత్సరాల పాత జానపద కథలు.",
+      "url": "https://rayalsabha.com/VU/",
+      "inLanguage": ["te", "en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "RayalSabha",
+        "logo": { "@type": "ImageObject", "url": "https://rayalsabha.com/logo.png" }
+      }
+    }
+    </script>
 
-  /* CHARACTERS */
-  .characters {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1px;
-    max-width: 900px;
-    margin: 0 auto 60px;
-    padding: 0 24px;
-    background: rgba(212,168,56,0.1);
-    border: 1px solid rgba(212,168,56,0.1);
-  }
-  .char-card {
-    background: var(--dark-surface);
-    padding: 32px 24px;
-    text-align: center;
-  }
-  .char-icon {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 12px;
-  }
-  .char-name-en {
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    color: var(--text-muted);
-    margin-bottom: 4px;
-  }
-  .char-name-te {
-    font-family: 'Noto Serif Telugu', serif;
-    font-size: 1.1rem;
-    color: var(--gold);
-    margin-bottom: 12px;
-  }
-  .char-desc {
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-  }
+    <!-- ✅ JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "హోమ్", "item": "https://rayalsabha.com/" },
+        { "@type": "ListItem", "position": 2, "name": "విక్రమార్క – బేతాళ కథలు", "item": "https://rayalsabha.com/VU/" }
+      ]
+    }
+    </script>
 
-  /* LOOP */
-  .loop-section {
-    background: var(--dark-surface);
-    border-top: 1px solid rgba(212,168,56,0.1);
-    border-bottom: 1px solid rgba(212,168,56,0.1);
-    padding: 60px 24px;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  .loop-steps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    max-width: 900px;
-    margin: 32px auto 24px;
-  }
-  .loop-step {
-    background: rgba(212,168,56,0.05);
-    border: 1px solid rgba(212,168,56,0.15);
-    padding: 12px 16px;
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.8rem;
-    color: var(--text-primary);
-    text-align: center;
-    min-width: 130px;
-  }
-  .loop-arrow {
-    color: var(--gold);
-    font-size: 1.2rem;
-    opacity: 0.5;
-  }
-  .loop-note {
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    max-width: 600px;
-    margin: 0 auto;
-  }
+    <!-- ✅ JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "విక్రమార్క బేతాళ కథలు అంటే ఏమిటి?",
+          "acceptedAnswer": { "@type": "Answer", "text": "విక్రమార్క బేతాళ కథలు సంస్కృత గ్రంథం 'బేతాళ పంచవింశతి' నుండి వచ్చాయి. మహారాజు విక్రమాదిత్యుడు స్మశానంలో బేతాళుని పట్టుకుని తీసుకొచ్చే ప్రయత్నంలో 25 నీతి కథలు చెప్తాడు. The Vikramarka Bethala stories come from the Sanskrit classic 'Baital Pachisi'. King Vikramaditya attempts to capture Bethala from a cremation ground and along the way hears 25 moral tales." }
+        },
+        {
+          "@type": "Question",
+          "name": "బేతాళుడు ఎవరు?",
+          "acceptedAnswer": { "@type": "Answer", "text": "బేతాళుడు ఒక పురాతన ఆత్మ. అతను స్మశానంలో చెట్టుపై నివసిస్తున్నాడు. మంచివాడు కాదు, చెడ్డవాడూ కాదు — కేవలం పురాతనమైనవాడు. కథలు చెప్పి విక్రముని పరీక్షిస్తాడు. Bethala is an ancient spirit dwelling on a tree in a cremation ground. He is neither good nor evil — merely ancient. He tests Vikrama by telling stories and posing riddles." }
+        },
+        {
+          "@type": "Question",
+          "name": "విక్రమార్క బేతాళ కథలు పిల్లలకు తగినవా?",
+          "acceptedAnswer": { "@type": "Answer", "text": "అవును, 8+ పిల్లలకు చాలా తగినవి. ప్రతి కథలో ధర్మం, నీతి, ప్రేమ మరియు జ్ఞానం గురించి నేర్పుతుంది. Yes, suitable for ages 8+. Every story teaches values of righteousness, morality, love, and wisdom." }
+        },
+        {
+          "@type": "Question",
+          "name": "RayalSabha లో ఇప్పుడు ఎన్ని బేతాళ కథలు live గా ఉన్నాయి?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ప్రస్తుతం 4 కథలు live గా ఉన్నాయి: EP01 ప్రారంభం: ఒప్పందం, EP02 ముగ్గురిలో ఒకరు, EP03 గుణవతి త్యాగం, EP04 లోభి బ్రాహ్మణుని కుమార్తె. Currently 4 episodes are live. New episodes release weekly." }
+        },
+        {
+          "@type": "Question",
+          "name": "విక్రమాదిత్యుడు ఎవరు?",
+          "acceptedAnswer": { "@type": "Answer", "text": "విక్రమాదిత్యుడు ఉజ్జయిని మహారాజు. ధర్మానికి ప్రతిరూపం. ఎటువంటి భయమూ లేని సాహసకారుడు. ఒక్క మాట ఇస్తే — వెనక్కి తిరగడు. Vikramaditya is the legendary king of Ujjain, an embodiment of righteousness and fearless courage who never breaks his word." }
+        }
+      ]
+    }
+    </script>
 
-  /* EPISODES */
-  .episodes-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 24px 80px;
-  }
-  .episodes-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgba(212,168,56,0.15);
-  }
-  .episodes-title {
-    font-family: 'Cinzel', serif;
-    font-size: 0.72rem;
-    letter-spacing: 0.25em;
-    color: var(--text-muted);
-  }
-  .episodes-count {
-    font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
-    color: var(--text-muted);
-  }
+    <!-- ✅ JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RayalSabha",
+      "url": "https://rayalsabha.com",
+      "logo": "https://rayalsabha.com/logo.png",
+      "email": "iloveindia1987@gmail.com",
+      "sameAs": [
+        "https://youtube.com/@Rayalsabha",
+        "https://instagram.com/pittakathalu.telugu"
+      ]
+    }
+    </script>
 
-  /* EPISODE CARD — LIVE */
-  .ep-card {
-    display: block;
-    text-decoration: none;
-    background: var(--dark-surface);
-    border: 1px solid rgba(212,168,56,0.2);
-    padding: 24px;
-    margin-bottom: 12px;
-    color: var(--text-primary);
-    transition: border-color 0.3s, background 0.3s;
-    position: relative;
-  }
-  .ep-card:hover {
-    border-color: var(--gold);
-    background: rgba(212,168,56,0.05);
-  }
-  .ep-card-top {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
-  .badge-live {
-    font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.2em;
-    color: var(--green-live);
-    background: rgba(34,197,94,0.1);
-    border: 1px solid rgba(34,197,94,0.3);
-    padding: 3px 10px;
-  }
-  .badge-ep {
-    font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    color: var(--text-muted);
-  }
-  .ep-label {
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.18em;
-    color: var(--text-muted);
-    margin-bottom: 6px;
-  }
-  .ep-title-te {
-    font-family: 'Noto Serif Telugu', serif;
-    font-size: 1.3rem;
-    color: var(--gold-bright);
-    margin-bottom: 4px;
-  }
-  .ep-title-en {
-    font-family: 'Cinzel', serif;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    letter-spacing: 0.1em;
-    margin-bottom: 10px;
-  }
-  .ep-desc {
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 14px;
-  }
-  .ep-read {
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    color: var(--gold);
-  }
+    <!-- ✅ JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://rayalsabha.com",
+      "name": "RayalSabha"
+    }
+    </script>
 
-  /* EPISODE CARD — COMING SOON */
-  .ep-card-pending {
-    background: rgba(26,26,26,0.5);
-    border: 1px solid rgba(255,255,255,0.05);
-    padding: 20px 24px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .ep-pending-info {}
-  .ep-pending-num {
-    font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    color: rgba(138,122,106,0.5);
-    margin-bottom: 4px;
-  }
-  .ep-pending-title {
-    font-family: 'Noto Serif Telugu', serif;
-    font-size: 0.95rem;
-    color: rgba(240,230,211,0.3);
-  }
-  .badge-pending {
-    font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    color: rgba(138,122,106,0.5);
-    white-space: nowrap;
-  }
+    <!-- ✅ GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JXQP6MB62C');
+    </script>
 
-  /* SUBSCRIBE */
-  .subscribe-section {
-    text-align: center;
-    padding: 60px 24px;
-    background: var(--dark-surface);
-    border-top: 1px solid rgba(212,168,56,0.1);
-  }
-  .subscribe-section p {
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-    line-height: 1.8;
-  }
-  .btn-subscribe {
-    display: inline-block;
-    background: var(--gold);
-    color: var(--dark);
-    font-family: 'Cinzel', serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    padding: 14px 32px;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: background 0.3s, transform 0.2s;
-  }
-  .btn-subscribe:hover { background: var(--gold-bright); transform: translateY(-2px); }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+Telugu:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;500&display=swap" rel="stylesheet" />
 
-  /* FOOTER */
-  footer {
-    text-align: center;
-    padding: 24px;
-    font-family: 'Noto Sans Telugu', sans-serif;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    border-top: 1px solid rgba(255,255,255,0.05);
-  }
-  footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
-  footer a:hover { color: var(--gold); }
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
 
-  @media (max-width: 600px) {
-    .nav-links { gap: 14px; }
-    .stats { gap: 24px; }
-    .loop-steps { flex-direction: column; align-items: center; }
-    .loop-arrow { transform: rotate(90deg); }
-  }
-</style>
+        :root {
+            --dark:          #080604;
+            --dark-surface:  #0F0B10;
+            --gold:          #C9A84C;
+            --gold-bright:   #F0C84A;
+            --gold-dim:      #8A6F28;
+            --text-primary:  #F5ECD7;
+            --text-muted:    #8A7A6A;
+            --text-subtle:   #4A3F32;
+            --green-live:    #22C55E;
+            --accent-glow:   rgba(201,168,76,0.06);
+        }
+
+        body {
+            background: var(--dark);
+            color: var(--text-primary);
+            font-family: 'Noto Sans Telugu', sans-serif;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(8,6,4,0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(201,168,76,0.2);
+            padding: 0 24px;
+            height: 58px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 0.15em;
+        }
+        .nav-links {
+            display: flex; gap: 20px; list-style: none; align-items: center;
+        }
+        .nav-links a {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-contact { display: none; }
+        @media (min-width: 640px) {
+            .nav-contact {
+                display: inline-block;
+                font-family: 'Cinzel', serif;
+                font-size: 0.65rem;
+                letter-spacing: 0.12em;
+                color: var(--gold);
+                border: 1px solid rgba(201,168,76,0.4);
+                padding: 5px 12px;
+                border-radius: 2px;
+                text-decoration: none;
+                transition: background 0.2s;
+            }
+            .nav-contact:hover { background: rgba(201,168,76,0.1); }
+        }
+
+        /* ── BREADCRUMB ── */
+        .breadcrumb {
+            margin-top: 58px;
+            padding: 12px 24px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            color: var(--text-subtle);
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+        .breadcrumb a { color: var(--text-subtle); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--gold); }
+        .breadcrumb span { margin: 0 6px; }
+
+        /* ── HERO ── */
+        .hero {
+            text-align: center;
+            padding: 3rem 24px 2.5rem;
+            background: radial-gradient(ellipse at 50% 0%, rgba(139,26,26,0.2) 0%, var(--dark) 65%);
+            border-bottom: 1px solid rgba(201,168,76,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%238B1A1A' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5; pointer-events: none;
+        }
+        .hero-moon {
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .hero-series {
+            font-family: 'Cinzel', serif;
+            font-size: 0.65rem;
+            letter-spacing: 0.3em;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .hero h1 {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            font-weight: 700;
+            color: var(--gold-bright);
+            text-shadow: 0 0 40px rgba(240,200,74,0.25);
+            line-height: 1.3;
+            margin-bottom: 4px;
+            position: relative;
+        }
+        .hero-english {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(0.9rem, 2vw, 1.15rem);
+            color: var(--text-muted);
+            letter-spacing: 0.15em;
+            margin-bottom: 14px;
+            position: relative;
+        }
+        .hero-subtitle {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.92rem;
+            color: var(--text-primary);
+            opacity: 0.75;
+            margin-bottom: 24px;
+            position: relative;
+            line-height: 1.7;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            position: relative;
+        }
+        .stat { text-align: center; }
+        .stat-num {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+        }
+        .stat-label {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            margin-top: 4px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            padding: 11px 26px;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background 0.3s, color 0.3s;
+            position: relative;
+        }
+        .hero-cta:hover { background: var(--gold); color: var(--dark); }
+
+        /* ── INTRO SECTION (600–1000w bilingual) ── */
+        .series-intro {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 52px 24px;
+            border-bottom: 1px solid rgba(201,168,76,0.08);
+        }
+        .intro-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.62rem;
+            letter-spacing: 0.25em;
+            color: var(--gold-dim);
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(201,168,76,0.1);
+        }
+        .intro-block {
+            display: grid;
+            gap: 32px;
+        }
+        .intro-te {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: 1rem;
+            line-height: 2;
+            color: var(--text-primary);
+        }
+        .intro-te p { margin-bottom: 18px; }
+        .intro-te p:last-child { margin-bottom: 0; }
+        .intro-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.82rem;
+            line-height: 1.85;
+            color: var(--text-muted);
+            letter-spacing: 0.02em;
+            border-left: 2px solid rgba(201,168,76,0.15);
+            padding-left: 20px;
+        }
+        .intro-en p { margin-bottom: 16px; }
+        .intro-en p:last-child { margin-bottom: 0; }
+
+        /* ── SECTION HEADER ── */
+        .section-header {
+            text-align: center;
+            padding: 52px 24px 36px;
+        }
+        .section-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.62rem;
+            letter-spacing: 0.3em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .section-title {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: clamp(1.3rem, 3vw, 1.9rem);
+            color: var(--gold);
+        }
+
+        /* ── CHARACTERS ── */
+        .characters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1px;
+            max-width: 860px;
+            margin: 0 auto 52px;
+            padding: 0 24px;
+            background: rgba(201,168,76,0.1);
+            border: 1px solid rgba(201,168,76,0.1);
+        }
+        .char-card {
+            background: var(--dark-surface);
+            padding: 28px 20px;
+            text-align: center;
+        }
+        .char-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
+        .char-name-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.62rem;
+            letter-spacing: 0.25em;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .char-name-te {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: 1.05rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .char-desc {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ── LOOP ── */
+        .loop-section {
+            background: var(--dark-surface);
+            border-top: 1px solid rgba(201,168,76,0.1);
+            border-bottom: 1px solid rgba(201,168,76,0.1);
+            padding: 52px 24px;
+            text-align: center;
+            margin-bottom: 52px;
+        }
+        .loop-steps {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            max-width: 860px;
+            margin: 28px auto 20px;
+        }
+        .loop-step {
+            background: rgba(201,168,76,0.05);
+            border: 1px solid rgba(201,168,76,0.15);
+            padding: 11px 14px;
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.78rem;
+            color: var(--text-primary);
+            text-align: center;
+            min-width: 120px;
+            line-height: 1.5;
+        }
+        .loop-arrow { color: var(--gold); font-size: 1.1rem; opacity: 0.5; }
+        .loop-note {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ── FAQ SECTION ── */
+        .faq-section {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 24px 52px;
+        }
+        .faq-header {
+            font-family: 'Cinzel', serif;
+            font-size: 0.62rem;
+            letter-spacing: 0.25em;
+            color: var(--gold-dim);
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(201,168,76,0.1);
+        }
+        .faq-item {
+            margin-bottom: 22px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+        .faq-item:last-child { border-bottom: none; margin-bottom: 0; }
+        .faq-q {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: 0.98rem;
+            color: var(--gold);
+            margin-bottom: 3px;
+            line-height: 1.6;
+        }
+        .faq-q-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.7rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            line-height: 1.9;
+            margin-bottom: 5px;
+        }
+        .faq-a-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.74rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+        }
+
+        /* ── EPISODES ── */
+        .episodes-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+        .episodes-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(201,168,76,0.15);
+        }
+        .episodes-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            color: var(--text-muted);
+        }
+        .episodes-count {
+            font-family: 'Cinzel', serif;
+            font-size: 0.68rem;
+            color: var(--text-muted);
+        }
+
+        /* EPISODE CARD — LIVE */
+        .ep-card {
+            display: block;
+            text-decoration: none;
+            background: var(--dark-surface);
+            border: 1px solid rgba(201,168,76,0.2);
+            padding: 22px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            transition: border-color 0.3s, background 0.3s;
+            border-radius: 2px;
+        }
+        .ep-card:hover {
+            border-color: var(--gold);
+            background: rgba(201,168,76,0.05);
+        }
+        .ep-card-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .badge-live {
+            font-family: 'Cinzel', serif;
+            font-size: 0.58rem;
+            letter-spacing: 0.2em;
+            color: var(--green-live);
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.3);
+            padding: 3px 9px;
+        }
+        .badge-ep {
+            font-family: 'Cinzel', serif;
+            font-size: 0.58rem;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+        }
+        .ep-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.6rem;
+            letter-spacing: 0.18em;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+        .ep-title-te {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: 1.2rem;
+            color: var(--gold-bright);
+            margin-bottom: 3px;
+        }
+        .ep-title-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+        .ep-desc {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.83rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .ep-read {
+            font-family: 'Cinzel', serif;
+            font-size: 0.62rem;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+        }
+
+        /* EPISODE CARD — COMING SOON */
+        .ep-card-pending {
+            background: rgba(26,26,26,0.4);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 16px 22px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            border-radius: 2px;
+        }
+        .ep-pending-num {
+            font-family: 'Cinzel', serif;
+            font-size: 0.58rem;
+            letter-spacing: 0.15em;
+            color: rgba(138,122,106,0.45);
+            margin-bottom: 4px;
+        }
+        .ep-pending-title {
+            font-family: 'Noto Serif Telugu', serif;
+            font-size: 0.9rem;
+            color: rgba(245,236,215,0.25);
+        }
+        .badge-pending {
+            font-family: 'Cinzel', serif;
+            font-size: 0.58rem;
+            letter-spacing: 0.15em;
+            color: rgba(138,122,106,0.45);
+            white-space: nowrap;
+        }
+
+        /* ── DIVIDER ── */
+        .divider {
+            text-align: center;
+            padding: 16px 0;
+            color: var(--gold-dim);
+            font-size: 0.9rem;
+            letter-spacing: 0.6em;
+            opacity: 0.35;
+        }
+
+        /* ── SUBSCRIBE ── */
+        .subscribe-section {
+            text-align: center;
+            padding: 56px 24px;
+            background: var(--dark-surface);
+            border-top: 1px solid rgba(201,168,76,0.1);
+        }
+        .subscribe-section p {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .btn-subscribe {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark);
+            font-family: 'Cinzel', serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            padding: 13px 30px;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn-subscribe:hover { background: var(--gold-bright); transform: translateY(-2px); }
+
+        /* ── FOOTER ── */
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: var(--gold); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 600px) {
+            .nav-links { gap: 14px; }
+            .stats { gap: 20px; }
+            .loop-steps { flex-direction: column; align-items: center; }
+            .loop-arrow { transform: rotate(90deg); }
+            .characters { grid-template-columns: 1fr; }
+            .ep-card-pending { flex-direction: column; align-items: flex-start; gap: 6px; }
+        }
+    </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="https://rayalsabha.com/" class="nav-logo">🪔 RayalSabha</a>
-  <ul class="nav-links">
-    <li><a href="https://rayalsabha.com/">హోమ్</a></li>
-    <li><a href="https://rayalsabha.com/VU/">బేతాళ</a></li>
-    <li><a href="https://rayalsabha.com/tenali/">తెనాలి</a></li>
-    <li><a href="https://youtube.com/@Rayalsabha">▶ YouTube</a></li>
-  </ul>
+    <a href="https://rayalsabha.com/" class="nav-logo">🪔 RayalSabha</a>
+    <ul class="nav-links">
+        <li><a href="https://rayalsabha.com/">హోమ్</a></li>
+        <li><a href="https://rayalsabha.com/VU/">బేతాళ</a></li>
+        <li><a href="https://rayalsabha.com/tenali/">తెనాలి</a></li>
+        <li><a href="https://rayalsabha.com/pittakathalu/">పిట్ట కథలు</a></li>
+        <li><a href="https://youtube.com/@Rayalsabha">▶ YouTube</a></li>
+        <li><a href="https://rayalsabha.com/contact.html" class="nav-contact">CONTACT</a></li>
+    </ul>
 </nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+    <a href="https://rayalsabha.com/">RayalSabha</a>
+    <span>›</span>
+    విక్రమార్క – బేతాళ కథలు
+</div>
 
 <!-- HERO -->
 <section class="hero">
-  <span class="hero-moon">🌕</span>
-  <div class="hero-series">RayalSabha · Telugu Animation Series</div>
-  <h1>విక్రమ్ – బేతాళ కథలు</h1>
-  <div class="hero-english">Vikram Bethala Stories</div>
-  <p class="hero-subtitle">విక్రమాదిత్యుని అద్భుత కథలు<br>25 కథలు. 25 పరీక్షలు. ఒక అద్భుత యాత్ర.</p>
-  <div class="stats">
-    <div class="stat">
-      <span class="stat-num">25</span>
-      <span class="stat-label">Episodes</span>
+    <span class="hero-moon">🌕</span>
+    <div class="hero-series">RayalSabha · Telugu Animation Series</div>
+    <h1>విక్రమార్క – బేతాళ కథలు</h1>
+    <div class="hero-english">Vikramarka Bethala Stories</div>
+    <p class="hero-subtitle">
+        విక్రమాదిత్యుని అద్భుత కథలు<br>
+        25 కథలు. 25 పరీక్షలు. ఒక అద్భుత యాత్ర.
+    </p>
+    <div class="stats">
+        <div class="stat">
+            <span class="stat-num">25</span>
+            <span class="stat-label">Episodes</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num">03</span>
+            <span class="stat-label">Characters</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num">04</span>
+            <span class="stat-label">Live Now</span>
+        </div>
     </div>
-    <div class="stat">
-      <span class="stat-num">03</span>
-      <span class="stat-label">Characters</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">3</span>
-      <span class="stat-label">Live Now</span>
-    </div>
-  </div>
-  <a href="#episodes" class="hero-cta">కథలు చూడండి ↓</a>
+    <a href="#episodes" class="hero-cta">కథలు చూడండి ↓</a>
 </section>
+
+<!-- ── SERIES INTRODUCTION (600–1000w bilingual) ── -->
+<section class="series-intro">
+    <div class="intro-label">సిరీస్ గురించి · ABOUT THIS SERIES</div>
+    <div class="intro-block">
+        <div class="intro-te">
+            <p>
+                విక్రమార్క బేతాళ కథలు — తెలుగు సాహిత్యంలో అత్యంత ప్రాచీనమైన, అత్యంత అద్భుతమైన కథా సంపుటి. సంస్కృత గ్రంథం 'బేతాళ పంచవింశతి' నుండి జన్మించిన ఈ కథలు 2,500+ సంవత్సరాలుగా తరాల తరాలకు నీతి, ధర్మం, జ్ఞానం అందిస్తూ వస్తున్నాయి. RayalSabha ఈ పురాతన కథలను 3D Animation రూపంలో నేటి తెలుగు తరానికి అందిస్తోంది.
+            </p>
+            <p>
+                కథ ఎలా మొదలవుతుందంటే — ఉజ్జయిని మహారాజు విక్రమాదిత్యుడికి ఒక కపాలి యోగి నుండి వింత పని వస్తుంది. స్మశానంలో చెట్టుపై వేలాడుతున్న శవాన్ని తీసుకొచ్చి ఇవ్వాలని. మహారాజు రాత్రిపూట స్మశానానికి వెళ్తాడు — ఆ శవంలో బేతాళుడు అనే పురాతన ఆత్మ ఉంటుంది. విక్రముడు భుజంపై వేసుకుంటే — బేతాళుడు కథ మొదలుపెడతాడు.
+            </p>
+            <p>
+                ప్రతి కథ చివరా ఒక ప్రశ్న. "సమాధానం తెలిసి చెప్పకుండా ఉంటే — మీ తల వెయ్యి ముక్కలవుతుంది" అని బేతాళుడు హెచ్చరిస్తాడు. విక్రముడు సమాధానం చెప్పగానే — మాటు తప్పింది కాబట్టి — బేతాళుడు తిరిగి చెట్టుపైకి పారిపోతాడు. 25 సార్లు ఇది జరుగుతుంది. 25వ కథలో రాజు సమాధానం చెప్పలేని పరిస్థితి వస్తుంది — అప్పుడు కపాలి యోగి రహస్యం బయటపడుతుంది.
+            </p>
+            <p>
+                ప్రతి కథలో సమాజంలోని అనేక అంశాలను — ప్రేమ, ధైర్యం, నీతి, న్యాయం, త్యాగం, జ్ఞానం — బేతాళుడు సూక్ష్మంగా పరీక్షిస్తాడు. విక్రముని ప్రతి సమాధానం అతని లోపలి స్వభావాన్ని బయటకు తీస్తుంది. ఈ కథలు కేవలం పిల్లల కోసం కాదు — పెద్దలకు కూడా ఎంతో ఆలోచింపజేస్తాయి.
+            </p>
+            <p>
+                RayalSabha లో ప్రతి వారం కొత్త కథ విడుదలవుతుంది. ఇప్పటి వరకు EP01 నుండి EP04 వరకు live గా ఉన్నాయి. మొత్తం 25 కథలు పూర్తవడానికి మీతో పాటు ఈ యాత్రలో ఉంటాం.
+            </p>
+        </div>
+        <div class="intro-en">
+            <p>
+                Vikramarka Bethala Stories — one of the most ancient and magnificent story collections in Telugu literature. Born from the Sanskrit text 'Baital Pachisi', these tales have passed wisdom, morality, and knowledge across generations for over 2,500 years. RayalSabha brings these timeless stories to today's Telugu generation in stunning 3D Animation.
+            </p>
+            <p>
+                The story begins when King Vikramaditya of Ujjain receives a strange task from a tantric ascetic named Kapali Yogi — to retrieve a corpse hanging from a tree in the cremation ground. The king goes at night, and discovers that the corpse is inhabited by Bethala, an ancient spirit. When Vikrama lifts the body onto his shoulder, Bethala begins telling a story.
+            </p>
+            <p>
+                Every story ends with a question. "If you know the answer and stay silent, your head shall shatter into a thousand pieces," Bethala warns. The moment Vikrama answers — Bethala flies back to the tree. This cycle repeats 25 times. In the 25th story, Vikrama faces a question he cannot answer — and Kapali Yogi's true secret is finally revealed.
+            </p>
+            <p>
+                Each tale probes a different aspect of human nature — love, courage, morality, justice, sacrifice, knowledge. Vikrama's every answer reveals the depth of his character. These stories are not just for children — they offer profound food for thought for adults too.
+            </p>
+            <p>
+                A new story releases on RayalSabha every week. Episodes 01 through 04 are live now. We are on this journey of 25 stories together with you.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="divider">· · ·</div>
 
 <!-- CHARACTERS -->
 <div class="section-header">
-  <div class="section-label">THE UNIVERSE · పాత్రలు</div>
-  <div class="section-title">Main Characters — ప్రధాన పాత్రలు</div>
+    <div class="section-label">THE UNIVERSE · పాత్రలు</div>
+    <div class="section-title">ప్రధాన పాత్రలు · Main Characters</div>
 </div>
 
 <div class="characters">
-  <div class="char-card">
-    <span class="char-icon">⚔️</span>
-    <div class="char-name-en">VIKRAMADITYA</div>
-    <div class="char-name-te">విక్రమాదిత్యుడు</div>
-    <p class="char-desc">ఉజ్జయిని మహారాజు. ధర్మానికి ప్రతిరూపం. ఎటువంటి భయమూ లేని సాహసకారుడు. ఒక్క మాట ఇస్తే — వెనక్కి తిరగడు.</p>
-  </div>
-  <div class="char-card">
-    <span class="char-icon">👁️</span>
-    <div class="char-name-en">BETHALA</div>
-    <div class="char-name-te">బేతాళుడు</div>
-    <p class="char-desc">పురాతన ఆత్మ. స్మశానంలో చెట్టుపై నివసిస్తున్నాడు. మంచివాడు కాదు, చెడ్డవాడూ కాదు — కేవలం పురాతనమైనవాడు. కథలు చెప్పి రాజుని పరీక్షిస్తాడు.</p>
-  </div>
-  <div class="char-card">
-    <span class="char-icon">🕯️</span>
-    <div class="char-name-en">KAPALI YOGI</div>
-    <div class="char-name-te">కపాలి యోగి</div>
-    <p class="char-desc">పైకి సాధువు. లోపల మాంత్రికుడు. రాజుని తన వలలో వేసుకున్న అసలు వాడు. అతని రహస్యం EP25లో బయటపడుతుంది.</p>
-  </div>
+    <div class="char-card">
+        <span class="char-icon">⚔️</span>
+        <div class="char-name-en">VIKRAMADITYA</div>
+        <div class="char-name-te">విక్రమాదిత్యుడు</div>
+        <p class="char-desc">ఉజ్జయిని మహారాజు. ధర్మానికి ప్రతిరూపం. ఎటువంటి భయమూ లేని సాహసకారుడు. ఒక్క మాట ఇస్తే — వెనక్కి తిరగడు.<br><em style="color:rgba(138,122,106,0.6); font-size:0.75rem;">King of Ujjain. Embodiment of righteousness. Fearless. Never breaks his word.</em></p>
+    </div>
+    <div class="char-card">
+        <span class="char-icon">👁️</span>
+        <div class="char-name-en">BETHALA</div>
+        <div class="char-name-te">బేతాళుడు</div>
+        <p class="char-desc">పురాతన ఆత్మ. స్మశానంలో చెట్టుపై నివసిస్తున్నాడు. మంచివాడు కాదు, చెడ్డవాడూ కాదు — కేవలం పురాతనమైనవాడు. కథలు చెప్పి రాజుని పరీక్షిస్తాడు.<br><em style="color:rgba(138,122,106,0.6); font-size:0.75rem;">An ancient spirit. Neither good nor evil — merely ancient. Tests the king through stories and riddles.</em></p>
+    </div>
+    <div class="char-card">
+        <span class="char-icon">🕯️</span>
+        <div class="char-name-en">KAPALI YOGI</div>
+        <div class="char-name-te">కపాలి యోగి</div>
+        <p class="char-desc">పైకి సాధువు. లోపల మాంత్రికుడు. రాజుని తన వలలో వేసుకున్న అసలు వాడు. అతని రహస్యం EP25లో బయటపడుతుంది.<br><em style="color:rgba(138,122,106,0.6); font-size:0.75rem;">Appears a sage. Is a sorcerer. The real architect behind Vikrama's journey. His secret revealed in EP25.</em></p>
+    </div>
 </div>
 
 <!-- THE LOOP -->
 <div class="loop-section">
-  <div class="section-label">THE ETERNAL LOOP · ఒప్పందం</div>
-  <div class="loop-steps">
-    <div class="loop-step">రాజు వెళ్తాడు<br>స్మశానానికి</div>
-    <span class="loop-arrow">→</span>
-    <div class="loop-step">బేతాళుని పట్టుకుంటాడు<br>భుజంపై వేసుకుంటాడు</div>
-    <span class="loop-arrow">→</span>
-    <div class="loop-step">బేతాళుడు కథ చెప్తాడు<br>ప్రశ్న వేస్తాడు</div>
-    <span class="loop-arrow">→</span>
-    <div class="loop-step">రాజు సమాధానం చెప్తాడు<br>ధర్మం వల్ల మాట్లాడాల్సివస్తుంది</div>
-    <span class="loop-arrow">→</span>
-    <div class="loop-step">బేతాళుడు తిరిగి వెళ్తాడు<br>మళ్ళీ రా...</div>
-  </div>
-  <p class="loop-note">25 సార్లు ఇది జరుగుతుంది. 25వ కథలో — రాజు మాట్లాడడు.<br>అప్పుడు కపాలి యోగి రహస్యం బయటపడుతుంది.</p>
+    <div class="section-label">THE ETERNAL LOOP · ఒప్పందం</div>
+    <div class="loop-steps">
+        <div class="loop-step">రాజు వెళ్తాడు<br>స్మశానానికి</div>
+        <span class="loop-arrow">→</span>
+        <div class="loop-step">బేతాళుని పట్టుకుంటాడు<br>భుజంపై వేసుకుంటాడు</div>
+        <span class="loop-arrow">→</span>
+        <div class="loop-step">బేతాళుడు కథ చెప్తాడు<br>ప్రశ్న వేస్తాడు</div>
+        <span class="loop-arrow">→</span>
+        <div class="loop-step">రాజు సమాధానం చెప్తాడు<br>ధర్మం వల్ల మాట్లాడాల్సివస్తుంది</div>
+        <span class="loop-arrow">→</span>
+        <div class="loop-step">బేతాళుడు తిరిగి వెళ్తాడు<br>మళ్ళీ రా...</div>
+    </div>
+    <p class="loop-note">25 సార్లు ఇది జరుగుతుంది.<br>25వ కథలో — రాజు మాట్లాడడు.<br>అప్పుడు కపాలి యోగి రహస్యం బయటపడుతుంది.<br><em style="font-size:0.78rem; opacity:0.7;">This cycle repeats 25 times. In the 25th — the king falls silent. Kapali Yogi's secret is finally revealed.</em></p>
 </div>
+
+<!-- FAQ SECTION -->
+<div class="section-header" style="padding-bottom: 20px;">
+    <div class="section-label">తరచుగా అడిగే ప్రశ్నలు · FAQ</div>
+    <div class="section-title">విక్రమార్క బేతాళ కథల గురించి</div>
+</div>
+<section class="faq-section">
+    <div class="faq-item">
+        <div class="faq-q">విక్రమార్క బేతాళ కథలు అంటే ఏమిటి?</div>
+        <div class="faq-q-en">What are the Vikramarka Bethala stories?</div>
+        <p class="faq-a">సంస్కృత గ్రంథం 'బేతాళ పంచవింశతి' నుండి వచ్చిన 25 నీతి కథలు. మహారాజు విక్రమాదిత్యుడు స్మశానంలో బేతాళుని పట్టుకుని తీసుకొచ్చే ప్రయత్నంలో ప్రతి రాత్రి ఒక కొత్త కథ వింటాడు.</p>
+        <p class="faq-a-en">25 moral tales from the Sanskrit classic 'Baital Pachisi'. Each night, King Vikramaditya hears a new story from the spirit Bethala as he attempts to carry him from the cremation ground.</p>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">ఈ కథలు పిల్లలకు తగినవా?</div>
+        <div class="faq-q-en">Are these stories suitable for children?</div>
+        <p class="faq-a">అవును, 8+ పిల్లలకు చాలా తగినవి. ప్రతి కథలో ధర్మం, నీతి, ప్రేమ మరియు జ్ఞానం గురించి నేర్పుతుంది. పెద్దలకు కూడా ఎంతో ఆలోచింపజేస్తాయి.</p>
+        <p class="faq-a-en">Yes, suitable for ages 8+. Each story teaches values of righteousness, morality, love, and wisdom. Adults will find them thought-provoking too.</p>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">ప్రతి వారం కొత్త కథ వస్తుందా?</div>
+        <div class="faq-q-en">Does a new story release every week?</div>
+        <p class="faq-a">అవును! RayalSabha ప్రతి వారం కొత్త బేతాళ కథ YouTube మరియు ఈ వెబ్‌సైట్‌లో విడుదల చేస్తుంది. Subscribe చేసి miss అవ్వకండి.</p>
+        <p class="faq-a-en">Yes! RayalSabha releases a new Bethala story every week on YouTube and this website. Subscribe so you don't miss one.</p>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">బేతాళ కథలు ఇక్కడ ఎలా చదవాలి?</div>
+        <div class="faq-q-en">How do I read the Bethala stories here?</div>
+        <p class="faq-a">దిగువ కథల జాబితా నుండి LIVE అని ఉన్న ఏ కథైనా క్లిక్ చేయండి. పూర్తి కథ, నీతి, జీవిత పాఠం మరియు YouTube వీడియో ఒకే పేజీలో ఉంటాయి.</p>
+        <p class="faq-a-en">Click any episode marked LIVE in the list below. Each page has the full story, moral, life lesson, and YouTube video all in one place.</p>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">విక్రమాదిత్యుడు నిజమైన రాజా?</div>
+        <div class="faq-q-en">Was Vikramaditya a real king?</div>
+        <p class="faq-a">చరిత్రలో విక్రమాదిత్యుడు అనే మహా రాజు ఉజ్జయినిని పరిపాలించాడు అని నమ్మకం. అతనికి సంబంధించిన అనేక కథలు, పురాణాలు భారతదేశమంతటా వ్యాప్తి చెందాయి. ఈ బేతాళ కథలు ఆ సంప్రదాయంలో భాగం.</p>
+        <p class="faq-a-en">Tradition holds that a great King Vikramaditya ruled Ujjain. Stories and legends about him spread across India. The Bethala tales are part of this enduring tradition.</p>
+    </div>
+</section>
+
+<div class="divider">· · ·</div>
 
 <!-- EPISODES -->
 <section class="episodes-section" id="episodes">
-
-  <div class="episodes-header">
-    <span class="episodes-title">STORIES · కథలు — Episodes</span>
-    <span class="episodes-count">25 కథలు</span>
-  </div>
-
-  <!-- EP01 — LIVE -->
-  <a href="https://rayalsabha.com/VU/vu01-prarabham-oppandham.html" class="ep-card">
-    <div class="ep-card-top">
-      <span class="badge-live">LIVE</span>
-      <span class="badge-ep">EP 01</span>
+    <div class="episodes-header">
+        <span class="episodes-title">STORIES · కథలు — Episodes</span>
+        <span class="episodes-count">25 కథలు · 4 Live</span>
     </div>
-    <div class="ep-label">EPISODE 01 · THE BEGINNING</div>
-    <div class="ep-title-te">ప్రారంభం: ఒప్పందం</div>
-    <div class="ep-title-en">The Beginning: The Pact</div>
-    <p class="ep-desc">కపాలి యోగి వల. విక్రముని సాహసం. బేతాళుని మొదటి రాక. 25 కథల యాత్ర ఇక్కడ మొదలవుతుంది.</p>
-    <span class="ep-read">కథ చదవండి →</span>
-  </a>
 
-  <!-- EP02 — LIVE -->
-  <a href="https://rayalsabha.com/VU/vu02-muggurilo-okaru.html" class="ep-card">
-    <div class="ep-card-top">
-      <span class="badge-live">LIVE</span>
-      <span class="badge-ep">EP 02</span>
-    </div>
-    <div class="ep-label">EPISODE 02 · ONE AMONG THREE</div>
-    <div class="ep-title-te">ముగ్గురిలో ఒకరు</div>
-    <div class="ep-title-en">One Among Three</div>
-    <p class="ep-desc">పెళ్ళి రాత్రే భర్తను పోగొట్టుకున్న చంద్రవతి ముందు ముగ్గురు నిలబడ్డారు. ముగ్గురూ నిజంగా ప్రేమించారు. కానీ... ఆమె భర్త ఎవరు?</p>
-    <span class="ep-read">కథ చదవండి →</span>
-  </a>
-
-  <!-- EP03 — LIVE -->
-  <a href="/VU/vu03-gunavathi-tyagam.html" class="ep-card">
-    <div class="ep-card-top">
-      <span class="badge-live">● LIVE</span>
-      <span class="badge-ep">EPISODE 03</span>
-    </div>
-    <div class="ep-label">EP 03 · గుణవతి త్యాగం</div>
-    <div class="ep-title-te">గుణవతి త్యాగం</div>
-    <div class="ep-title-en">Gunavathi's Sacrifice</div>
-    <p class="ep-desc">దేవతలే వేడుకున్నారు... ఆమె నిరాకరించింది. ఒక సాధారణ స్త్రీ సూర్యుడినే ఆపింది — ప్రేమ కోసం.</p>
-    <span class="ep-read">కథ చదవండి →</span>
-  </a>
-
-  <!-- EP04 — PENDING -->
-  <div class="ep-card">
-    <a href="/VU/vu04-lobhi-brahmanuni-kumarte.html">
-      <img src="/images/vu04/VU_EP04_SCENE02_warrior_sacrifice_MASTER.png" alt="EP04" />
-      <div class="ep-card-info">
-        <span class="ep-num">EP 04</span>
-        <h3>లోభి బ్రాహ్మణుని కుమార్తె</h3>
-        <p>ప్రాణం కాపాడినవాడు... భర్త కాలేడా?</p>
-        <span class="ep-status live">LIVE</span>
-      </div>
+    <!-- EP01 — LIVE -->
+    <a href="https://rayalsabha.com/VU/vu01-prarabham-oppandham.html" class="ep-card">
+        <div class="ep-card-top">
+            <span class="badge-live">● LIVE</span>
+            <span class="badge-ep">EP 01</span>
+        </div>
+        <div class="ep-label">EPISODE 01 · THE BEGINNING</div>
+        <div class="ep-title-te">ప్రారంభం: ఒప్పందం</div>
+        <div class="ep-title-en">The Beginning: The Pact</div>
+        <p class="ep-desc">కపాలి యోగి వల. విక్రముని సాహసం. బేతాళుని మొదటి రాక. 25 కథల యాత్ర ఇక్కడ మొదలవుతుంది.</p>
+        <span class="ep-read">కథ చదవండి →</span>
     </a>
-  </div>
 
-  <!-- EP05 — PENDING -->
-  <div class="ep-card-pending">
-    <div class="ep-pending-info">
-      <div class="ep-pending-num">EPISODE 05</div>
-      <div class="ep-pending-title">రాజకుమారి వివాహం</div>
-    </div>
-    <span class="badge-pending">⏳ Pending</span>
-  </div>
+    <!-- EP02 — LIVE -->
+    <a href="https://rayalsabha.com/VU/vu02-muggurilo-okaru.html" class="ep-card">
+        <div class="ep-card-top">
+            <span class="badge-live">● LIVE</span>
+            <span class="badge-ep">EP 02</span>
+        </div>
+        <div class="ep-label">EPISODE 02 · ONE AMONG THREE</div>
+        <div class="ep-title-te">ముగ్గురిలో ఒకరు</div>
+        <div class="ep-title-en">One Among Three</div>
+        <p class="ep-desc">పెళ్ళి రాత్రే భర్తను పోగొట్టుకున్న చంద్రవతి ముందు ముగ్గురు నిలబడ్డారు. ముగ్గురూ నిజంగా ప్రేమించారు. కానీ... ఆమె భర్త ఎవరు?</p>
+        <span class="ep-read">కథ చదవండి →</span>
+    </a>
 
-  <!-- EP06-25 -->
-  <div class="ep-card-pending">
-    <div class="ep-pending-info">
-      <div class="ep-pending-num">EPISODES 06 — 25</div>
-      <div class="ep-pending-title">EP06 మొదలు EP25 వరకు — మరిన్ని కథలు వస్తున్నాయి</div>
+    <!-- EP03 — LIVE -->
+    <a href="https://rayalsabha.com/VU/vu03-gunavathi-tyagam.html" class="ep-card">
+        <div class="ep-card-top">
+            <span class="badge-live">● LIVE</span>
+            <span class="badge-ep">EP 03</span>
+        </div>
+        <div class="ep-label">EPISODE 03 · GUNAVATHI'S SACRIFICE</div>
+        <div class="ep-title-te">గుణవతి త్యాగం</div>
+        <div class="ep-title-en">Gunavathi's Sacrifice</div>
+        <p class="ep-desc">దేవతలే వేడుకున్నారు... ఆమె నిరాకరించింది. భర్త ప్రేమ కోసం సూర్యుడినే ఆపిన స్త్రీ కథ.</p>
+        <span class="ep-read">కథ చదవండి →</span>
+    </a>
+
+    <!-- EP04 — LIVE -->
+    <a href="https://rayalsabha.com/VU/vu04-lobhi-brahmanuni-kumarte.html" class="ep-card">
+        <div class="ep-card-top">
+            <span class="badge-live">● LIVE</span>
+            <span class="badge-ep">EP 04</span>
+        </div>
+        <div class="ep-label">EPISODE 04 · THE GREEDY BRAHMIN'S DAUGHTER</div>
+        <div class="ep-title-te">లోభి బ్రాహ్మణుని కుమార్తె</div>
+        <div class="ep-title-en">The Greedy Brahmin's Daughter</div>
+        <p class="ep-desc">ప్రాణం కాపాడినవాడు భర్త కాలేడా? హేమలత కోసం యోధుడు, వ్యాపారి, పండితుడు పోటీపడ్డారు. నిజమైన అర్హత ఎవరికుంది?</p>
+        <span class="ep-read">కథ చదవండి →</span>
+    </a>
+
+    <div style="margin: 20px 0 12px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.04);">
+        <div style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:var(--text-subtle); margin-bottom: 10px;">COMING SOON · వస్తున్నాయి</div>
     </div>
-    <span class="badge-pending">⏳ In Production</span>
-  </div>
+
+    <!-- EP05–25 — PENDING -->
+    <div class="ep-card-pending">
+        <div><div class="ep-pending-num">EP 05</div><div class="ep-pending-title">రాజకుమారి వివాహం</div></div>
+        <span class="badge-pending">COMING SOON</span>
+    </div>
+    <div class="ep-card-pending">
+        <div><div class="ep-pending-num">EP 06</div><div class="ep-pending-title">వేటగాని నిర్ణయం</div></div>
+        <span class="badge-pending">COMING SOON</span>
+    </div>
+    <div class="ep-card-pending">
+        <div><div class="ep-pending-num">EP 07–25</div><div class="ep-pending-title">మరిన్ని కథలు వస్తున్నాయి...</div></div>
+        <span class="badge-pending">WEEKLY</span>
+    </div>
 
 </section>
 
 <!-- SUBSCRIBE -->
 <div class="subscribe-section">
-  <p>🌕 ఒక్క కథ Miss అవ్వకండి<br>ప్రతి వారం ఒక కొత్త కథ. ప్రతి కథలో ఒక పరీక్ష.<br>@Rayalsabha YouTube Subscribe చేసి — మీ సమాధానం కామెంట్లో చెప్పండి.</p>
-  <a href="https://youtube.com/@Rayalsabha" class="btn-subscribe">▶ YouTube Subscribe</a>
+    <p>
+        ప్రతి వారం కొత్త కథ — విక్రమార్క, బేతాళుడు, మరిన్ని.<br>
+        Subscribe చేయండి — ఒక్క కథ కూడా మిస్ అవ్వకండి.
+    </p>
+    <a href="https://youtube.com/@Rayalsabha" class="btn-subscribe">▶ YouTube లో Subscribe చేయండి</a>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <p>🪔 RayalSabha · విక్రమ్ – బేతాళ కథలు · తెలుగు కథలు</p>
-  <p style="margin-top:8px;">
-    <a href="https://rayalsabha.com/">హోమ్</a>
-    <a href="https://rayalsabha.com/VU/">బేతాళ</a>
-    <a href="https://rayalsabha.com/tenali/">తెనాలి</a>
-    <a href="https://youtube.com/@Rayalsabha">YouTube</a>
-  </p>
-  <p style="margin-top:8px;">© 2026 RayalSabha · Powered by తెలుగు సంస్కృతి</p>
+    <p>🪔 RayalSabha · విక్రమార్క – బేతాళ కథలు · తెలుగు నీతి కథలు</p>
+    <p style="margin-top: 8px;">
+        <a href="https://rayalsabha.com/">హోమ్</a>
+        <a href="https://rayalsabha.com/VU/">బేతాళ</a>
+        <a href="https://rayalsabha.com/tenali/">తెనాలి</a>
+        <a href="https://rayalsabha.com/pittakathalu/">పిట్ట కథలు</a>
+        <a href="https://youtube.com/@Rayalsabha">YouTube</a>
+        <a href="https://rayalsabha.com/contact.html">Contact</a>
+    </p>
+    <p style="margin-top: 8px;">© 2026 RayalSabha · <a href="mailto:iloveindia1987@gmail.com">iloveindia1987@gmail.com</a></p>
 </footer>
 
 </body>
