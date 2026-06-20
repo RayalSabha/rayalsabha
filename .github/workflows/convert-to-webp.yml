@@ -25,18 +25,19 @@ jobs:
       - name: Install WebP tools
         run: sudo apt-get install -y webp
 
-      - name: Convert new images to WebP
+      - name: Convert ALL PNG/JPG to WebP
         run: |
-          # Find all PNG/JPG files pushed in this commit
-          git diff --name-only HEAD~1 HEAD | grep -iE '\.(png|jpg|jpeg)$' | while read file; do
-            if [ -f "$file" ]; then
-              # Get filename without extension
-              filename="${file%.*}"
-              
-              # Convert to WebP at 85% quality
-              cwebp -q 85 "$file" -o "${filename}.webp"
-              
-              echo "✅ Converted: $file → ${filename}.webp"
+          find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) \
+            ! -path "./.git/*" | while read file; do
+            filename="${file%.*}"
+            webp_file="${filename}.webp"
+
+            # Convert if WebP doesn't exist OR PNG is newer than WebP
+            if [ ! -f "$webp_file" ] || [ "$file" -nt "$webp_file" ]; then
+              cwebp -q 85 "$file" -o "$webp_file"
+              echo "✅ Converted: $file → $webp_file"
+            else
+              echo "⏭️ Skipped (already exists): $webp_file"
             fi
           done
 
@@ -44,12 +45,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Add only WebP files
-          git add "*.webp" -f
-          git add "**/*.webp" -f
-          
-          # Check if anything to commit
+
+          git add **/*.webp *.webp 2>/dev/null || true
+
           if git diff --staged --quiet; then
             echo "No new WebP files to commit."
           else
