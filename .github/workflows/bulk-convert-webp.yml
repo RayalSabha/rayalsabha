@@ -1,0 +1,51 @@
+name: Bulk Convert All Images to WebP
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bulk-convert:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install WebP tools
+        run: sudo apt-get install -y webp
+
+      - name: Convert ALL PNG/JPG in repo to WebP
+        run: |
+          find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) \
+            ! -path "./.git/*" | while read file; do
+            filename="${file%.*}"
+            webp_file="${filename}.webp"
+
+            if [ ! -f "$webp_file" ] || [ "$file" -nt "$webp_file" ]; then
+              cwebp -q 85 "$file" -o "$webp_file"
+              echo "✅ Converted: $file → $webp_file"
+            else
+              echo "⏭️ Skipped: $webp_file already exists"
+            fi
+          done
+
+      - name: Show conversion summary
+        run: |
+          echo "=== WebP files created ==="
+          find . -name "*.webp" ! -path "./.git/*" | wc -l
+          echo "total WebP files in repo"
+
+      - name: Commit all WebP files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add **/*.webp *.webp 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Nothing new to commit — all already converted."
+          else
+            git commit -m "Bulk convert all images to WebP [skip ci]"
+            git push
+          fi
