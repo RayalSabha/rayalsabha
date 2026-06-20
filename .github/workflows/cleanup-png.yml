@@ -1,0 +1,62 @@
+name: Cleanup — Delete PNGs and Update HTML references
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Delete PNGs that have a WebP version
+        run: |
+          echo "=== Deleting PNGs that have matching WebP ==="
+          find . -type f -iname "*.png" ! -path "./.git/*" | while read png; do
+            webp="${png%.*}.webp"
+            if [ -f "$webp" ]; then
+              rm "$png"
+              echo "🗑️  Deleted: $png (WebP exists)"
+            else
+              echo "⚠️  Kept: $png (no WebP found — skipping)"
+            fi
+          done
+
+      - name: Replace .png with .webp in all HTML files
+        run: |
+          echo "=== Updating .png → .webp in HTML files ==="
+          find . -type f -iname "*.html" ! -path "./.git/*" | while read html; do
+            if grep -q '\.png' "$html"; then
+              sed -i 's/\.png"/.webp"/g; s/\.png'\''/.webp'\''/g' "$html"
+              echo "✅ Updated: $html"
+            else
+              echo "⏭️  Skipped: $html (no .png references)"
+            fi
+          done
+
+      - name: Show summary
+        run: |
+          echo "=== Remaining PNG files ==="
+          find . -name "*.png" ! -path "./.git/*" | wc -l
+          echo "PNG files remaining (should be 0 if all had WebP)"
+          echo ""
+          echo "=== HTML files updated ==="
+          find . -name "*.html" ! -path "./.git/*" | wc -l
+          echo "total HTML files in repo"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Cleanup: remove PNGs, update HTML refs to .webp [skip ci]"
+            git push
+          fi
