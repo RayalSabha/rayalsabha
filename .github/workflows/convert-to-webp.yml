@@ -1,0 +1,58 @@
+name: Convert Images to WebP
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.png'
+      - '**.jpg'
+      - '**.jpeg'
+
+jobs:
+  convert-images:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install WebP tools
+        run: sudo apt-get install -y webp
+
+      - name: Convert new images to WebP
+        run: |
+          # Find all PNG/JPG files pushed in this commit
+          git diff --name-only HEAD~1 HEAD | grep -iE '\.(png|jpg|jpeg)$' | while read file; do
+            if [ -f "$file" ]; then
+              # Get filename without extension
+              filename="${file%.*}"
+              
+              # Convert to WebP at 85% quality
+              cwebp -q 85 "$file" -o "${filename}.webp"
+              
+              echo "✅ Converted: $file → ${filename}.webp"
+            fi
+          done
+
+      - name: Commit WebP files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add only WebP files
+          git add "*.webp" -f
+          git add "**/*.webp" -f
+          
+          # Check if anything to commit
+          if git diff --staged --quiet; then
+            echo "No new WebP files to commit."
+          else
+            git commit -m "Auto-convert images to WebP [skip ci]"
+            git push
+          fi
