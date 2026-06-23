@@ -4,7 +4,7 @@
   <!-- ═══ HOMEPAGE — Priority 1.0 ═══ -->
   <url>
     <loc>https://rayalsabha.com/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,30 +17,10 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- ═══ JEEVITA KATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
-  <url>
-    <loc>https://rayalsabha.com/jeevitakathalu/</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/jeevitakathalu/jk01-pagilina-kunda-paatam.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/jeevitakathalu/jk02-samayam-viluva.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- ═══ PITTAKATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
   <url>
     <loc>https://rayalsabha.com/pittakathalu/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -83,6 +63,40 @@
   <url>
     <loc>https://rayalsabha.com/pittakathalu/pk07-gradda-mariyu-kaki.html</loc>
     <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- ✅ NEW -->
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk08-gadiyaram-calendar.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- ✅ NEW -->
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk09-guddivadi-board.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══ JEEVITAKATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
+  <url>
+    <loc>https://rayalsabha.com/jeevitakathalu/</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/jeevitakathalu/jk01-pagilina-kunda-paatam.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/jeevitakathalu/jk02-samayam-viluva.html</loc>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
