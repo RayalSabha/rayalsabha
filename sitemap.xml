@@ -132,53 +132,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- ✅ NEW -->
   <url>
     <loc>https://rayalsabha.com/tenali/t05-atyantha-kashtamaina-pani.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- ✅ NEW -->
   <url>
     <loc>https://rayalsabha.com/tenali/t06-chitrakarudi-ahankaram.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ═══ VIKRAMARKA BETHALA SERIES — Index 0.9 · Stories 0.8 ═══ -->
-
-  <!-- ═══ VIKRAMARKA BETHALA SERIES — Index 0.9 · Stories 0.8 ═══ -->
+  <!-- ✅ NEW -->
   <url>
-    <loc>https://rayalsabha.com/VU/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/VU/vu01-prarabham-oppandham.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://rayalsabha.com/tenali/t07-galilo-tele-rajabhavanam.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://rayalsabha.com/VU/vu02-muggurilo-okaru.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/VU/vu03-gunavathi-tyagam.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/VU/vu04-lobhi-brahmanuni-kumarte.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
