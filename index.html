@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <title>RayalSabha — తెలుగు కథలు | తెనాలి, అక్బర్-బీర్బల్, పిట్ట కథలు, జీవిత కథలు | Telugu Stories</title>
   <meta name="description" content="RayalSabha — తెలుగు కథలు, భారతీయ సంస్కృతి. తెనాలి రామకృష్ణ, అక్బర్-బీర్బల్, పిట్ట కథలు, జీవిత కథలు తెలుగులో చదవండి, వీడియోలు చూడండి." />
@@ -38,12 +41,7 @@
       "url": "https://rayalsabha.com",
       "name": "RayalSabha",
       "description": "తెలుగు కథలు — తెనాలి రామకృష్ణ, అక్బర్-బీర్బల్, పిట్ట కథలు, జీవిత కథలు",
-      "inLanguage": ["te", "en"],
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://rayalsabha.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": ["te", "en"]
     }
   </script>
 
@@ -141,12 +139,13 @@
     @media(max-width:768px){nav{padding:0.8rem 1rem;}.nav-links{gap:0.8rem;}.nav-logo{font-size:1.1rem;}.nav-contact{display:none;}}
 
     /* HERO */
-    .hero{margin-top:0;padding:3rem 2rem 2.5rem;text-align:center;background:linear-gradient(180deg,rgba(201,168,76,0.12) 0%,transparent 100%);border-bottom:1px solid var(--gold-border);}
+    .hero{margin-top:0;padding:4rem 2rem 3rem;text-align:center;background:linear-gradient(180deg,rgba(8,6,4,0.62) 0%,rgba(8,6,4,0.82) 65%,var(--bg) 100%),url(/images/home/hero-sabha-1600.webp) center 35%/cover no-repeat;border-bottom:1px solid var(--gold-border);}
+    @media(max-width:768px){.hero{padding:3rem 1.25rem 2.5rem;background-image:linear-gradient(180deg,rgba(8,6,4,0.62) 0%,rgba(8,6,4,0.82) 65%,var(--bg) 100%),url(/images/home/hero-sabha-800.webp);}}
     .hero-emoji{font-size:2.6rem;display:block;margin-bottom:0.6rem;animation:float 3s ease-in-out infinite;}
     @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
     .hero h1{font-size:clamp(2rem,6vw,2.8rem);color:var(--gold);text-shadow:0 4px 15px rgba(201,168,76,0.4);}
     .hero-subtitle{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#d4a574;margin:0.5rem 0;}
-    .hero-tagline{max-width:600px;margin:0 auto 1.5rem;font-size:0.92rem;color:var(--text-faint);}
+    .hero-tagline{max-width:600px;margin:0 auto 1.5rem;font-size:0.92rem;color:var(--text-dim);}
     .hero-ctas{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;}
     .hero-pill{font-family:var(--sans);font-size:0.85rem;color:var(--gold);border:1px solid var(--gold-border);padding:0.5rem 1.1rem;border-radius:20px;text-decoration:none;transition:all 0.25s;}
     .hero-pill:hover{background:rgba(201,168,76,0.12);}
@@ -167,7 +166,8 @@
     .section-desc{font-size:0.9rem;color:var(--text-faint);margin-bottom:1.5rem;font-family:var(--sans);}
     .series-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-bottom:2.5rem;}
     .series-card{text-decoration:none;display:block;}
-    .card-inner{background:rgba(201,168,76,0.04);border:1px solid var(--gold-border);border-radius:12px;padding:1.5rem;height:100%;transition:all 0.25s;}
+    .card-inner{background:rgba(201,168,76,0.04);border:1px solid var(--gold-border);border-radius:12px;padding:1.5rem;height:100%;transition:all 0.25s;overflow:hidden;}
+    .card-img{display:block;width:calc(100% + 3rem);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-1.5rem -1.5rem 1.1rem;border-bottom:1px solid var(--gold-border);}
     .series-card:hover .card-inner{background:rgba(201,168,76,0.09);transform:translateY(-3px);}
     .card-top{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;}
     .card-emoji{font-size:1.8rem;}
@@ -183,7 +183,8 @@
     .featured-section{margin:2.5rem 0;}
     .featured-label{font-family:var(--sans);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block;}
     .featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.85rem;}
-    .featured-link{display:block;background:rgba(201,168,76,0.04);border:1px solid var(--gold-border);border-radius:8px;padding:1rem 1.1rem;text-decoration:none;transition:all 0.25s;}
+    .featured-link{display:block;background:rgba(201,168,76,0.04);border:1px solid var(--gold-border);border-radius:8px;padding:1rem 1.1rem;text-decoration:none;transition:all 0.25s;overflow:hidden;}
+    .feat-img{display:block;width:calc(100% + 2.2rem);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-1rem -1.1rem 0.75rem;}
     .featured-link:hover{background:rgba(201,168,76,0.1);}
     .feat-series{font-family:var(--sans);font-size:0.63rem;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase;display:block;margin-bottom:0.3rem;}
     .feat-te{font-size:0.98rem;color:var(--text);display:block;}
@@ -211,6 +212,7 @@
     footer a{color:var(--gold);text-decoration:none;}
     footer a:hover{text-decoration:underline;}
   </style>
+  <style id="nav-mobile-fix">@media(max-width:768px){body>nav:first-of-type{gap:0.75rem;}body>nav:first-of-type .nav-logo{flex-shrink:0;}body>nav:first-of-type .nav-links{min-width:0;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent);}body>nav:first-of-type .nav-links::-webkit-scrollbar{display:none;}body>nav:first-of-type .nav-links>a{flex-shrink:0;}}</style>
 </head>
 <body>
 
@@ -267,6 +269,7 @@
     <!-- TENALI -->
     <a href="/tenali/" class="series-card">
       <div class="card-inner">
+        <img class="card-img" src="/images/home/series-tenali.webp" alt="తెనాలి రామకృష్ణ కథలు" width="640" height="360" loading="lazy" decoding="async" />
         <div class="card-top">
           <span class="card-emoji">🧠</span>
           <div class="card-titles">
@@ -288,6 +291,7 @@
     <!-- CHANAKYA NITI -->
     <a href="/chanakya/" class="series-card">
       <div class="card-inner">
+        <img class="card-img" src="/images/home/series-chanakya.webp" alt="చాణక్య నీతి కథలు" width="640" height="360" loading="lazy" decoding="async" />
         <div class="card-top">
           <span class="card-emoji">📜</span>
           <div class="card-titles">
@@ -309,6 +313,7 @@
     <!-- AKBAR - BIRBAL -->
     <a href="/AkbarBirbal/" class="series-card">
       <div class="card-inner">
+        <img class="card-img" src="/images/home/series-akbarbirbal.webp" alt="అక్బర్ బీర్బల్ కథలు" width="640" height="360" loading="lazy" decoding="async" />
         <div class="card-top">
           <span class="card-emoji">👑</span>
           <div class="card-titles">
@@ -330,6 +335,7 @@
     <!-- PITTAKATHALU -->
     <a href="/pittakathalu/" class="series-card">
       <div class="card-inner">
+        <img class="card-img" src="/images/home/series-pittakathalu.webp" alt="పిట్ట కథలు" width="640" height="360" loading="lazy" decoding="async" />
         <div class="card-top">
           <span class="card-emoji">🐦</span>
           <div class="card-titles">
@@ -351,6 +357,7 @@
     <!-- JEEVITAKATHALU -->
     <a href="/jeevitakathalu/" class="series-card">
       <div class="card-inner">
+        <img class="card-img" src="/images/home/series-jeevitakathalu.webp" alt="జీవిత కథలు" width="640" height="360" loading="lazy" decoding="async" />
         <div class="card-top">
           <span class="card-emoji">🏺</span>
           <div class="card-titles">
@@ -376,31 +383,37 @@
     <span class="featured-label">⭐ Featured Stories — ప్రముఖ కథలు</span>
     <div class="featured-grid">
       <a href="/tenali/t22-gadidato-tenali-ettugada.html" class="featured-link">
+        <img class="feat-img" src="/images/home/feat-t22.webp" alt="" width="480" height="270" loading="lazy" decoding="async" />
         <span class="feat-series">తెనాలి కథలు · T22 · NEW</span>
         <span class="feat-te">గాడిదతో తెనాలి ఎత్తుగడ!</span>
         <span class="feat-en">Tenali's Donkey Trick</span>
       </a>
       <a href="/tenali/t21-needanu-ammina-vyapari.html" class="featured-link">
+        <img class="feat-img" src="/images/home/feat-t21.webp" alt="" width="480" height="270" loading="lazy" decoding="async" />
         <span class="feat-series">తెనాలి కథలు · T21 · NEW</span>
         <span class="feat-te">నీడను అమ్మిన వ్యాపారి!</span>
         <span class="feat-en">The Merchant Who Sold His Shadow</span>
       </a>
       <a href="/chanakya/c01-okka-avamanam-chanakya-sapatham.html" class="featured-link">
+        <img class="feat-img" src="/images/home/feat-c01.webp" alt="" width="480" height="270" loading="lazy" decoding="async" />
         <span class="feat-series">చాణక్య నీతి · C01 · NEW</span>
         <span class="feat-te">ఒక్క అవమానం... చాణక్యుని శపథం!</span>
         <span class="feat-en">A Single Insult — Chanakya's Vow</span>
       </a>
       <a href="/AkbarBirbal/ab01-birbal-khichidi.html" class="featured-link">
+        <img class="feat-img" src="/images/home/feat-ab01.webp" alt="" width="480" height="270" loading="lazy" decoding="async" />
         <span class="feat-series">అక్బర్ బీర్బల్ · AB01</span>
         <span class="feat-te">బీర్బల్ ఖిచిడీ</span>
         <span class="feat-en">Birbal's Khichdi</span>
       </a>
       <a href="/jeevitakathalu/jk01-pagilina-kunda-paatam.html" class="featured-link">
+        <img class="feat-img" src="/images/home/feat-jk01.webp" alt="" width="480" height="270" loading="lazy" decoding="async" />
         <span class="feat-series">జీవిత కథలు · JK01</span>
         <span class="feat-te">పగిలిన కుండ పాఠం</span>
         <span class="feat-en">The Cracked Pot — Nobody Is Perfect</span>
       </a>
       <a href="/pittakathalu/pk01-telivaina-nakka.html" class="featured-link">
+        <img class="feat-img" src="/images/home/feat-pk01.webp" alt="" width="480" height="270" loading="lazy" decoding="async" />
         <span class="feat-series">పిట్ట కథలు · PK01</span>
         <span class="feat-te">తెలివైన నక్క</span>
         <span class="feat-en">The Clever Fox</span>
