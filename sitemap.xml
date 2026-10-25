@@ -17,88 +17,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- ═══ PITTAKATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk01-telivaina-nakka.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk02-raagi-binde-matti-kunda.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk03-pencil-rubber.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk04-gaayapadina-simham.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk05-moorkhudito-vadana.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk06-deepam.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk07-gradda-mariyu-kaki.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk08-gadiyaram-calendar.html</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/pittakathalu/pk09-guddivadi-board.html</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ═══ JEEVITAKATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
-  <url>
-    <loc>https://rayalsabha.com/jeevitakathalu/</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/jeevitakathalu/jk01-pagilina-kunda-paatam.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rayalsabha.com/jeevitakathalu/jk02-samayam-viluva.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- ═══ TENALI RAMAKRISHNA SERIES — Index 0.9 · Stories 0.8 ═══ -->
   <url>
     <loc>https://rayalsabha.com/tenali/</loc>
@@ -227,6 +145,32 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- ═══ CHANAKYA NITI SERIES — Index 0.9 · Stories 0.8 ═══ -->
+  <url>
+    <loc>https://rayalsabha.com/chanakya/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/chanakya/c01-okka-avamanam-chanakya-sapatham.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/chanakya/c02-pala-kundalo-visham.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/chanakya/c03-ee-mugguripai-jaali-vaddu.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ═══ AKBAR – BIRBAL SERIES — Index 0.9 · Stories 0.8 ═══ -->
   <url>
     <loc>https://rayalsabha.com/AkbarBirbal/</loc>
@@ -249,6 +193,88 @@
   <url>
     <loc>https://rayalsabha.com/AkbarBirbal/ab03-birbal-peru-kadha.html</loc>
     <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══ PITTAKATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk01-telivaina-nakka.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk02-raagi-binde-matti-kunda.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk03-pencil-rubber.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk04-gaayapadina-simham.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk05-moorkhudito-vadana.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk06-deepam.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk07-gradda-mariyu-kaki.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk08-gadiyaram-calendar.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/pittakathalu/pk09-guddivadi-board.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══ JEEVITAKATHALU SERIES — Index 0.9 · Stories 0.8 ═══ -->
+  <url>
+    <loc>https://rayalsabha.com/jeevitakathalu/</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/jeevitakathalu/jk01-pagilina-kunda-paatam.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/jeevitakathalu/jk02-samayam-viluva.html</loc>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
