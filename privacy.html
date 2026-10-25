@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <title>Privacy Policy | RayalSabha</title>
+  <meta name="description" content="How rayalsabha.com uses cookies, Google Analytics and Google AdSense, and how to contact us about your privacy." />
+  <link rel="canonical" href="https://rayalsabha.com/privacy.html" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQP6MB62C"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-JXQP6MB62C');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{ --bg:#080604; --gold:#C9A84C; --gold-border:rgba(201,168,76,0.3); --text:#F5ECD7; --text-dim:rgba(245,236,215,0.75); --text-faint:rgba(245,236,215,0.45); --telugu:'Tiro Telugu',serif; --serif:'Cormorant Garamond',serif; --sans:'DM Sans',sans-serif; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:var(--telugu),var(--serif);line-height:1.75;min-height:100vh;}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:100;background:rgba(8,6,4,0.96);border-bottom:1px solid var(--gold-border);padding:0.9rem 2rem;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(8px);}
+    .nav-logo{color:var(--gold);text-decoration:none;font-size:1.15rem;font-weight:bold;}
+    .nav-links{display:flex;align-items:center;gap:1.4rem;}
+    .nav-link{color:var(--text-faint);text-decoration:none;font-size:0.88rem;font-family:var(--sans);transition:color 0.2s;}
+    .nav-link:hover{color:var(--gold);}
+    .nav-yt{color:var(--gold);text-decoration:none;font-size:0.82rem;border:1px solid var(--gold-border);padding:0.3rem 0.8rem;border-radius:4px;font-family:var(--sans);}
+    .nav-contact{color:var(--gold);text-decoration:none;font-size:0.8rem;border:1px solid var(--gold-border);padding:0.3rem 0.8rem;border-radius:20px;font-family:var(--sans);}
+    .nav-contact:hover{background:rgba(201,168,76,0.12);}
+    @media(max-width:768px){nav{padding:0.8rem 1rem;}.nav-links{gap:0.8rem;}.nav-logo{font-size:1.1rem;}.nav-contact{display:none;}}
+
+    /* HERO */
+    .hero{margin-top:0;padding:4rem 2rem 3rem;text-align:center;background:linear-gradient(180deg,rgba(8,6,4,0.62) 0%,rgba(8,6,4,0.82) 65%,var(--bg) 100%),url(/images/home/hero-sabha-1600.webp) center 35%/cover no-repeat;border-bottom:1px solid var(--gold-border);}
+    @media(max-width:768px){.hero{padding:3rem 1.25rem 2.5rem;background-image:linear-gradient(180deg,rgba(8,6,4,0.62) 0%,rgba(8,6,4,0.82) 65%,var(--bg) 100%),url(/images/home/hero-sabha-800.webp);}}
+    .hero-emoji{font-size:2.6rem;display:block;margin-bottom:0.6rem;animation:float 3s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+    .hero h1{font-size:clamp(2rem,6vw,2.8rem);color:var(--gold);text-shadow:0 4px 15px rgba(201,168,76,0.4);}
+    .hero-subtitle{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#d4a574;margin:0.5rem 0;}
+    .hero-tagline{max-width:600px;margin:0 auto 1.5rem;font-size:0.92rem;color:var(--text-dim);}
+    .hero-ctas{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;}
+    .hero-pill{font-family:var(--sans);font-size:0.85rem;color:var(--gold);border:1px solid var(--gold-border);padding:0.5rem 1.1rem;border-radius:20px;text-decoration:none;transition:all 0.25s;}
+    .hero-pill:hover{background:rgba(201,168,76,0.12);}
+    .hero-pill-new{background:rgba(201,168,76,0.1);}
+    .stats-strip{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;font-size:0.85rem;color:var(--text-faint);font-family:var(--sans);}
+    .stats-strip strong{color:var(--gold);}
+    .hero-langs{font-family:var(--sans);font-size:0.85rem;margin:-0.5rem 0 1.25rem;color:var(--text-faint);}
+    .hero-langs a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
+
+    .content{max-width:1000px;margin:0 auto;padding:2rem;}
+
+    /* ABOUT INTRO */
+    .about-intro{margin:1.5rem 0 2.5rem;padding:1.75rem clamp(1.25rem,4vw,2.25rem);border-left:3px solid var(--gold-border);background:rgba(201,168,76,0.04);border-radius:0 8px 8px 0;}
+    .intro-label{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem;display:block;}
+    .intro-te{color:var(--text-dim);margin-bottom:0.75rem;}
+    .intro-en{font-family:var(--serif);font-style:italic;color:var(--text-faint);font-size:0.92rem;}
+
+    /* SERIES GRID */
+    .section-title{font-size:1.5rem;color:var(--gold);margin-bottom:0.3rem;}
+    .section-desc{font-size:0.9rem;color:var(--text-faint);margin-bottom:1.5rem;font-family:var(--sans);}
+    .series-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-bottom:2.5rem;}
+    .series-card{text-decoration:none;display:block;}
+    .card-inner{background:rgba(201,168,76,0.04);border:1px solid var(--gold-border);border-radius:12px;padding:1.5rem;height:100%;transition:all 0.25s;overflow:hidden;}
+    .card-img{display:block;width:calc(100% + 3rem);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-1.5rem -1.5rem 1.1rem;border-bottom:1px solid var(--gold-border);}
+    .series-card:hover .card-inner{background:rgba(201,168,76,0.09);transform:translateY(-3px);}
+    .card-top{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;}
+    .card-emoji{font-size:1.8rem;}
+    .card-title-te{font-size:1.15rem;color:var(--text);}
+    .card-title-en{font-family:var(--serif);font-style:italic;font-size:0.8rem;color:var(--text-faint);}
+    .card-desc{font-size:0.88rem;color:var(--text-dim);margin-bottom:1rem;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;}
+    .card-stats{display:flex;gap:0.75rem;font-family:var(--sans);font-size:0.75rem;color:var(--text-faint);}
+    .card-stat.live{color:#4CAF7D;}
+    .card-arrow{color:var(--gold);font-size:1.3rem;}
+
+    /* FEATURED */
+    .featured-section{margin:2.5rem 0;}
+    .featured-label{font-family:var(--sans);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block;}
+    .featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.85rem;}
+    .featured-link{display:block;background:rgba(201,168,76,0.04);border:1px solid var(--gold-border);border-radius:8px;padding:1rem 1.1rem;text-decoration:none;transition:all 0.25s;overflow:hidden;}
+    .feat-img{display:block;width:calc(100% + 2.2rem);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-1rem -1.1rem 0.75rem;}
+    .featured-link:hover{background:rgba(201,168,76,0.1);}
+    .feat-series{font-family:var(--sans);font-size:0.63rem;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase;display:block;margin-bottom:0.3rem;}
+    .feat-te{font-size:0.98rem;color:var(--text);display:block;}
+    .feat-en{font-family:var(--serif);font-style:italic;font-size:0.78rem;color:var(--text-faint);}
+
+    /* FAQ */
+    .faq-section{margin:2.5rem 0;}
+    .faq-label{font-family:var(--sans);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block;}
+    .faq-item{border-bottom:1px solid var(--gold-border);padding:1rem 0;}
+    .faq-q-te{font-size:0.98rem;color:var(--text);}
+    .faq-q-en{font-family:var(--serif);font-style:italic;font-size:0.82rem;color:var(--text-faint);margin-top:2px;}
+    .faq-a-te{font-size:0.92rem;color:var(--text-dim);margin-top:0.6rem;}
+    .faq-a-en{font-family:var(--serif);font-style:italic;font-size:0.85rem;color:var(--text-faint);margin-top:0.3rem;}
+
+    /* SUBSCRIBE CTA */
+    .subscribe-cta{text-align:center;margin:2.5rem 0;padding:2rem 1.5rem;border:1px solid var(--gold-border);border-radius:12px;background:rgba(201,168,76,0.04);}
+    .subscribe-cta h3{color:var(--gold);font-size:1.15rem;margin-bottom:0.3rem;}
+    .subscribe-cta p{color:var(--text-faint);font-size:0.9rem;margin-bottom:1.25rem;font-family:var(--sans);}
+    .subscribe-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;}
+    .sub-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),#d4a574);color:var(--bg);padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:bold;font-size:0.9rem;font-family:var(--sans);}
+    .sub-btn-o{display:inline-block;background:transparent;border:1px solid rgba(201,168,76,0.5);color:var(--gold);padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:bold;font-size:0.9rem;font-family:var(--sans);}
+
+    /* FOOTER */
+    footer{padding:2rem;background:rgba(8,6,4,0.95);border-top:1px solid var(--gold-border);text-align:center;color:var(--text-faint);font-size:0.85rem;font-family:var(--sans);}
+    footer a{color:var(--gold);text-decoration:none;}
+    footer a:hover{text-decoration:underline;}
+  
+    .page{max-width:780px;margin:0 auto;padding:2.5rem 1.25rem 3rem;}
+    .page h1{color:var(--gold);font-family:var(--serif);font-size:clamp(1.8rem,5vw,2.4rem);margin-bottom:0.3rem;}
+    .page .sub{color:var(--text-faint);font-family:var(--sans);font-size:0.85rem;margin-bottom:2rem;}
+    .page h2{color:var(--gold);font-family:var(--serif);font-size:1.3rem;margin:2rem 0 0.6rem;}
+    .page p,.page li{font-family:var(--sans);font-size:0.95rem;color:var(--text-dim);line-height:1.8;margin-bottom:0.8rem;}
+    .page ul{padding-left:1.25rem;}
+    .page a{color:var(--gold);}
+    .page .te{font-family:var(--telugu);}
+  </style>
+  <style id="nav-mobile-fix">@media(max-width:768px){body>nav:first-of-type{gap:0.75rem;}body>nav:first-of-type .nav-logo{flex-shrink:0;}body>nav:first-of-type .nav-links{min-width:0;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent);}body>nav:first-of-type .nav-links::-webkit-scrollbar{display:none;}body>nav:first-of-type .nav-links>a{flex-shrink:0;}}</style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5357966302045581" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">🪔 RayalSabha</a>
+  <div class="nav-links">
+    <a href="/tenali/" class="nav-link">తెనాలి</a>
+    <a href="/chanakya/" class="nav-link">చాణక్య నీతి</a>
+    <a href="/AkbarBirbal/" class="nav-link">అక్బర్ బీర్బల్</a>
+    <a href="/pittakathalu/" class="nav-link">పిట్ట కథలు</a>
+    <a href="/jeevitakathalu/" class="nav-link">జీవిత కథలు</a>
+    <a href="https://youtube.com/@Rayalsabha" target="_blank" class="nav-yt">▶ YouTube</a>
+    <a href="/contact.html" class="nav-contact">✉ Contact</a>
+  </div>
+</nav>
+<main class="page">
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated: 25 October 2026</p>
+  <p>This policy explains what information is collected when you visit rayalsabha.com ("RayalSabha", "we") and how it is used.</p>
+  <h2>Information we collect</h2>
+  <p>You can read every story without an account, and we do not ask for your name, email or any personal details. If you email us, we use your email only to reply to you.</p>
+  <h2>Analytics</h2>
+  <p>We use Google Analytics to understand how many people visit and which stories they read. Google Analytics uses cookies and collects information such as pages visited, approximate location, device and browser type. This information is aggregated and does not identify you personally. Learn more in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from sites that use its services</a>.</p>
+  <h2>Advertising</h2>
+  <p>We use Google AdSense to show ads, which helps keep the stories free.</p>
+  <ul>
+    <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.</li>
+    <li>Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to this site and/or other sites on the Internet.</li>
+    <li>You may opt out of personalised advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>, or opt out of some third-party vendors' use of cookies at <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</li>
+  </ul>
+  <h2>Children's privacy</h2>
+  <p>Our stories are made for families and children. We do not knowingly collect personal information from children, and we do not ask anyone to register or submit personal details. Parents who believe a child has sent us personal information can email us and we will delete it.</p>
+  <h2>YouTube videos</h2>
+  <p>Story pages embed videos from our YouTube channel. When you play a video, YouTube (owned by Google) may set cookies under its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>.</p>
+  <h2>Your choices</h2>
+  <p>You can block or delete cookies in your browser settings. The stories will still work without them.</p>
+  <h2>Changes</h2>
+  <p>We may update this policy from time to time. The date at the top shows when it was last changed.</p>
+  <h2>Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:iloveindia1987@gmail.com">iloveindia1987@gmail.com</a>.</p>
+</main>
+<footer>
+  <p>© 2026 RayalSabha · <a href="/">rayalsabha.com</a> · <a href="/contact.html">Contact</a></p>
+<p class="legal-links" style="margin-top:0.5rem;font-size:0.75rem;"><a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a></p>
+</footer>
+</body>
+</html>
