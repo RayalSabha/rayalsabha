@@ -4,7 +4,7 @@
   <!-- ═══ HOMEPAGE — Priority 1.0 ═══ -->
   <url>
     <loc>https://rayalsabha.com/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -32,7 +32,7 @@
   <!-- ═══ TENALI RAMAKRISHNA SERIES — Index 0.9 · Stories 0.8 ═══ -->
   <url>
     <loc>https://rayalsabha.com/tenali/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -110,25 +110,25 @@
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t13-moodu-bommala-chikku.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t14-mallayodhudi-saval.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t15-pidikedu-dhanyam.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t16-nadi-datite-raju.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -140,19 +140,25 @@
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t18-paina-kinda.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/tenali/t19-vasanaki-dhara.html</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t20-kunda-ninda-telivi.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/tenali/t21-needanu-ammina-vyapari.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -166,7 +172,7 @@
   <!-- ═══ TENALI RAMA — ENGLISH SERIES — Index 0.9 · Stories 0.8 ═══ -->
   <url>
     <loc>https://rayalsabha.com/en/tenali/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -244,49 +250,55 @@
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t13-the-three-dolls-riddle.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t14-the-wrestlers-test.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t15-a-fistful-of-grain.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t16-the-astrologer-spy.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t17-the-magicians-challenge.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t18-top-or-bottom.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/en/tenali/t19-the-price-of-a-smell.html</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t20-a-pot-full-of-wisdom.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/en/tenali/t21-the-merchant-who-sold-his-shadow.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -300,7 +312,7 @@
   <!-- ═══ TENALI RAMA — HINDI SERIES — Index 0.9 · Stories 0.8 ═══ -->
   <url>
     <loc>https://rayalsabha.com/hi/tenali/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -378,49 +390,55 @@
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t13-teen-gudiyon-ki-paheli.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t14-pahalwan-ki-pariksha.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t15-mutthi-bhar-anaj-tenali-rama-kahani.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t16-jyotishi-jasoos-tenali-rama-kahani.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t17-jadugar-ki-chunauti-tenali-rama-kahani.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t18-upar-ya-neeche-tenali-rama-kahani.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rayalsabha.com/hi/tenali/t19-gandh-ki-keemat.html</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t20-buddhi-se-bhara-ghada.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rayalsabha.com/hi/tenali/t21-chhaya-bechne-wala-vyapari.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
